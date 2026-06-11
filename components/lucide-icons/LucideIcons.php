@@ -41,6 +41,7 @@ class LucideIcons extends BaseComponent {
                 'label'      => 'Lucide Icons',
                 'field_type' => 'theme_icon_picker',
                 'field_args' => ['label' => 'Icon'],
+                'render'     => fn(string $value): string => self::get_icons_data()[$value] ?? '',
             ];
             return $providers;
         });

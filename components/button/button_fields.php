@@ -89,7 +89,12 @@ $button_full_fields->addRadio('button_component', [
 
 // Set up conditional logic for the full field group to show/hide fields based on other field values.
 $button_full_fields->getField('link')->conditional('button_component', '==', 'link');
-$button_full_fields->getField('label')->conditional('button_component', '==', 'button');
+$button_full_fields->getField('label')
+    ->conditional('button_component', '==', 'button')
+    ->and('size', '!=', 'icon')
+    ->and('size', '!=', 'icon-xs')
+    ->and('size', '!=', 'icon-sm')
+    ->and('size', '!=', 'icon-lg');
 $button_full_fields->getField('type')->conditional('button_component', '==', 'button');
 $button_full_fields->getField('click_action')->conditional('button_component', '==', 'button');
 $button_full_fields->getField('alpine_module')->conditional('click_action', '==', 'alpine');

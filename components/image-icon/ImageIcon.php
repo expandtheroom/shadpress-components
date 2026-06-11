@@ -16,9 +16,13 @@ class ImageIcon extends BaseComponent {
                 'label'      => 'Image Icon',
                 'field_type' => 'icon_picker',
                 'field_args' => [
-                    'label' => 'Icon',
-                    'tabs'  => ['media_library', 'url'],
+                    'label'         => 'Icon',
+                    'tabs'          => ['media_library', 'url'],
+                    'return_format' => 'string',
                 ],
+                'render'     => fn(string $value): string => !empty($value)
+                    ? '<img src="' . esc_url($value) . '" alt="" class="size-4">'
+                    : '',
             ];
             return $providers;
         });

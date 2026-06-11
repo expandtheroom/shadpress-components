@@ -8,11 +8,15 @@ $shared_attrs = implode(' ', array_filter([
     $this->component_attrs(),
     'class="' . esc_attr(classNames($this->button_classes(), $this->get_classes())) . '"',
 ]));
+
+$icon_html  = !empty($this->include_icon) ? $this->render_icon() : '';
+$icon_left  = $this->icon_position !== 'right' ? $icon_html : '';
+$icon_right = $this->icon_position === 'right' ? $icon_html : '';
 ?>
 
 <?php if ($is_link):
     $link = $this->link;
-    $url = $this->link['url'];
+    $url  = $this->link['url'];
 
     $is_external = !empty($url) && parse_url($url, PHP_URL_HOST) && parse_url($url, PHP_URL_HOST) !== parse_url(home_url(), PHP_URL_HOST);
 
@@ -30,7 +34,9 @@ $shared_attrs = implode(' ', array_filter([
 ?>
     <a <?= $shared_attrs ?>
         <?= $link_attrs ?>>
+        <?= $icon_left ?>
         <?= $this->link['title'] ?? '' ?>
+        <?= $icon_right ?>
     </a>
 <?php else:
     $button_attrs = implode(' ', array_filter([
@@ -41,6 +47,8 @@ $shared_attrs = implode(' ', array_filter([
 ?>
     <button <?= $shared_attrs ?>
         <?= $button_attrs ?>>
+        <?= $icon_left ?>
         <?= esc_html($this->label) ?>
+        <?= $icon_right ?>
     </button>
 <?php endif; ?>

@@ -13,6 +13,11 @@ class Button extends BaseComponent {
         public string $type = 'button',
         public string $click_action = '',
         public string $alpine_module = '',
+        public bool|int $include_icon = 0,
+        public string $icon_provider     = '',
+        public string $icon_lucide_icons = '',
+        public string $icon_image_icon   = '',
+        public string $icon_position     = 'left',
 
         // non field properties
         public array $extra_attrs = []
@@ -63,5 +68,19 @@ class Button extends BaseComponent {
         };
 
         return "$base $variant_classes $size_classes";
+    }
+
+    public function render_icon(): string {
+        static $providers = null; // cached for the lifetime of the request
+        if ($providers === null) {
+            $providers = apply_filters('theme/icon_providers', []);
+        }
+        if (empty($providers)) return '';
+        // Fall back to first provider when icon_provider is empty (hidden field, never explicitly saved)
+        $provider_key = !empty($this->icon_provider) ? $this->icon_provider : (string) array_key_first($providers);
+        $provider     = $providers[$provider_key] ?? null;
+        if (!$provider || !isset($provider['render'])) return '';
+        $field = 'icon_' . str_replace('-', '_', $provider_key);
+        return ($provider['render'])($this->$field ?? '');
     }
 }

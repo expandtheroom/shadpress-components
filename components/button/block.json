@@ -21,8 +21,7 @@
   },
 
   "acf": {
-    "blockVersion": 3,
-    "autoInlineEditing": true
+    "blockVersion": 3
   },
 
   "example": {

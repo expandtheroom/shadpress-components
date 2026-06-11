@@ -12,7 +12,7 @@ return function (array $config = []): array {
         'required' => 1,
         'include' => $include,
         'ignore' => $ignore,
-        'instructions' => 'Select an icon from the Lucide icon set. There are A LOT of icons, so the select takes a moment to load. Click once, be patient.',
+        'instructions' => 'Select an icon from the Lucide icon set. There are A LOT of icons, so the select takes a moment to load. Click once, be patient. See: https://lucide.dev/icons/',
     ]);
 
     $icon_full_fields = (new FieldsBuilder('icon_component_fields'));
