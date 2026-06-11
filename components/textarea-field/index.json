@@ -1,0 +1,5 @@
+{
+  "name": "Textarea Field",
+  "description": "Form field wrapper for textarea with label, description, and error handling",
+  "requires": ["label", "textarea"]
+}

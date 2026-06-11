@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+.hello-world-blue {
+  background-color: lightblue;
+}

@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+[data-slot='checkbox'] {
+  border-color: var(--color-primary);
+}
+
+[data-slot='checkbox'][data-state='checked'] {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}

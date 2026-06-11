@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+[data-component='tooltip'] {
+  @apply relative inline-block;
+}

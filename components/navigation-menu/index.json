@@ -1,0 +1,5 @@
+{
+  "name": "Navigation Menu",
+  "description": "WordPress menu walker for hierarchical navigation with submenus",
+  "requires": []
+}

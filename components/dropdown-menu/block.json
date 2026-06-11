@@ -1,0 +1,43 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/dropdown-menu",
+
+  "title": "Dropdown Menu",
+
+  "category": "theme",
+
+  "description": "Dropdown Menu",
+
+  "keywords": ["Dropdown Menu", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "trigger_label": "Open menu",
+        "trigger_variant": "outline",
+        "items": [
+          { "type": "label", "label": "My Account" },
+          { "type": "item", "label": "Profile", "href": "#" },
+          { "type": "item", "label": "Settings", "href": "#" },
+          { "type": "separator" },
+          { "type": "item", "label": "Log out", "href": "#" }
+        ]
+      }
+    }
+  }
+}

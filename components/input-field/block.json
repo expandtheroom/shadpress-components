@@ -1,0 +1,40 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/input-field",
+
+  "title": "Input Field",
+
+  "category": "theme",
+
+  "description": "Input Field",
+
+  "keywords": ["Input Field", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "label": "Email address",
+        "label_for": "email",
+        "field_type": "email",
+        "placeholder": "you@example.com",
+        "description": "We'll never share your email.",
+        "required": true
+      }
+    }
+  }
+}

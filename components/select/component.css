@@ -1,0 +1,35 @@
+@reference "tailwindcss";
+
+[data-slot='select-trigger'] {
+  border-color: var(--color-input);
+  background-color: var(--color-background);
+}
+
+[data-slot='select-content'] {
+  position: absolute;
+  top: calc(100% + 0.25rem);
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  min-width: 8rem;
+  border-radius: calc(var(--radius) - 2px);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-background);
+  padding: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+}
+
+[data-slot='select-item'] {
+  @apply flex items-center gap-2 px-2 py-1.5 text-sm rounded-sm cursor-pointer;
+}
+
+[data-slot='select-item']:hover,
+[data-slot='select-item'][data-active='true'] {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+[data-slot='select-item-indicator'] {
+  @apply w-4 text-center;
+  color: var(--color-primary);
+}

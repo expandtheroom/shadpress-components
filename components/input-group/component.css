@@ -1,0 +1,16 @@
+@reference "tailwindcss";
+
+[data-slot='input-group'] {
+  border-color: var(--color-input);
+}
+
+[data-slot='input-group-addon'] {
+  background-color: var(--color-muted);
+  color: var(--color-muted-foreground);
+  border-right: 1px solid var(--color-border);
+}
+
+[data-slot='input-group-addon']:last-child {
+  border-right: none;
+  border-left: 1px solid var(--color-border);
+}

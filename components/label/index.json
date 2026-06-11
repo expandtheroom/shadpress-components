@@ -1,0 +1,5 @@
+{
+  "name": "Label",
+  "description": "Form label element with optional required indicator",
+  "requires": []
+}

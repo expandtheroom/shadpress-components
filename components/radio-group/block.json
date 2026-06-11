@@ -1,0 +1,41 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/radio-group",
+
+  "title": "Radio Group",
+
+  "category": "theme",
+
+  "description": "Radio Group",
+
+  "keywords": ["Radio Group", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "data": {
+        "name": "plan",
+        "default_value": "pro",
+        "orientation": "vertical",
+        "items": [
+          { "label": "Starter", "value": "starter" },
+          { "label": "Pro", "value": "pro" },
+          { "label": "Enterprise", "value": "enterprise" }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@reference "tailwindcss";
+
+[data-slot='toggle'][data-state='on'] {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+[data-slot='toggle'][data-state='on']:hover {
+  background-color: var(--color-accent);
+}

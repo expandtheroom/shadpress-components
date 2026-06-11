@@ -1,0 +1,5 @@
+{
+  "name": "Calendar",
+  "description": "Date picker calendar with min/max date constraints",
+  "requires": []
+}

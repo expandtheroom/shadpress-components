@@ -1,0 +1,75 @@
+@reference "tailwindcss";
+
+/* Bottom (default) — panel appears below the trigger */
+[data-slot='popover-content'][data-side='bottom'] {
+  top: calc(100% + 0.5rem);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-slot='popover-content'][data-side='bottom'][data-align='start'] {
+  left: 0;
+  transform: none;
+}
+
+[data-slot='popover-content'][data-side='bottom'][data-align='end'] {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+/* Top — panel appears above the trigger */
+[data-slot='popover-content'][data-side='top'] {
+  bottom: calc(100% + 0.5rem);
+  top: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+[data-slot='popover-content'][data-side='top'][data-align='start'] {
+  left: 0;
+  transform: none;
+}
+
+[data-slot='popover-content'][data-side='top'][data-align='end'] {
+  left: auto;
+  right: 0;
+  transform: none;
+}
+
+/* Right — panel appears to the right of the trigger */
+[data-slot='popover-content'][data-side='right'] {
+  left: calc(100% + 0.5rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[data-slot='popover-content'][data-side='right'][data-align='start'] {
+  top: 0;
+  transform: none;
+}
+
+[data-slot='popover-content'][data-side='right'][data-align='end'] {
+  top: auto;
+  bottom: 0;
+  transform: none;
+}
+
+/* Left — panel appears to the left of the trigger */
+[data-slot='popover-content'][data-side='left'] {
+  right: calc(100% + 0.5rem);
+  left: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+[data-slot='popover-content'][data-side='left'][data-align='start'] {
+  top: 0;
+  transform: none;
+}
+
+[data-slot='popover-content'][data-side='left'][data-align='end'] {
+  top: auto;
+  bottom: 0;
+  transform: none;
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/scroll-area",
+
+  "title": "Scroll Area",
+
+  "category": "theme",
+
+  "description": "Scroll Area",
+
+  "keywords": ["Scroll Area", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "max_height": "200px",
+        "orientation": "vertical",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p><p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>"
+      }
+    }
+  }
+}

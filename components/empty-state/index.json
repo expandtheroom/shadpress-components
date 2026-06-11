@@ -1,0 +1,5 @@
+{
+  "name": "Empty State",
+  "description": "Empty state display with title, description, and optional action link",
+  "requires": []
+}

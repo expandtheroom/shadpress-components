@@ -1,0 +1,5 @@
+@reference "tailwindcss";
+
+[data-slot='dialog'] {
+  @apply max-h-[90dvh] overflow-y-auto;
+}

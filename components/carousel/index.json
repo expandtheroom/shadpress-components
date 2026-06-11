@@ -1,0 +1,5 @@
+{
+  "name": "Carousel",
+  "description": "Image carousel with loop, autoplay, and configurable transitions",
+  "requires": []
+}

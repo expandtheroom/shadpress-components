@@ -1,0 +1,38 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/toggle",
+
+  "title": "Toggle",
+
+  "category": "theme",
+
+  "description": "Toggle",
+
+  "keywords": ["Toggle", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "data": {
+        "label": "Bold",
+        "pressed": false,
+        "variant": "default",
+        "size": "default",
+        "disabled": false
+      }
+    }
+  }
+}

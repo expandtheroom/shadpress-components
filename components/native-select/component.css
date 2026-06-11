@@ -1,0 +1,6 @@
+@reference "tailwindcss";
+
+[data-slot='native-select'] {
+  border-color: var(--color-input);
+  background-color: var(--color-background);
+}

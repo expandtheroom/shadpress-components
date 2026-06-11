@@ -1,0 +1,5 @@
+{
+  "name": "Popover",
+  "description": "Floating popover with content, positioning, and alignment options",
+  "requires": ["typography"]
+}

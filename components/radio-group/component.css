@@ -1,0 +1,38 @@
+@reference "tailwindcss";
+
+[data-slot='radio-group'][data-orientation='horizontal'] {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+[data-slot='radio-group'][data-orientation='vertical'] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+[data-slot='radio-group-item'] {
+  border-color: var(--color-primary);
+}
+
+[data-slot='radio-group-item'][data-state='checked'] {
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+[data-slot='radio-group-indicator'] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+[data-slot='radio-group-indicator']::after {
+  content: '';
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--color-primary);
+}

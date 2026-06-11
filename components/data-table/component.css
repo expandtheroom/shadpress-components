@@ -1,0 +1,31 @@
+@reference "tailwindcss";
+
+[data-slot='table-head'][data-sortable='true']:hover {
+  color: var(--color-foreground);
+}
+
+[data-slot='sort-icon'] {
+  @apply inline-flex opacity-60;
+}
+
+[data-slot='table-head'][data-sortable='true']:hover [data-slot='sort-icon'] {
+  opacity: 1;
+}
+
+[data-slot='data-table-filter-input'] {
+  border-color: var(--color-input);
+  background-color: var(--color-background);
+  transition:
+    border-color 150ms ease,
+    box-shadow 150ms ease;
+}
+
+[data-slot='data-table-filter-input']:focus {
+  outline: none;
+  border-color: var(--color-ring);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-ring) 20%, transparent);
+}
+
+[data-slot='table-row']:hover {
+  background-color: color-mix(in srgb, var(--color-muted) 50%, transparent);
+}

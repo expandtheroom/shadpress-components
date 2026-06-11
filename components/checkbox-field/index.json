@@ -1,0 +1,5 @@
+{
+  "name": "Checkbox Field",
+  "description": "Form field wrapper for checkbox with label, description, and error handling",
+  "requires": ["label", "checkbox"]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Input Field",
+  "description": "Form field wrapper for input with label, description, and error handling",
+  "requires": ["label", "input"]
+}

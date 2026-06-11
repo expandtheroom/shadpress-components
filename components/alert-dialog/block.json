@@ -1,0 +1,40 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/alert-dialog",
+
+  "title": "Alert Dialog",
+
+  "category": "theme",
+
+  "description": "Alert Dialog",
+
+  "keywords": ["Alert Dialog", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "trigger_label": "Delete account",
+        "title": "Are you absolutely sure?",
+        "description": "This action cannot be undone. This will permanently delete your account.",
+        "cancel_label": "Cancel",
+        "confirm_label": "Continue",
+        "variant": "destructive"
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/menubar",
+
+  "title": "Menubar",
+
+  "category": "theme",
+
+  "description": "Menubar",
+
+  "keywords": ["Menubar", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "menus": [
+          {
+            "label": "File",
+            "items": [
+              { "type": "item", "label": "New", "href": "#" },
+              { "type": "separator" },
+              { "type": "item", "label": "Exit", "href": "#" }
+            ]
+          },
+          {
+            "label": "Edit",
+            "items": [
+              { "type": "item", "label": "Undo", "href": "#" },
+              { "type": "item", "label": "Redo", "href": "#" }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

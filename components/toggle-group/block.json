@@ -1,0 +1,40 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/toggle-group",
+
+  "title": "Toggle Group",
+
+  "category": "theme",
+
+  "description": "Toggle Group",
+
+  "keywords": ["Toggle Group", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "data": {
+        "type": "single",
+        "default_value": "center",
+        "items": [
+          { "label": "Left", "value": "left" },
+          { "label": "Center", "value": "center" },
+          { "label": "Right", "value": "right" }
+        ]
+      }
+    }
+  }
+}

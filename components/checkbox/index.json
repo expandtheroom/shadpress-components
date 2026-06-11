@@ -1,0 +1,5 @@
+{
+  "name": "Checkbox",
+  "description": "Standalone checkbox input with label and validation states",
+  "requires": []
+}

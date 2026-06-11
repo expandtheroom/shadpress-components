@@ -1,0 +1,5 @@
+{
+  "name": "Input",
+  "description": "Text input field with type variants and validation support",
+  "requires": []
+}

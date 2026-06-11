@@ -1,0 +1,38 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/checkbox",
+
+  "title": "Checkbox",
+
+  "category": "theme",
+
+  "description": "Checkbox",
+
+  "keywords": ["Checkbox", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "label": "Accept terms and conditions",
+        "name": "terms",
+        "value": "1",
+        "checked": false
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/input",
+
+  "title": "Input",
+
+  "category": "theme",
+
+  "description": "Input",
+
+  "keywords": ["Input", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "type": "email",
+        "placeholder": "you@example.com",
+        "name": "email"
+      }
+    }
+  }
+}

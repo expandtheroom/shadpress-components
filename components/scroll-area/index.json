@@ -1,0 +1,5 @@
+{
+  "name": "Scroll Area",
+  "description": "Scrollable container with typography content and max-height control",
+  "requires": ["typography"]
+}

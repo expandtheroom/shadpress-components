@@ -1,0 +1,38 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/popover",
+
+  "title": "Popover",
+
+  "category": "theme",
+
+  "description": "Popover",
+
+  "keywords": ["Popover", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "trigger_label": "Open popover",
+        "content": "<p>Place content for the popover here.</p>",
+        "side": "bottom",
+        "align": "center"
+      }
+    }
+  }
+}

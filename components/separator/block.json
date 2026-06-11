@@ -1,0 +1,36 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/separator",
+
+  "title": "Separator",
+
+  "category": "theme",
+
+  "description": "Separator",
+
+  "keywords": ["Separator", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "orientation": "horizontal",
+        "decorative": true
+      }
+    }
+  }
+}

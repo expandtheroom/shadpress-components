@@ -1,0 +1,5419 @@
+{
+  "categoryMap": {
+    "accessibility": "Accessibility",
+    "accounts-access": "Accounts & Access",
+    "animals": "Animals",
+    "arrows": "Arrows",
+    "buildings": "Buildings",
+    "charts": "Charts",
+    "communication": "Communication",
+    "connectivity": "Connectivity",
+    "cursors": "Cursors",
+    "design": "Design",
+    "coding-development": "Coding & Development",
+    "devices": "Devices",
+    "emoji": "Emoji",
+    "file-icons": "File Icons",
+    "finance": "Finance",
+    "food-beverage": "Food & Beverage",
+    "gaming": "Gaming",
+    "home": "Home",
+    "layout": "Layout",
+    "mail": "Mail",
+    "mathematics": "Mathematics",
+    "medical": "Medical",
+    "multimedia": "Multimedia",
+    "nature": "Nature",
+    "navigation-maps-and-pois": "Navigation Maps and POIs",
+    "notification": "Notification",
+    "people": "People",
+    "photography": "Photography",
+    "science": "Science",
+    "seasons": "Seasons",
+    "security": "Security",
+    "shapes": "Shapes",
+    "shopping": "Shopping",
+    "social": "Social",
+    "sports": "Sports",
+    "sustainability": "Sustainability",
+    "text-formatting": "Text Formatting",
+    "time-calendar": "Time & Calendar",
+    "tools": "Tools",
+    "transportation": "Transportation",
+    "travel": "Travel",
+    "weather": "Weather"
+  },
+  "iconCategories": {
+    "accessibility": ["accessibility", "people", "travel"],
+    "baby": ["accessibility", "medical", "people"],
+    "badge-info": [
+      "accessibility",
+      "accounts-access",
+      "notification",
+      "shapes"
+    ],
+    "badge-question-mark": ["accessibility"],
+    "circle-question-mark": ["accessibility"],
+    "closed-caption": ["accessibility"],
+    "contrast": [
+      "accessibility",
+      "design",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes",
+      "tools"
+    ],
+    "ear": ["accessibility", "multimedia", "navigation-maps-and-pois"],
+    "ear-off": ["accessibility", "multimedia"],
+    "eclipse": [
+      "accessibility",
+      "design",
+      "coding-development",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "weather"
+    ],
+    "eye": [
+      "accessibility",
+      "design",
+      "medical",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes"
+    ],
+    "eye-closed": [
+      "accessibility",
+      "design",
+      "medical",
+      "photography",
+      "security"
+    ],
+    "eye-off": [
+      "accessibility",
+      "design",
+      "medical",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes"
+    ],
+    "glasses": [
+      "accessibility",
+      "navigation-maps-and-pois",
+      "people",
+      "tools",
+      "travel"
+    ],
+    "hand": [
+      "accessibility",
+      "cursors",
+      "medical",
+      "navigation-maps-and-pois",
+      "people",
+      "tools"
+    ],
+    "info": [
+      "accessibility",
+      "navigation-maps-and-pois",
+      "notification",
+      "travel"
+    ],
+    "life-buoy": ["accessibility", "navigation-maps-and-pois", "tools"],
+    "moon": [
+      "accessibility",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "seasons",
+      "shapes",
+      "weather"
+    ],
+    "moon-star": [
+      "accessibility",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "seasons",
+      "shapes",
+      "weather"
+    ],
+    "person-standing": ["accessibility", "navigation-maps-and-pois", "people"],
+    "scan-eye": [
+      "accessibility",
+      "accounts-access",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "scan-search": [
+      "accessibility",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "speech": [
+      "accessibility",
+      "communication",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "sun": [
+      "accessibility",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "seasons",
+      "shapes",
+      "time-calendar",
+      "tools",
+      "travel",
+      "weather"
+    ],
+    "sun-dim": [
+      "accessibility",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "seasons",
+      "shapes",
+      "travel",
+      "weather"
+    ],
+    "sun-medium": [
+      "accessibility",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "seasons",
+      "shapes",
+      "travel",
+      "weather"
+    ],
+    "sun-moon": [
+      "accessibility",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "seasons",
+      "shapes",
+      "weather"
+    ],
+    "transgender": ["accessibility"],
+    "zoom-in": [
+      "accessibility",
+      "design",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "text-formatting",
+      "tools"
+    ],
+    "zoom-out": [
+      "accessibility",
+      "design",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "text-formatting",
+      "tools"
+    ],
+    "activity": ["accounts-access", "medical", "science"],
+    "at-sign": ["accounts-access", "mail", "social", "text-formatting"],
+    "award": ["accounts-access", "gaming", "sports"],
+    "badge": ["accounts-access", "shapes"],
+    "badge-alert": ["accounts-access", "notification", "shapes"],
+    "ban": ["accounts-access", "notification", "security", "shapes", "social"],
+    "bell": [
+      "accounts-access",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "notification",
+      "social",
+      "time-calendar"
+    ],
+    "bell-check": ["accounts-access"],
+    "bell-dot": [
+      "accounts-access",
+      "multimedia",
+      "notification",
+      "social",
+      "time-calendar"
+    ],
+    "book-user": ["accounts-access", "communication", "connectivity"],
+    "bookmark": ["accounts-access", "social"],
+    "bookmark-check": ["accounts-access", "social"],
+    "bookmark-minus": ["accounts-access", "social"],
+    "bookmark-off": ["accounts-access"],
+    "bookmark-plus": ["accounts-access", "social"],
+    "bookmark-x": ["accounts-access", "social"],
+    "building": ["accounts-access", "buildings", "navigation-maps-and-pois"],
+    "building-2": ["accounts-access", "buildings", "navigation-maps-and-pois"],
+    "cake": ["accounts-access", "food-beverage", "time-calendar", "travel"],
+    "circle-user": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "shapes",
+      "social"
+    ],
+    "circle-user-round": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "shapes",
+      "social"
+    ],
+    "cog": ["accounts-access", "tools"],
+    "contact": [
+      "accounts-access",
+      "communication",
+      "connectivity",
+      "mail",
+      "people",
+      "social"
+    ],
+    "contact-round": [
+      "accounts-access",
+      "communication",
+      "connectivity",
+      "mail",
+      "people",
+      "social"
+    ],
+    "cookie": [
+      "accounts-access",
+      "food-beverage",
+      "medical",
+      "navigation-maps-and-pois"
+    ],
+    "credit-card": [
+      "accounts-access",
+      "finance",
+      "navigation-maps-and-pois",
+      "shopping"
+    ],
+    "file-user": ["accounts-access", "file-icons", "navigation-maps-and-pois"],
+    "fingerprint-pattern": [
+      "accounts-access",
+      "devices",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes"
+    ],
+    "flag": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social",
+      "sports"
+    ],
+    "flag-off": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social",
+      "sports"
+    ],
+    "frown": ["accounts-access", "emoji", "navigation-maps-and-pois"],
+    "gift": [
+      "accounts-access",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shopping",
+      "sports",
+      "travel"
+    ],
+    "hand-coins": [
+      "accounts-access",
+      "finance",
+      "navigation-maps-and-pois",
+      "people",
+      "shopping"
+    ],
+    "handshake": [
+      "accounts-access",
+      "communication",
+      "finance",
+      "medical",
+      "navigation-maps-and-pois",
+      "people",
+      "shopping",
+      "social"
+    ],
+    "hat-glasses": ["accounts-access"],
+    "heart-handshake": [
+      "accounts-access",
+      "emoji",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social"
+    ],
+    "heart-minus": ["accounts-access", "gaming", "shapes"],
+    "heart-plus": ["accounts-access", "gaming"],
+    "id-card": ["accounts-access", "people"],
+    "id-card-lanyard": ["accounts-access"],
+    "inbox": [
+      "accounts-access",
+      "mail",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "key": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "security",
+      "tools",
+      "travel"
+    ],
+    "key-round": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "security",
+      "tools",
+      "travel"
+    ],
+    "key-square": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "security",
+      "tools",
+      "travel"
+    ],
+    "link": ["accounts-access", "navigation-maps-and-pois", "social", "tools"],
+    "link-2": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "social",
+      "tools"
+    ],
+    "log-in": ["accounts-access", "arrows", "navigation-maps-and-pois"],
+    "log-out": ["accounts-access", "arrows", "navigation-maps-and-pois"],
+    "mail": [
+      "accounts-access",
+      "mail",
+      "navigation-maps-and-pois",
+      "social",
+      "tools"
+    ],
+    "map-pin": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-check": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-check-inside": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-house": ["accounts-access"],
+    "map-pin-minus": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-minus-inside": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-pen": ["accounts-access"],
+    "map-pin-plus": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-plus-inside": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-search": ["accounts-access"],
+    "map-pin-x": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pin-x-inside": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "map-pinned": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "menu": ["accounts-access", "navigation-maps-and-pois", "shapes", "tools"],
+    "message-circle-check": ["accounts-access"],
+    "message-circle-x": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "message-square-check": ["accounts-access"],
+    "notebook-tabs": [
+      "accounts-access",
+      "communication",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "pin": ["accounts-access", "navigation-maps-and-pois", "shapes", "tools"],
+    "rotate-ccw-key": ["accounts-access"],
+    "scan-face": [
+      "accounts-access",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "scan-qr-code": [
+      "accounts-access",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "settings": ["accounts-access", "navigation-maps-and-pois", "tools"],
+    "settings-2": ["accounts-access", "navigation-maps-and-pois", "tools"],
+    "share": [
+      "accounts-access",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social",
+      "tools"
+    ],
+    "share-2": [
+      "accounts-access",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social",
+      "tools"
+    ],
+    "shield": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "shield-alert": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-ban": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-check": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-cog": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "shield-cog-corner": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "shield-ellipsis": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-half": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-minus": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-off": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-plus": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "medical",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-question-mark": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "shield-user": [
+      "accounts-access",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes"
+    ],
+    "shield-x": [
+      "accounts-access",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "sports"
+    ],
+    "sliders-horizontal": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "sliders-vertical": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "smile": ["accounts-access", "emoji", "navigation-maps-and-pois", "social"],
+    "square-user": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "security",
+      "shapes"
+    ],
+    "square-user-round": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "security",
+      "shapes"
+    ],
+    "star": [
+      "accounts-access",
+      "emoji",
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "people",
+      "shapes",
+      "social",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "tag": ["accounts-access", "navigation-maps-and-pois", "shopping", "tools"],
+    "tags": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "shopping",
+      "tools"
+    ],
+    "thumbs-down": [
+      "accounts-access",
+      "emoji",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "thumbs-up": [
+      "accounts-access",
+      "emoji",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "ticket": [
+      "accounts-access",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "travel"
+    ],
+    "tickets": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "shopping",
+      "travel"
+    ],
+    "toggle-left": [
+      "accounts-access",
+      "coding-development",
+      "navigation-maps-and-pois"
+    ],
+    "toggle-right": [
+      "accounts-access",
+      "coding-development",
+      "navigation-maps-and-pois"
+    ],
+    "user": ["accounts-access", "navigation-maps-and-pois", "people", "social"],
+    "user-check": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-cog": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social",
+      "tools"
+    ],
+    "user-key": ["accounts-access"],
+    "user-lock": ["accounts-access"],
+    "user-minus": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-pen": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-plus": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-round": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-round-check": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "security",
+      "social"
+    ],
+    "user-round-cog": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "security",
+      "social"
+    ],
+    "user-round-key": ["accounts-access"],
+    "user-round-minus": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-round-pen": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-round-plus": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-round-search": [
+      "accounts-access",
+      "mail",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-round-x": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "security",
+      "social"
+    ],
+    "user-search": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "user-star": ["accounts-access"],
+    "user-x": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "users": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "users-round": [
+      "accounts-access",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "venetian-mask": [
+      "accounts-access",
+      "gaming",
+      "navigation-maps-and-pois",
+      "people",
+      "travel"
+    ],
+    "vibrate": [
+      "accounts-access",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "vibrate-off": [
+      "accounts-access",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "wallet": [
+      "accounts-access",
+      "finance",
+      "medical",
+      "navigation-maps-and-pois",
+      "shopping",
+      "tools",
+      "travel"
+    ],
+    "wallet-cards": [
+      "accounts-access",
+      "finance",
+      "medical",
+      "navigation-maps-and-pois",
+      "shopping",
+      "tools",
+      "travel"
+    ],
+    "wallet-minimal": [
+      "accounts-access",
+      "finance",
+      "navigation-maps-and-pois",
+      "shopping",
+      "tools",
+      "travel"
+    ],
+    "wallpaper": [
+      "accounts-access",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "waypoints": [
+      "accounts-access",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "tools",
+      "transportation",
+      "travel"
+    ],
+    "webhook": [
+      "accounts-access",
+      "coding-development",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "social",
+      "tools"
+    ],
+    "webhook-off": [
+      "accounts-access",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social",
+      "tools"
+    ],
+    "wrench": [
+      "accounts-access",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "bird": [
+      "animals",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "sustainability"
+    ],
+    "birdhouse": ["animals", "home"],
+    "bone": ["animals", "gaming", "medical", "tools"],
+    "bug": ["animals", "coding-development", "nature", "security"],
+    "bug-off": ["animals", "coding-development", "nature", "security"],
+    "bug-play": ["animals", "coding-development", "nature", "security"],
+    "cat": ["animals", "nature"],
+    "dog": ["animals", "nature", "navigation-maps-and-pois"],
+    "egg": [
+      "animals",
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois"
+    ],
+    "fish": [
+      "animals",
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports"
+    ],
+    "fish-off": [
+      "animals",
+      "food-beverage",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports"
+    ],
+    "fish-symbol": [
+      "animals",
+      "food-beverage",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports"
+    ],
+    "origami": ["animals", "design", "navigation-maps-and-pois", "shapes"],
+    "panda": ["animals"],
+    "paw-print": ["animals", "nature", "navigation-maps-and-pois", "people"],
+    "rabbit": ["animals", "nature", "navigation-maps-and-pois", "seasons"],
+    "rat": ["animals", "navigation-maps-and-pois"],
+    "shell": [
+      "animals",
+      "coding-development",
+      "food-beverage",
+      "home",
+      "nature",
+      "navigation-maps-and-pois"
+    ],
+    "shrimp": ["animals"],
+    "snail": [
+      "animals",
+      "food-beverage",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "tools",
+      "travel"
+    ],
+    "squirrel": ["animals", "nature", "navigation-maps-and-pois", "seasons"],
+    "turtle": ["animals", "navigation-maps-and-pois"],
+    "worm": ["animals", "nature", "navigation-maps-and-pois"],
+    "arrow-big-down": ["arrows", "gaming", "shapes"],
+    "arrow-big-down-dash": [
+      "arrows",
+      "file-icons",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "arrow-big-left": ["arrows", "gaming", "shapes"],
+    "arrow-big-left-dash": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "arrow-big-right": ["arrows", "gaming", "shapes"],
+    "arrow-big-right-dash": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "arrow-big-up": ["arrows", "coding-development", "gaming", "shapes"],
+    "arrow-big-up-dash": [
+      "arrows",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "arrow-down": ["arrows"],
+    "arrow-down-0-1": ["arrows"],
+    "arrow-down-1-0": ["arrows"],
+    "arrow-down-a-z": ["arrows"],
+    "arrow-down-from-line": ["arrows", "file-icons"],
+    "arrow-down-left": ["arrows"],
+    "arrow-down-narrow-wide": ["arrows"],
+    "arrow-down-right": ["arrows"],
+    "arrow-down-to-dot": ["arrows"],
+    "arrow-down-to-line": ["arrows", "coding-development", "file-icons"],
+    "arrow-down-up": ["arrows"],
+    "arrow-down-wide-narrow": ["arrows"],
+    "arrow-down-z-a": ["arrows"],
+    "arrow-left": ["arrows"],
+    "arrow-left-from-line": ["arrows"],
+    "arrow-left-right": ["arrows", "time-calendar"],
+    "arrow-left-to-line": ["arrows"],
+    "arrow-right": ["arrows"],
+    "arrow-right-from-line": ["arrows"],
+    "arrow-right-left": ["arrows"],
+    "arrow-right-to-line": ["arrows", "coding-development"],
+    "arrow-up": ["arrows"],
+    "arrow-up-0-1": ["arrows"],
+    "arrow-up-1-0": ["arrows"],
+    "arrow-up-a-z": ["arrows"],
+    "arrow-up-down": ["arrows"],
+    "arrow-up-from-dot": ["arrows"],
+    "arrow-up-from-line": ["arrows", "coding-development", "file-icons"],
+    "arrow-up-left": ["arrows"],
+    "arrow-up-narrow-wide": ["arrows"],
+    "arrow-up-right": ["arrows"],
+    "arrow-up-to-line": ["arrows", "file-icons"],
+    "arrow-up-wide-narrow": ["arrows"],
+    "arrow-up-z-a": ["arrows"],
+    "arrows-up-from-line": ["arrows"],
+    "calendar-sync": ["arrows", "time-calendar"],
+    "chevron-down": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevron-first": ["arrows"],
+    "chevron-last": ["arrows"],
+    "chevron-left": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevron-right": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevron-up": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevrons-down": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevrons-down-up": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevrons-left": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevrons-left-right": ["arrows", "notification", "shapes"],
+    "chevrons-right": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevrons-right-left": ["arrows"],
+    "chevrons-up": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "chevrons-up-down": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "circle-arrow-down": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-left": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-out-down-left": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-out-down-right": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-out-up-left": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-out-up-right": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-right": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-arrow-up": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-chevron-down": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "circle-chevron-left": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "circle-chevron-right": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "circle-chevron-up": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "circle-fading-arrow-up": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes"
+    ],
+    "clipboard-copy": ["arrows", "tools"],
+    "clipboard-paste": ["arrows"],
+    "cloud-backup": ["arrows", "file-icons", "weather"],
+    "cloud-download": ["arrows", "file-icons", "weather"],
+    "cloud-sync": ["arrows", "file-icons", "weather"],
+    "cloud-upload": ["arrows", "file-icons", "science", "tools", "weather"],
+    "corner-down-left": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "corner-down-right": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "corner-left-down": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "corner-left-up": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "corner-right-down": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "corner-right-up": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "corner-up-left": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "corner-up-right": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "database-backup": [
+      "arrows",
+      "design",
+      "coding-development",
+      "devices",
+      "tools"
+    ],
+    "decimals-arrow-left": ["arrows", "design", "text-formatting"],
+    "decimals-arrow-right": ["arrows", "design", "text-formatting"],
+    "delete": ["arrows"],
+    "download": [
+      "arrows",
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "expand": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "external-link": ["arrows"],
+    "fast-forward": ["arrows", "navigation-maps-and-pois"],
+    "file-down": ["arrows", "file-icons", "navigation-maps-and-pois", "tools"],
+    "file-input": ["arrows", "file-icons", "navigation-maps-and-pois", "tools"],
+    "file-output": [
+      "arrows",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "file-up": ["arrows", "file-icons", "navigation-maps-and-pois", "tools"],
+    "fold-horizontal": ["arrows", "text-formatting"],
+    "fold-vertical": ["arrows", "text-formatting"],
+    "folder-down": ["arrows", "file-icons", "tools"],
+    "folder-input": [
+      "arrows",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "folder-output": [
+      "arrows",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "folder-sync": [
+      "arrows",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "folder-up": ["arrows", "file-icons", "navigation-maps-and-pois", "tools"],
+    "git-compare-arrows": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-pull-request-arrow": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-pull-request-create-arrow": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "hard-drive-download": [
+      "arrows",
+      "coding-development",
+      "devices",
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "hard-drive-upload": [
+      "arrows",
+      "coding-development",
+      "devices",
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "history": ["arrows", "navigation-maps-and-pois"],
+    "import": ["arrows", "file-icons", "navigation-maps-and-pois", "tools"],
+    "iteration-ccw": ["arrows", "design", "navigation-maps-and-pois", "shapes"],
+    "iteration-cw": ["arrows", "design", "navigation-maps-and-pois", "shapes"],
+    "lasso-select": [
+      "arrows",
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "list-chevrons-down-up": ["arrows"],
+    "list-chevrons-up-down": ["arrows"],
+    "maximize-2": [
+      "arrows",
+      "design",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "merge": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "milestone": [
+      "arrows",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation",
+      "travel"
+    ],
+    "minimize-2": [
+      "arrows",
+      "design",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "mouse-pointer": ["arrows", "cursors", "navigation-maps-and-pois"],
+    "mouse-pointer-2": ["arrows", "cursors", "navigation-maps-and-pois"],
+    "mouse-pointer-2-off": ["arrows", "cursors"],
+    "mouse-pointer-ban": ["arrows", "cursors"],
+    "mouse-pointer-click": ["arrows", "cursors", "navigation-maps-and-pois"],
+    "move": [
+      "arrows",
+      "cursors",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-diagonal": [
+      "arrows",
+      "cursors",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-diagonal-2": [
+      "arrows",
+      "cursors",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-down": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-down-left": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-down-right": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-horizontal": [
+      "arrows",
+      "cursors",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools",
+      "transportation"
+    ],
+    "move-left": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-right": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-up": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-up-left": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-up-right": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "move-vertical": [
+      "arrows",
+      "cursors",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools",
+      "transportation"
+    ],
+    "panel-bottom-close": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-bottom-open": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-left-close": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-left-open": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-right-close": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-right-open": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-top-close": ["arrows", "layout", "navigation-maps-and-pois"],
+    "panel-top-open": ["arrows", "layout", "navigation-maps-and-pois"],
+    "phone-forwarded": [
+      "arrows",
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "phone-incoming": [
+      "arrows",
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "phone-outgoing": [
+      "arrows",
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "play": ["arrows", "multimedia", "navigation-maps-and-pois"],
+    "redo": ["arrows", "navigation-maps-and-pois", "text-formatting", "tools"],
+    "redo-2": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "redo-dot": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "refresh-ccw": ["arrows", "navigation-maps-and-pois", "tools"],
+    "refresh-ccw-dot": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "refresh-cw": ["arrows", "navigation-maps-and-pois", "tools"],
+    "refresh-cw-off": ["arrows", "navigation-maps-and-pois", "tools"],
+    "repeat": [
+      "arrows",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "repeat-2": [
+      "arrows",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "repeat-off": ["arrows"],
+    "rewind": ["arrows", "multimedia", "navigation-maps-and-pois"],
+    "rotate-ccw": [
+      "arrows",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "rotate-ccw-square": [
+      "arrows",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "rotate-cw": [
+      "arrows",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "rotate-cw-square": [
+      "arrows",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "separator-horizontal": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "separator-vertical": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "shrink": ["arrows", "navigation-maps-and-pois", "shapes", "tools"],
+    "shuffle": ["arrows", "multimedia", "navigation-maps-and-pois", "tools"],
+    "signpost": [
+      "arrows",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "transportation",
+      "travel"
+    ],
+    "signpost-big": [
+      "arrows",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "transportation",
+      "travel"
+    ],
+    "skip-back": ["arrows", "multimedia", "navigation-maps-and-pois"],
+    "skip-forward": ["arrows", "multimedia", "navigation-maps-and-pois"],
+    "spline-pointer": ["arrows", "cursors", "design", "shapes", "tools"],
+    "split": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-arrow-down": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-down-left": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-down-right": [
+      "arrows",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-left": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-arrow-out-down-left": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-out-down-right": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-out-up-left": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-out-up-right": [
+      "arrows",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-arrow-right": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-arrow-right-enter": ["arrows"],
+    "square-arrow-right-exit": ["arrows"],
+    "square-arrow-up": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-arrow-up-left": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-arrow-up-right": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-chevron-down": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-chevron-left": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-chevron-right": [
+      "arrows",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-chevron-up": ["arrows", "navigation-maps-and-pois", "shapes"],
+    "square-dashed-mouse-pointer": [
+      "arrows",
+      "cursors",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "square-mouse-pointer": [
+      "arrows",
+      "cursors",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "square-play": [
+      "arrows",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "step-back": ["arrows", "multimedia", "navigation-maps-and-pois"],
+    "step-forward": ["arrows", "multimedia", "navigation-maps-and-pois"],
+    "sunrise": [
+      "arrows",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "seasons",
+      "shapes",
+      "time-calendar",
+      "travel",
+      "weather"
+    ],
+    "sunset": [
+      "arrows",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "seasons",
+      "shapes",
+      "time-calendar",
+      "travel",
+      "weather"
+    ],
+    "text-wrap": ["arrows"],
+    "trending-down": ["arrows", "charts", "navigation-maps-and-pois", "social"],
+    "trending-up": ["arrows", "charts", "navigation-maps-and-pois", "social"],
+    "trending-up-down": [
+      "arrows",
+      "charts",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "undo": ["arrows", "navigation-maps-and-pois", "text-formatting", "tools"],
+    "undo-2": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "undo-dot": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "unfold-horizontal": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "text-formatting"
+    ],
+    "unfold-vertical": [
+      "arrows",
+      "navigation-maps-and-pois",
+      "text-formatting"
+    ],
+    "upload": ["arrows", "file-icons", "navigation-maps-and-pois", "tools"],
+    "anvil": [
+      "buildings",
+      "gaming",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "tools"
+    ],
+    "brick-wall": ["buildings", "home"],
+    "castle": [
+      "buildings",
+      "gaming",
+      "navigation-maps-and-pois",
+      "sports",
+      "travel"
+    ],
+    "church": ["buildings", "navigation-maps-and-pois", "travel"],
+    "dam": ["buildings"],
+    "factory": ["buildings", "navigation-maps-and-pois"],
+    "fence": ["buildings", "home", "navigation-maps-and-pois"],
+    "graduation-cap": [
+      "buildings",
+      "navigation-maps-and-pois",
+      "people",
+      "tools"
+    ],
+    "hospital": ["buildings", "medical", "navigation-maps-and-pois"],
+    "hotel": ["buildings", "navigation-maps-and-pois", "travel"],
+    "house": ["buildings", "home", "navigation-maps-and-pois"],
+    "house-heart": ["buildings", "home", "navigation-maps-and-pois"],
+    "house-plug": ["buildings", "home", "navigation-maps-and-pois"],
+    "house-plus": ["buildings"],
+    "house-wifi": [
+      "buildings",
+      "connectivity",
+      "home",
+      "navigation-maps-and-pois"
+    ],
+    "landmark": [
+      "buildings",
+      "finance",
+      "navigation-maps-and-pois",
+      "shopping",
+      "travel"
+    ],
+    "school": ["buildings", "navigation-maps-and-pois"],
+    "store": ["buildings", "navigation-maps-and-pois", "shopping", "travel"],
+    "theater": ["buildings", "navigation-maps-and-pois"],
+    "university": ["buildings", "navigation-maps-and-pois"],
+    "utility-pole": ["buildings", "home", "navigation-maps-and-pois"],
+    "warehouse": [
+      "buildings",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "travel"
+    ],
+    "chart-area": ["charts"],
+    "chart-bar": ["charts", "navigation-maps-and-pois"],
+    "chart-bar-big": ["charts"],
+    "chart-bar-decreasing": ["charts", "navigation-maps-and-pois"],
+    "chart-bar-increasing": ["charts", "navigation-maps-and-pois"],
+    "chart-bar-stacked": ["charts", "navigation-maps-and-pois"],
+    "chart-candlestick": ["charts", "finance", "navigation-maps-and-pois"],
+    "chart-column": ["charts", "navigation-maps-and-pois"],
+    "chart-column-big": ["charts", "navigation-maps-and-pois"],
+    "chart-column-decreasing": ["charts", "navigation-maps-and-pois"],
+    "chart-column-increasing": ["charts", "navigation-maps-and-pois"],
+    "chart-column-stacked": ["charts", "navigation-maps-and-pois"],
+    "chart-gantt": ["charts", "medical"],
+    "chart-line": ["charts", "navigation-maps-and-pois"],
+    "chart-network": ["charts", "navigation-maps-and-pois"],
+    "chart-no-axes-column": ["charts", "navigation-maps-and-pois"],
+    "chart-no-axes-column-decreasing": ["charts"],
+    "chart-no-axes-column-increasing": ["charts"],
+    "chart-no-axes-combined": ["charts", "navigation-maps-and-pois"],
+    "chart-no-axes-gantt": [
+      "charts",
+      "design",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "chart-pie": ["charts", "file-icons", "navigation-maps-and-pois"],
+    "chart-scatter": ["charts", "navigation-maps-and-pois"],
+    "chart-spline": ["charts", "navigation-maps-and-pois"],
+    "folder-kanban": [
+      "charts",
+      "design",
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "kanban": [
+      "charts",
+      "design",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-chart-gantt": [
+      "charts",
+      "design",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-dashed-kanban": [
+      "charts",
+      "design",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-kanban": [
+      "charts",
+      "design",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "antenna": ["communication", "devices", "multimedia"],
+    "audio-lines": ["communication", "multimedia"],
+    "audio-waveform": ["communication", "multimedia"],
+    "camera": [
+      "communication",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "travel"
+    ],
+    "camera-off": [
+      "communication",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "travel"
+    ],
+    "card-sim": ["communication", "connectivity", "devices"],
+    "cassette-tape": [
+      "communication",
+      "connectivity",
+      "devices",
+      "file-icons",
+      "multimedia",
+      "shapes",
+      "tools"
+    ],
+    "cctv": ["communication", "connectivity", "devices", "multimedia"],
+    "cctv-off": ["communication", "connectivity", "devices", "multimedia"],
+    "chevrons-left-right-ellipsis": [
+      "communication",
+      "devices",
+      "gaming",
+      "notification",
+      "shapes"
+    ],
+    "circle-fading-plus": ["communication"],
+    "ethernet-port": ["communication", "devices", "gaming", "multimedia"],
+    "hand-fist": ["communication", "emoji", "people", "sports"],
+    "headphone-off": [
+      "communication",
+      "connectivity",
+      "devices",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "lectern": ["communication"],
+    "mic": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "mic-off": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "newspaper": ["communication", "navigation-maps-and-pois"],
+    "nfc": [
+      "communication",
+      "devices",
+      "finance",
+      "navigation-maps-and-pois",
+      "shopping"
+    ],
+    "notebook": [
+      "communication",
+      "design",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "phone": [
+      "communication",
+      "connectivity",
+      "devices",
+      "navigation-maps-and-pois",
+      "social",
+      "travel"
+    ],
+    "phone-call": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "phone-missed": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "phone-off": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "presentation": [
+      "communication",
+      "design",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "projector": [
+      "communication",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "radar": ["communication", "navigation-maps-and-pois"],
+    "screen-share": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "screen-share-off": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "send": [
+      "communication",
+      "connectivity",
+      "mail",
+      "navigation-maps-and-pois",
+      "social",
+      "tools"
+    ],
+    "send-horizontal": [
+      "communication",
+      "connectivity",
+      "mail",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "smartphone-nfc": [
+      "communication",
+      "devices",
+      "finance",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shopping"
+    ],
+    "smile-plus": [
+      "communication",
+      "emoji",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "spool": ["communication"],
+    "spotlight": ["communication", "devices"],
+    "switch-camera": ["communication", "devices", "navigation-maps-and-pois"],
+    "tv": [
+      "communication",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "video": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "social"
+    ],
+    "video-off": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "social"
+    ],
+    "videotape": [
+      "communication",
+      "connectivity",
+      "devices",
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "volume": [
+      "communication",
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "volume-1": [
+      "communication",
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "volume-2": [
+      "communication",
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "volume-off": [
+      "communication",
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "volume-x": [
+      "communication",
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "webcam": [
+      "communication",
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "airplay": ["connectivity", "multimedia", "shapes", "transportation"],
+    "battery": ["connectivity", "devices", "science", "sustainability"],
+    "battery-charging": [
+      "connectivity",
+      "devices",
+      "science",
+      "sustainability"
+    ],
+    "battery-full": ["connectivity", "devices", "science", "sustainability"],
+    "battery-low": ["connectivity", "devices", "science", "sustainability"],
+    "battery-medium": ["connectivity", "devices", "science", "sustainability"],
+    "battery-warning": ["connectivity", "devices", "science", "sustainability"],
+    "bluetooth": ["connectivity", "devices"],
+    "bluetooth-connected": ["connectivity", "devices"],
+    "bluetooth-off": ["connectivity", "devices"],
+    "bluetooth-searching": ["connectivity", "devices", "multimedia"],
+    "brick-wall-fire": ["connectivity", "home"],
+    "brick-wall-shield": ["connectivity", "home"],
+    "cable": ["connectivity", "devices", "multimedia"],
+    "cast": ["connectivity", "devices", "multimedia"],
+    "circle-power": ["connectivity", "navigation-maps-and-pois", "shapes"],
+    "cloud-off": ["connectivity", "navigation-maps-and-pois", "weather"],
+    "globe-off": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "globe-x": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "headphones": [
+      "connectivity",
+      "devices",
+      "file-icons",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "headset": [
+      "connectivity",
+      "devices",
+      "file-icons",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-check": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-cloud": ["connectivity", "coding-development", "devices"],
+    "monitor-cog": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "monitor-dot": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-down": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "monitor-off": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-pause": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-play": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-smartphone": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-speaker": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-stop": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-up": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "monitor-x": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "power": ["connectivity", "navigation-maps-and-pois", "science", "tools"],
+    "power-off": [
+      "connectivity",
+      "navigation-maps-and-pois",
+      "notification",
+      "security"
+    ],
+    "rectangle-goggles": [
+      "connectivity",
+      "devices",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "router": [
+      "connectivity",
+      "coding-development",
+      "devices",
+      "home",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "satellite": [
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science"
+    ],
+    "satellite-dish": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science"
+    ],
+    "signal": [
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science",
+      "social"
+    ],
+    "signal-high": [
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science",
+      "social"
+    ],
+    "signal-low": [
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science",
+      "social"
+    ],
+    "signal-medium": [
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science",
+      "social"
+    ],
+    "signal-zero": [
+      "connectivity",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science",
+      "social"
+    ],
+    "smartphone": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "travel"
+    ],
+    "smartphone-charging": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "square-power": ["connectivity", "navigation-maps-and-pois", "shapes"],
+    "voicemail": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "wifi": [
+      "connectivity",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "wifi-cog": [
+      "connectivity",
+      "devices",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "wifi-high": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "wifi-low": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "wifi-off": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "wifi-pen": [
+      "connectivity",
+      "devices",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "wifi-sync": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "wifi-zero": ["connectivity", "devices", "navigation-maps-and-pois"],
+    "zap": [
+      "connectivity",
+      "devices",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "social",
+      "sustainability",
+      "tools",
+      "weather"
+    ],
+    "zap-off": [
+      "connectivity",
+      "devices",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "sustainability",
+      "tools",
+      "weather"
+    ],
+    "circle-plus": [
+      "cursors",
+      "coding-development",
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "hand-grab": ["cursors", "design", "people", "tools"],
+    "lasso": [
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "loader": [
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "loader-circle": ["cursors", "navigation-maps-and-pois", "shapes", "tools"],
+    "loader-pinwheel": [
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "pen-tool": [
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "photography",
+      "text-formatting",
+      "tools"
+    ],
+    "pencil": [
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "social",
+      "text-formatting",
+      "tools"
+    ],
+    "pencil-off": [
+      "cursors",
+      "design",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "plus": [
+      "cursors",
+      "coding-development",
+      "gaming",
+      "layout",
+      "mathematics",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "pointer": ["cursors", "navigation-maps-and-pois", "shapes", "tools"],
+    "pointer-off": [
+      "cursors",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes"
+    ],
+    "sparkles": [
+      "cursors",
+      "gaming",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "notification",
+      "photography",
+      "science",
+      "seasons",
+      "shapes",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "square-dashed-text": ["cursors"],
+    "stamp": ["cursors", "design", "mail", "navigation-maps-and-pois", "tools"],
+    "text-cursor": [
+      "cursors",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "wand": [
+      "cursors",
+      "design",
+      "gaming",
+      "navigation-maps-and-pois",
+      "sports",
+      "tools"
+    ],
+    "wand-sparkles": [
+      "cursors",
+      "design",
+      "gaming",
+      "navigation-maps-and-pois",
+      "sports",
+      "tools"
+    ],
+    "a-arrow-down": ["design", "text-formatting"],
+    "a-arrow-up": ["design", "text-formatting"],
+    "a-large-small": ["design", "text-formatting"],
+    "app-window": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "layout",
+      "shapes"
+    ],
+    "app-window-mac": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "layout",
+      "shapes"
+    ],
+    "axis-3d": ["design"],
+    "between-horizontal-end": ["design", "layout", "shapes"],
+    "between-horizontal-start": ["design", "layout", "shapes"],
+    "between-vertical-end": ["design", "layout", "shapes"],
+    "between-vertical-start": ["design", "layout", "shapes"],
+    "blend": ["design", "coding-development"],
+    "book-type": ["design", "gaming", "text-formatting"],
+    "bring-to-front": ["design", "shapes"],
+    "brush": ["design", "navigation-maps-and-pois", "tools"],
+    "brush-cleaning": ["design", "home", "tools"],
+    "columns-2": ["design", "layout", "shapes", "text-formatting"],
+    "columns-3": ["design", "layout", "shapes", "text-formatting"],
+    "columns-3-cog": ["design", "layout", "shapes", "text-formatting"],
+    "columns-4": ["design", "layout", "shapes", "text-formatting"],
+    "component": [
+      "design",
+      "coding-development",
+      "medical",
+      "multimedia",
+      "science",
+      "shapes"
+    ],
+    "crop": ["design", "photography", "tools"],
+    "cylinder": ["design", "navigation-maps-and-pois", "shapes"],
+    "diameter": ["design"],
+    "dock": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "drafting-compass": ["design", "tools"],
+    "file-axis-3d": ["design", "file-icons", "navigation-maps-and-pois"],
+    "flip-horizontal-2": ["design", "layout", "photography", "shapes"],
+    "flip-vertical-2": ["design", "layout", "photography", "shapes"],
+    "frame": ["design", "navigation-maps-and-pois", "photography", "shapes"],
+    "fullscreen": ["design", "navigation-maps-and-pois"],
+    "gallery-horizontal": [
+      "design",
+      "coding-development",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "gallery-horizontal-end": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "gallery-thumbnails": [
+      "design",
+      "coding-development",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "gallery-vertical": [
+      "design",
+      "coding-development",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "gallery-vertical-end": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "grid-2x2": ["design", "layout", "multimedia", "navigation-maps-and-pois"],
+    "grid-3x2": ["design", "layout"],
+    "grid-3x3": ["design", "layout", "multimedia"],
+    "heart-x": ["design", "shapes"],
+    "highlighter": [
+      "design",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "land-plot": [
+      "design",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "travel"
+    ],
+    "layers": ["design", "navigation-maps-and-pois", "shapes", "tools"],
+    "layers-2": ["design", "navigation-maps-and-pois", "shapes"],
+    "layers-minus": ["design", "navigation-maps-and-pois", "shapes"],
+    "layers-plus": ["design", "navigation-maps-and-pois", "shapes"],
+    "layout-dashboard": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "layout-grid": ["design", "layout", "navigation-maps-and-pois", "shapes"],
+    "layout-list": ["design", "layout", "navigation-maps-and-pois", "shapes"],
+    "layout-panel-left": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "line-squiggle": ["design"],
+    "line-style": ["design"],
+    "magnet": [
+      "design",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "tools"
+    ],
+    "maximize": [
+      "design",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "minimize": [
+      "design",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "move-3d": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "paint-bucket": ["design", "tools"],
+    "paint-roller": ["design", "home", "tools"],
+    "paintbrush": ["design", "home", "navigation-maps-and-pois", "tools"],
+    "paintbrush-vertical": [
+      "design",
+      "home",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "palette": ["design", "navigation-maps-and-pois", "photography", "tools"],
+    "panel-top": [
+      "design",
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois"
+    ],
+    "panels-top-left": [
+      "design",
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "paperclip": [
+      "design",
+      "file-icons",
+      "mail",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "pen": [
+      "design",
+      "mail",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "pen-line": [
+      "design",
+      "mail",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "pen-off": [
+      "design",
+      "mail",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "pencil-line": [
+      "design",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "pencil-ruler": [
+      "design",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "pipette": [
+      "design",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "tools"
+    ],
+    "proportions": [
+      "design",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "radius": ["design", "navigation-maps-and-pois"],
+    "ratio": [
+      "design",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "rectangle-horizontal": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "rectangle-vertical": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "rotate-3d": ["design", "navigation-maps-and-pois", "shapes", "tools"],
+    "rows-2": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "rows-3": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "rows-4": [
+      "design",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "ruler": [
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "ruler-dimension-line": [
+      "design",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "scale-3d": ["design", "navigation-maps-and-pois", "shapes", "tools"],
+    "scaling": [
+      "design",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "tools"
+    ],
+    "scissors": ["design", "navigation-maps-and-pois", "tools"],
+    "scissors-line-dashed": ["design", "navigation-maps-and-pois", "tools"],
+    "send-to-back": ["design", "mail", "navigation-maps-and-pois", "shapes"],
+    "slice": ["design", "navigation-maps-and-pois", "shapes", "tools"],
+    "spline": ["design", "shapes", "tools"],
+    "spray-can": [
+      "design",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-bottom-dashed-scissors": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-centerline-dashed-horizontal": [
+      "design",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-centerline-dashed-vertical": [
+      "design",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-dashed": ["design", "layout", "navigation-maps-and-pois", "shapes"],
+    "square-dashed-top-solid": [
+      "design",
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-round-corner": [
+      "design",
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "square-scissors": [
+      "design",
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "squares-exclude": ["design", "shapes"],
+    "squares-intersect": ["design", "shapes"],
+    "squares-subtract": ["design", "shapes"],
+    "squares-unite": ["design", "shapes"],
+    "squircle-dashed": [
+      "design",
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "swatch-book": ["design", "home", "navigation-maps-and-pois", "tools"],
+    "tablet-smartphone": [
+      "design",
+      "coding-development",
+      "devices",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "tangent": ["design", "navigation-maps-and-pois", "shapes", "tools"],
+    "torus": [
+      "design",
+      "food-beverage",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "vector-square": ["design", "shapes", "tools"],
+    "view": [
+      "design",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes",
+      "tools"
+    ],
+    "ampersand": ["coding-development", "text-formatting"],
+    "ampersands": ["coding-development", "text-formatting"],
+    "asterisk": ["coding-development", "shapes", "text-formatting"],
+    "binary": ["coding-development", "mathematics"],
+    "binoculars": ["coding-development", "social", "sports", "travel"],
+    "bitcoin": ["coding-development", "finance", "shopping"],
+    "blocks": ["coding-development"],
+    "book": ["coding-development", "gaming"],
+    "book-alert": ["coding-development", "gaming"],
+    "book-check": ["coding-development", "gaming"],
+    "book-copy": ["coding-development", "gaming"],
+    "book-dashed": ["coding-development"],
+    "book-down": ["coding-development"],
+    "book-key": ["coding-development", "gaming"],
+    "book-lock": ["coding-development", "gaming"],
+    "book-marked": ["coding-development", "gaming", "tools"],
+    "book-minus": ["coding-development", "gaming"],
+    "book-open": ["coding-development", "gaming"],
+    "book-open-check": ["coding-development", "gaming"],
+    "book-open-text": ["coding-development"],
+    "book-plus": ["coding-development", "gaming"],
+    "book-search": ["coding-development", "gaming"],
+    "book-up": ["coding-development"],
+    "book-up-2": ["coding-development"],
+    "bot": ["coding-development", "navigation-maps-and-pois"],
+    "bot-message-square": ["coding-development"],
+    "bot-off": ["coding-development"],
+    "box": ["coding-development", "gaming", "shapes", "tools"],
+    "boxes": ["coding-development", "gaming", "shapes", "tools"],
+    "braces": ["coding-development", "file-icons", "shapes", "text-formatting"],
+    "brackets": [
+      "coding-development",
+      "file-icons",
+      "shapes",
+      "text-formatting"
+    ],
+    "brain-circuit": [
+      "coding-development",
+      "medical",
+      "navigation-maps-and-pois",
+      "science"
+    ],
+    "brain-cog": ["coding-development", "medical", "science"],
+    "case-lower": ["coding-development", "text-formatting"],
+    "case-upper": ["coding-development", "text-formatting"],
+    "circle-dashed": [
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "circle-dot": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "photography",
+      "shapes"
+    ],
+    "circle-dot-dashed": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "circle-ellipsis": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "circle-slash": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes"
+    ],
+    "circle-slash-2": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes"
+    ],
+    "circle-x": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes"
+    ],
+    "circuit-board": ["coding-development"],
+    "cloud-alert": ["coding-development", "weather"],
+    "cloud-check": ["coding-development", "weather"],
+    "cloud-cog": ["coding-development", "navigation-maps-and-pois", "weather"],
+    "code": ["coding-development", "multimedia", "text-formatting"],
+    "code-xml": ["coding-development", "text-formatting"],
+    "combine": ["coding-development", "file-icons", "shapes", "transportation"],
+    "command": ["coding-development"],
+    "computer": [
+      "coding-development",
+      "devices",
+      "gaming",
+      "navigation-maps-and-pois"
+    ],
+    "construction": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "notification",
+      "tools",
+      "transportation"
+    ],
+    "container": [
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "copy-slash": ["coding-development", "shapes", "text-formatting", "tools"],
+    "database": [
+      "coding-development",
+      "devices",
+      "layout",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "database-search": ["coding-development", "devices", "tools"],
+    "database-zap": ["coding-development", "devices", "tools"],
+    "diff": ["coding-development", "file-icons"],
+    "divide": ["coding-development", "mathematics", "shapes"],
+    "earth-lock": ["coding-development", "devices", "security"],
+    "ellipsis": ["coding-development", "navigation-maps-and-pois"],
+    "equal": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "equal-not": ["coding-development", "mathematics", "shapes"],
+    "file-braces": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "file-braces-corner": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "file-code": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "file-code-corner": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "file-diff": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "file-digit": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "text-formatting"
+    ],
+    "file-sliders": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "file-stack": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "file-terminal": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "flag-triangle-left": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social",
+      "sports"
+    ],
+    "flag-triangle-right": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social",
+      "sports"
+    ],
+    "folder-code": ["coding-development", "file-icons"],
+    "folder-dot": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "folder-open-dot": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "folder-root": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois"
+    ],
+    "form": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "gem": [
+      "coding-development",
+      "finance",
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "sports"
+    ],
+    "git-branch": ["coding-development", "navigation-maps-and-pois", "social"],
+    "git-branch-minus": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-branch-plus": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-commit-horizontal": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-commit-vertical": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-compare": ["coding-development", "navigation-maps-and-pois", "social"],
+    "git-fork": ["coding-development", "navigation-maps-and-pois", "social"],
+    "git-graph": ["coding-development", "navigation-maps-and-pois", "social"],
+    "git-merge": ["coding-development", "navigation-maps-and-pois", "social"],
+    "git-merge-conflict": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-pull-request": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-pull-request-closed": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-pull-request-create": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "git-pull-request-draft": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "globe-lock": [
+      "coding-development",
+      "devices",
+      "navigation-maps-and-pois",
+      "security"
+    ],
+    "hard-drive": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "hexagon": [
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "keyboard": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "keyboard-off": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "library": [
+      "coding-development",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "library-big": [
+      "coding-development",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "line-dot-right-horizontal": ["coding-development", "shapes"],
+    "list-indent-decrease": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "text-formatting"
+    ],
+    "list-indent-increase": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "text-formatting"
+    ],
+    "message-circle-code": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "message-square-code": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "message-square-diff": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "minus": [
+      "coding-development",
+      "layout",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "network": ["coding-development", "navigation-maps-and-pois", "tools"],
+    "omega": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "option": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "package": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "package-2": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "text-formatting",
+      "tools"
+    ],
+    "package-check": [
+      "coding-development",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "package-minus": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "package-open": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "package-plus": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "package-search": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "package-x": [
+      "coding-development",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "parentheses": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "percent": [
+      "coding-development",
+      "finance",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "pi": [
+      "coding-development",
+      "mathematics",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "plug": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "plug-2": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "puzzle": [
+      "coding-development",
+      "gaming",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "qr-code": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "tools"
+    ],
+    "radical": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "rectangle-circle": ["coding-development", "shapes"],
+    "rectangle-ellipsis": [
+      "coding-development",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "regex": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "text-formatting"
+    ],
+    "rocket": [
+      "coding-development",
+      "gaming",
+      "nature",
+      "science",
+      "time-calendar",
+      "tools",
+      "transportation",
+      "travel"
+    ],
+    "rss": [
+      "coding-development",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "scroll": [
+      "coding-development",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "scroll-text": [
+      "coding-development",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "search-code": ["coding-development", "navigation-maps-and-pois", "tools"],
+    "server": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "server-cog": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "server-crash": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "server-off": [
+      "coding-development",
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "slash": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "spell-check": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "spell-check-2": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "square-asterisk": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "text-formatting"
+    ],
+    "square-code": ["coding-development", "navigation-maps-and-pois", "shapes"],
+    "square-dashed-bottom": [
+      "coding-development",
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-dashed-bottom-code": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-dot": ["coding-development", "navigation-maps-and-pois", "shapes"],
+    "square-function": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-library": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-minus": [
+      "coding-development",
+      "devices",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-pi": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "square-plus": [
+      "coding-development",
+      "mathematics",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-radical": [
+      "coding-development",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-slash": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "square-stack": [
+      "coding-development",
+      "file-icons",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "square-terminal": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools"
+    ],
+    "table-properties": [
+      "coding-development",
+      "file-icons",
+      "layout",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "telescope": [
+      "coding-development",
+      "navigation-maps-and-pois",
+      "science",
+      "tools",
+      "travel"
+    ],
+    "terminal": ["coding-development", "navigation-maps-and-pois"],
+    "tool-case": [
+      "coding-development",
+      "home",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "toy-brick": ["coding-development", "gaming", "navigation-maps-and-pois"],
+    "triangle-alert": [
+      "coding-development",
+      "medical",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes"
+    ],
+    "unplug": [
+      "coding-development",
+      "devices",
+      "medical",
+      "navigation-maps-and-pois",
+      "security",
+      "tools"
+    ],
+    "variable": ["coding-development", "navigation-maps-and-pois", "tools"],
+    "workflow": ["coding-development", "navigation-maps-and-pois", "shapes"],
+    "alarm-clock": ["devices", "notification", "time-calendar"],
+    "alarm-clock-check": ["devices", "notification", "time-calendar"],
+    "alarm-clock-minus": ["devices", "notification", "time-calendar"],
+    "alarm-clock-off": ["devices", "notification", "time-calendar"],
+    "alarm-clock-plus": ["devices", "notification", "time-calendar"],
+    "alarm-smoke": ["devices", "home", "notification"],
+    "battery-plus": ["devices"],
+    "bell-electric": ["devices", "home", "notification", "time-calendar"],
+    "boom-box": ["devices", "multimedia"],
+    "calculator": ["devices", "mathematics", "shopping", "tools"],
+    "cpu": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes"
+    ],
+    "diamond-minus": ["devices", "navigation-maps-and-pois", "shapes"],
+    "diamond-plus": ["devices", "navigation-maps-and-pois", "shapes"],
+    "disc": ["devices", "multimedia", "shapes"],
+    "disc-2": ["devices", "multimedia", "shapes"],
+    "disc-3": ["devices", "multimedia", "shapes"],
+    "disc-album": ["devices", "multimedia", "shapes"],
+    "drill": [
+      "devices",
+      "home",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "drone": ["devices"],
+    "drum": ["devices", "multimedia", "navigation-maps-and-pois", "tools"],
+    "flashlight": ["devices", "navigation-maps-and-pois"],
+    "flashlight-off": ["devices", "navigation-maps-and-pois"],
+    "gamepad": ["devices", "gaming", "navigation-maps-and-pois"],
+    "gamepad-2": ["devices", "gaming", "navigation-maps-and-pois"],
+    "gamepad-directional": ["devices", "gaming"],
+    "gpu": ["devices", "gaming"],
+    "hd": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "hdmi-port": [
+      "devices",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "heater": ["devices", "home", "medical", "navigation-maps-and-pois"],
+    "joystick": ["devices", "gaming", "multimedia", "navigation-maps-and-pois"],
+    "keyboard-music": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "laptop": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "laptop-minimal": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "laptop-minimal-check": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "memory-stick": ["devices", "gaming", "navigation-maps-and-pois", "tools"],
+    "mic-vocal": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "microchip": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "mouse": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "mouse-left": ["devices", "navigation-maps-and-pois"],
+    "mouse-off": ["devices", "navigation-maps-and-pois"],
+    "mouse-right": ["devices", "navigation-maps-and-pois"],
+    "pc-case": ["devices", "gaming", "multimedia", "navigation-maps-and-pois"],
+    "piano": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "plug-zap": ["devices", "navigation-maps-and-pois", "tools"],
+    "printer": ["devices", "navigation-maps-and-pois", "tools"],
+    "printer-check": ["devices", "navigation-maps-and-pois", "tools"],
+    "printer-x": ["devices", "navigation-maps-and-pois", "tools"],
+    "radio": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social",
+      "tools"
+    ],
+    "radio-off": ["devices", "navigation-maps-and-pois"],
+    "radio-receiver": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "radio-tower": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "scan": [
+      "devices",
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "scan-barcode": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "scan-line": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "scan-text": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "security",
+      "shapes",
+      "tools"
+    ],
+    "speaker": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "tablet": ["devices", "medical", "multimedia", "navigation-maps-and-pois"],
+    "toilet": ["devices", "home", "navigation-maps-and-pois"],
+    "touchpad": ["devices", "multimedia", "navigation-maps-and-pois", "tools"],
+    "touchpad-off": [
+      "devices",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "tv-minimal": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "tv-minimal-play": ["devices", "multimedia", "navigation-maps-and-pois"],
+    "usb": [
+      "devices",
+      "home",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "washing-machine": ["devices", "home", "navigation-maps-and-pois"],
+    "angry": ["emoji"],
+    "annoyed": ["emoji"],
+    "balloon": ["emoji", "travel"],
+    "biceps-flexed": ["emoji"],
+    "chess-bishop": ["emoji", "gaming"],
+    "chess-king": ["emoji", "gaming"],
+    "chess-knight": ["emoji", "gaming"],
+    "chess-pawn": ["emoji", "gaming"],
+    "chess-queen": ["emoji", "gaming"],
+    "chess-rook": ["emoji", "gaming"],
+    "hand-helping": [
+      "emoji",
+      "medical",
+      "navigation-maps-and-pois",
+      "people",
+      "social"
+    ],
+    "hand-metal": [
+      "emoji",
+      "medical",
+      "navigation-maps-and-pois",
+      "people",
+      "security",
+      "sports"
+    ],
+    "heart": [
+      "emoji",
+      "gaming",
+      "medical",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping",
+      "social",
+      "sports",
+      "tools"
+    ],
+    "heart-crack": [
+      "emoji",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social"
+    ],
+    "laugh": ["emoji", "navigation-maps-and-pois", "social"],
+    "leafy-green": [
+      "emoji",
+      "food-beverage",
+      "nature",
+      "navigation-maps-and-pois"
+    ],
+    "meh": ["emoji", "navigation-maps-and-pois"],
+    "party-popper": ["emoji", "navigation-maps-and-pois"],
+    "ribbon": ["emoji", "medical", "navigation-maps-and-pois", "tools"],
+    "salad": [
+      "emoji",
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois"
+    ],
+    "zodiac-aquarius": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-aries": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-cancer": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-capricorn": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-gemini": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-leo": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-libra": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-ophiuchus": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-pisces": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-sagittarius": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-scorpio": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-taurus": ["emoji", "navigation-maps-and-pois"],
+    "zodiac-virgo": ["emoji", "navigation-maps-and-pois"],
+    "archive": ["file-icons", "multimedia"],
+    "archive-restore": ["file-icons"],
+    "archive-x": ["file-icons"],
+    "book-image": ["file-icons"],
+    "calendar-fold": ["file-icons", "time-calendar"],
+    "file": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-archive": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-badge": ["file-icons", "navigation-maps-and-pois"],
+    "file-box": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-chart-column": ["file-icons", "navigation-maps-and-pois"],
+    "file-chart-column-increasing": ["file-icons", "navigation-maps-and-pois"],
+    "file-chart-line": ["file-icons", "navigation-maps-and-pois"],
+    "file-chart-pie": ["file-icons", "navigation-maps-and-pois"],
+    "file-check": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-check-corner": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-clock": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-cog": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-exclamation-point": ["file-icons", "navigation-maps-and-pois"],
+    "file-headphone": ["file-icons", "navigation-maps-and-pois"],
+    "file-heart": ["file-icons", "medical", "navigation-maps-and-pois"],
+    "file-image": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "file-key": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-lock": [
+      "file-icons",
+      "navigation-maps-and-pois",
+      "security",
+      "tools"
+    ],
+    "file-minus": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-minus-corner": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-music": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "file-pen": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-pen-line": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-play": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "file-plus": ["file-icons", "medical", "navigation-maps-and-pois", "tools"],
+    "file-plus-corner": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-question-mark": ["file-icons", "navigation-maps-and-pois"],
+    "file-scan": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-search": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-search-corner": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-signal": ["file-icons", "navigation-maps-and-pois"],
+    "file-spreadsheet": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-symlink": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-text": [
+      "file-icons",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "file-type": [
+      "file-icons",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "file-type-corner": [
+      "file-icons",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "file-video-camera": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois"
+    ],
+    "file-volume": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "file-x": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "file-x-corner": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "files": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-archive": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-bookmark": ["file-icons"],
+    "folder-check": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-clock": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-closed": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-cog": ["file-icons", "tools"],
+    "folder-git": ["file-icons", "navigation-maps-and-pois"],
+    "folder-git-2": ["file-icons", "navigation-maps-and-pois"],
+    "folder-heart": ["file-icons", "medical", "navigation-maps-and-pois"],
+    "folder-key": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-lock": [
+      "file-icons",
+      "navigation-maps-and-pois",
+      "security",
+      "tools"
+    ],
+    "folder-minus": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-open": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-pen": ["file-icons", "tools"],
+    "folder-plus": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-search": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-search-2": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-symlink": ["file-icons"],
+    "folder-tree": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folder-x": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "folders": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "group": ["file-icons", "navigation-maps-and-pois", "shapes"],
+    "image": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes"
+    ],
+    "image-down": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "image-minus": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "image-off": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "image-play": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "image-plus": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "image-up": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "images": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "list-tree": ["file-icons", "navigation-maps-and-pois", "text-formatting"],
+    "music": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "music-2": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "music-3": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "music-4": ["file-icons", "multimedia", "navigation-maps-and-pois"],
+    "save": ["file-icons", "multimedia", "navigation-maps-and-pois", "tools"],
+    "save-all": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "save-off": [
+      "file-icons",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "sheet": ["file-icons", "navigation-maps-and-pois", "tools"],
+    "shredder": ["file-icons", "tools"],
+    "table": [
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "table-2": [
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "table-cells-merge": [
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "table-cells-split": [
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "table-columns-split": [
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "table-rows-split": [
+      "file-icons",
+      "layout",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "trash": ["file-icons", "navigation-maps-and-pois", "tools", "travel"],
+    "trash-2": ["file-icons", "navigation-maps-and-pois", "tools", "travel"],
+    "ungroup": [
+      "file-icons",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "badge-cent": ["finance", "shapes", "shopping"],
+    "badge-dollar-sign": ["finance", "shapes", "shopping"],
+    "badge-euro": ["finance", "shapes", "shopping"],
+    "badge-indian-rupee": ["finance", "shapes", "shopping"],
+    "badge-japanese-yen": ["finance", "shapes", "shopping"],
+    "badge-percent": ["finance", "shapes", "shopping"],
+    "badge-pound-sterling": ["finance", "shapes", "shopping"],
+    "badge-russian-ruble": ["finance", "shapes", "shopping"],
+    "badge-swiss-franc": ["finance", "shapes", "shopping"],
+    "badge-turkish-lira": ["finance", "shapes", "shopping"],
+    "banknote": ["finance", "navigation-maps-and-pois", "shopping"],
+    "banknote-arrow-down": ["finance", "shopping"],
+    "banknote-arrow-up": ["finance", "shopping"],
+    "banknote-x": ["finance", "shopping"],
+    "circle-dollar-sign": ["finance", "shapes", "shopping"],
+    "circle-percent": [
+      "finance",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping"
+    ],
+    "circle-pound-sterling": ["finance", "shopping"],
+    "currency": ["finance", "navigation-maps-and-pois", "shopping"],
+    "diamond-percent": [
+      "finance",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping"
+    ],
+    "dollar-sign": ["finance", "navigation-maps-and-pois", "shopping"],
+    "euro": ["finance", "navigation-maps-and-pois", "shopping"],
+    "georgian-lari": ["finance"],
+    "indian-rupee": ["finance", "navigation-maps-and-pois", "shopping"],
+    "japanese-yen": ["finance", "navigation-maps-and-pois", "shopping"],
+    "philippine-peso": ["finance", "shopping"],
+    "piggy-bank": ["finance", "navigation-maps-and-pois", "shopping"],
+    "pound-sterling": [
+      "finance",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shopping"
+    ],
+    "receipt": [
+      "finance",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shopping",
+      "tools",
+      "travel"
+    ],
+    "receipt-cent": ["finance", "navigation-maps-and-pois", "shopping"],
+    "receipt-euro": ["finance", "navigation-maps-and-pois", "shopping"],
+    "receipt-indian-rupee": ["finance", "navigation-maps-and-pois", "shopping"],
+    "receipt-japanese-yen": ["finance", "navigation-maps-and-pois", "shopping"],
+    "receipt-pound-sterling": [
+      "finance",
+      "navigation-maps-and-pois",
+      "shopping"
+    ],
+    "receipt-russian-ruble": [
+      "finance",
+      "navigation-maps-and-pois",
+      "shopping"
+    ],
+    "receipt-swiss-franc": ["finance", "navigation-maps-and-pois", "shopping"],
+    "receipt-text": ["finance", "navigation-maps-and-pois", "shopping"],
+    "receipt-turkish-lira": ["finance", "navigation-maps-and-pois", "shopping"],
+    "russian-ruble": ["finance", "navigation-maps-and-pois", "shopping"],
+    "saudi-riyal": ["finance", "shopping"],
+    "scale": [
+      "finance",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shopping",
+      "tools"
+    ],
+    "square-percent": [
+      "finance",
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "shopping"
+    ],
+    "swiss-franc": ["finance", "navigation-maps-and-pois", "shopping"],
+    "turkish-lira": ["finance", "navigation-maps-and-pois", "shopping"],
+    "amphora": ["food-beverage", "gaming"],
+    "apple": ["food-beverage", "medical"],
+    "banana": ["food-beverage"],
+    "barrel": ["food-beverage"],
+    "bean": ["food-beverage"],
+    "bean-off": ["food-beverage"],
+    "beef": ["food-beverage"],
+    "beef-off": ["food-beverage"],
+    "beer": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "beer-off": ["food-beverage"],
+    "blender": ["food-beverage", "home"],
+    "bottle-wine": ["food-beverage"],
+    "broccoli": ["food-beverage"],
+    "cake-slice": ["food-beverage", "time-calendar"],
+    "candy": ["food-beverage", "medical"],
+    "candy-cane": ["food-beverage", "medical"],
+    "candy-off": ["food-beverage", "medical"],
+    "carrot": ["food-beverage", "medical"],
+    "chef-hat": ["food-beverage", "navigation-maps-and-pois"],
+    "cherry": [
+      "food-beverage",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons"
+    ],
+    "citrus": [
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "travel"
+    ],
+    "coffee": ["food-beverage", "travel"],
+    "cooking-pot": [
+      "food-beverage",
+      "home",
+      "navigation-maps-and-pois",
+      "travel"
+    ],
+    "croissant": [
+      "food-beverage",
+      "medical",
+      "navigation-maps-and-pois",
+      "travel"
+    ],
+    "cuboid": ["food-beverage", "shapes"],
+    "cup-soda": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "dessert": ["food-beverage", "medical"],
+    "dna-off": ["food-beverage", "medical", "science"],
+    "donut": ["food-beverage", "medical", "shapes"],
+    "drumstick": ["food-beverage"],
+    "egg-fried": ["food-beverage", "medical", "nature"],
+    "egg-off": ["food-beverage", "medical", "nature"],
+    "glass-water": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "grape": ["food-beverage", "medical", "nature", "navigation-maps-and-pois"],
+    "ham": ["food-beverage"],
+    "hamburger": ["food-beverage"],
+    "hand-platter": [
+      "food-beverage",
+      "navigation-maps-and-pois",
+      "people",
+      "tools",
+      "travel"
+    ],
+    "hop": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "hop-off": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "ice-cream-bowl": [
+      "food-beverage",
+      "medical",
+      "navigation-maps-and-pois",
+      "seasons",
+      "travel"
+    ],
+    "ice-cream-cone": [
+      "food-beverage",
+      "medical",
+      "navigation-maps-and-pois",
+      "seasons",
+      "travel"
+    ],
+    "lollipop": [
+      "food-beverage",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes"
+    ],
+    "martini": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "microwave": ["food-beverage", "home", "navigation-maps-and-pois"],
+    "milk": ["food-beverage", "nature", "navigation-maps-and-pois"],
+    "milk-off": ["food-beverage", "nature", "navigation-maps-and-pois"],
+    "nut": [
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "nut-off": [
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois"
+    ],
+    "pizza": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "popcorn": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "popsicle": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "refrigerator": ["food-beverage", "home", "navigation-maps-and-pois"],
+    "sandwich": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "soup": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "tractor": [
+      "food-beverage",
+      "navigation-maps-and-pois",
+      "tools",
+      "transportation"
+    ],
+    "utensils": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "utensils-crossed": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "vegan": ["food-beverage", "medical", "navigation-maps-and-pois"],
+    "wheat": [
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "tools"
+    ],
+    "wheat-off": [
+      "food-beverage",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois"
+    ],
+    "wine": ["food-beverage", "navigation-maps-and-pois", "travel"],
+    "wine-off": [
+      "food-beverage",
+      "medical",
+      "navigation-maps-and-pois",
+      "travel"
+    ],
+    "axe": ["gaming", "sports", "tools"],
+    "backpack": ["gaming", "sports", "tools", "travel"],
+    "beaker": ["gaming", "science", "tools"],
+    "book-a": ["gaming", "text-formatting"],
+    "book-heart": ["gaming"],
+    "book-text": ["gaming", "navigation-maps-and-pois", "text-formatting"],
+    "book-x": ["gaming"],
+    "bow-arrow": ["gaming", "sports"],
+    "circle-star": ["gaming", "shapes"],
+    "clover": ["gaming", "nature", "seasons", "sports"],
+    "club": ["gaming", "shapes", "sports", "travel"],
+    "coins": ["gaming", "shopping"],
+    "crown": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "people",
+      "social",
+      "sports",
+      "travel"
+    ],
+    "diamond": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "dice-1": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "dice-2": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "dice-3": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "dice-4": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "dice-5": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "dice-6": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "dices": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools"
+    ],
+    "droplet": [
+      "gaming",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "tools",
+      "weather"
+    ],
+    "droplet-off": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "weather"
+    ],
+    "feather": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports",
+      "tools"
+    ],
+    "flame": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports",
+      "tools",
+      "travel",
+      "weather"
+    ],
+    "flame-kindling": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports"
+    ],
+    "flask-conical": [
+      "gaming",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "tools"
+    ],
+    "flask-conical-off": [
+      "gaming",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "tools"
+    ],
+    "flask-round": [
+      "gaming",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "tools"
+    ],
+    "flower": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "shapes",
+      "travel"
+    ],
+    "ghost": ["gaming", "multimedia", "navigation-maps-and-pois"],
+    "goal": [
+      "gaming",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "sports",
+      "travel"
+    ],
+    "hourglass": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "notification",
+      "shapes",
+      "sports",
+      "time-calendar",
+      "tools"
+    ],
+    "medal": ["gaming", "navigation-maps-and-pois", "sports", "travel"],
+    "mountain": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "photography",
+      "sports",
+      "travel"
+    ],
+    "pickaxe": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "shapes": ["gaming", "navigation-maps-and-pois", "shapes", "tools"],
+    "shovel": [
+      "gaming",
+      "nature",
+      "navigation-maps-and-pois",
+      "sports",
+      "tools"
+    ],
+    "skull": [
+      "gaming",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "security",
+      "sports"
+    ],
+    "spade": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "travel"
+    ],
+    "sprout": [
+      "gaming",
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "seasons",
+      "sustainability"
+    ],
+    "square-star": ["gaming", "navigation-maps-and-pois", "shapes"],
+    "sword": ["gaming", "navigation-maps-and-pois", "tools"],
+    "swords": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "tally-1": ["gaming", "navigation-maps-and-pois"],
+    "tally-2": ["gaming", "navigation-maps-and-pois"],
+    "tally-3": ["gaming", "navigation-maps-and-pois"],
+    "tally-4": ["gaming", "navigation-maps-and-pois"],
+    "tally-5": ["gaming", "navigation-maps-and-pois"],
+    "target": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "shapes",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "trophy": [
+      "gaming",
+      "navigation-maps-and-pois",
+      "people",
+      "sports",
+      "tools",
+      "travel"
+    ],
+    "volleyball": ["gaming", "navigation-maps-and-pois", "sports"],
+    "air-vent": ["home"],
+    "armchair": ["home"],
+    "bed": ["home", "navigation-maps-and-pois", "travel"],
+    "bed-double": ["home", "medical", "navigation-maps-and-pois", "travel"],
+    "bed-single": ["home", "medical", "navigation-maps-and-pois", "travel"],
+    "blinds": ["home"],
+    "bolt": ["home", "tools"],
+    "door-closed": [
+      "home",
+      "navigation-maps-and-pois",
+      "security",
+      "tools",
+      "travel"
+    ],
+    "door-closed-locked": ["home", "security", "tools"],
+    "door-open": [
+      "home",
+      "navigation-maps-and-pois",
+      "security",
+      "tools",
+      "travel"
+    ],
+    "fan": ["home", "navigation-maps-and-pois"],
+    "fire-extinguisher": ["home", "navigation-maps-and-pois", "tools"],
+    "hammer": ["home", "navigation-maps-and-pois", "tools"],
+    "lamp": ["home"],
+    "lamp-ceiling": ["home"],
+    "lamp-desk": ["home"],
+    "lamp-floor": ["home"],
+    "lamp-wall-down": ["home"],
+    "lamp-wall-up": ["home"],
+    "mirror-rectangular": ["home", "navigation-maps-and-pois"],
+    "mirror-round": ["home", "navigation-maps-and-pois"],
+    "rocking-chair": ["home", "navigation-maps-and-pois"],
+    "rose": ["home", "nature", "seasons"],
+    "shelving-unit": ["home"],
+    "shower-head": ["home", "navigation-maps-and-pois"],
+    "soap-dispenser-droplet": ["home", "navigation-maps-and-pois"],
+    "sofa": ["home", "navigation-maps-and-pois", "travel"],
+    "solar-panel": ["home", "navigation-maps-and-pois", "sustainability"],
+    "toolbox": ["home", "navigation-maps-and-pois", "tools"],
+    "towel-rack": ["home"],
+    "turntable": ["home"],
+    "vault": ["home", "navigation-maps-and-pois", "security"],
+    "waves-ladder": ["home", "nature", "navigation-maps-and-pois"],
+    "align-center": ["layout", "text-formatting"],
+    "align-center-horizontal": ["layout", "text-formatting"],
+    "align-center-vertical": ["layout", "text-formatting"],
+    "align-end-horizontal": ["layout", "text-formatting"],
+    "align-end-vertical": ["layout", "text-formatting"],
+    "align-horizontal-distribute-center": ["layout", "text-formatting"],
+    "align-horizontal-distribute-end": ["layout", "text-formatting"],
+    "align-horizontal-distribute-start": ["layout", "text-formatting"],
+    "align-horizontal-justify-center": ["layout", "text-formatting"],
+    "align-horizontal-justify-end": ["layout", "text-formatting"],
+    "align-horizontal-justify-start": ["layout", "text-formatting"],
+    "align-horizontal-space-around": ["layout", "text-formatting"],
+    "align-horizontal-space-between": ["layout", "text-formatting"],
+    "align-justify": ["layout", "text-formatting"],
+    "align-left": ["layout", "text-formatting"],
+    "align-right": ["layout", "text-formatting"],
+    "align-start-horizontal": ["layout", "text-formatting"],
+    "align-start-vertical": ["layout", "text-formatting"],
+    "align-vertical-distribute-center": ["layout", "text-formatting"],
+    "align-vertical-distribute-end": ["layout", "text-formatting"],
+    "align-vertical-distribute-start": ["layout", "text-formatting"],
+    "align-vertical-justify-center": ["layout", "text-formatting"],
+    "align-vertical-justify-end": ["layout", "text-formatting"],
+    "align-vertical-justify-start": ["layout", "text-formatting"],
+    "align-vertical-space-around": ["layout", "text-formatting"],
+    "align-vertical-space-between": ["layout", "text-formatting"],
+    "diamond-dashed": ["layout", "shapes"],
+    "flip-horizontal": ["layout", "photography", "shapes"],
+    "flip-vertical": ["layout", "photography", "shapes"],
+    "grid-2x2-check": ["layout", "navigation-maps-and-pois"],
+    "grid-2x2-plus": ["layout", "navigation-maps-and-pois"],
+    "grid-2x2-x": ["layout", "navigation-maps-and-pois"],
+    "layout": ["layout", "navigation-maps-and-pois"],
+    "layout-panel-top": ["layout", "navigation-maps-and-pois", "shapes"],
+    "layout-template": ["layout", "navigation-maps-and-pois", "shapes"],
+    "minus-circle": ["layout", "navigation-maps-and-pois", "shapes", "social"],
+    "octagon": ["layout", "navigation-maps-and-pois", "shapes"],
+    "panel-bottom": ["layout", "navigation-maps-and-pois"],
+    "panel-bottom-dashed": ["layout", "navigation-maps-and-pois"],
+    "panel-left": ["layout", "navigation-maps-and-pois"],
+    "panel-left-dashed": ["layout", "navigation-maps-and-pois"],
+    "panel-right": ["layout", "navigation-maps-and-pois"],
+    "panel-right-dashed": ["layout", "navigation-maps-and-pois"],
+    "panel-top-dashed": ["layout", "navigation-maps-and-pois"],
+    "panels-left-bottom": ["layout", "navigation-maps-and-pois", "shapes"],
+    "panels-right-bottom": ["layout", "navigation-maps-and-pois", "shapes"],
+    "pentagon": ["layout", "navigation-maps-and-pois", "shapes"],
+    "plus-circle": ["layout", "navigation-maps-and-pois", "shapes", "social"],
+    "rectangle": ["layout", "navigation-maps-and-pois", "shapes"],
+    "space": [
+      "layout",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "square": ["layout", "navigation-maps-and-pois", "shapes", "tools"],
+    "squircle": ["layout", "navigation-maps-and-pois", "shapes", "tools"],
+    "triangle": [
+      "layout",
+      "navigation-maps-and-pois",
+      "photography",
+      "shapes",
+      "tools"
+    ],
+    "triangle-dashed": ["layout", "navigation-maps-and-pois", "shapes"],
+    "forward": ["mail", "multimedia", "navigation-maps-and-pois", "social"],
+    "mail-check": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-minus": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-open": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-plus": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-question": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-search": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-warning": ["mail", "navigation-maps-and-pois", "social"],
+    "mail-x": ["mail", "navigation-maps-and-pois", "social"],
+    "mailbox": ["mail", "navigation-maps-and-pois", "social", "tools"],
+    "mails": ["mail", "navigation-maps-and-pois", "social", "tools"],
+    "reply": ["mail", "navigation-maps-and-pois", "social"],
+    "reply-all": ["mail", "navigation-maps-and-pois", "social"],
+    "copyleft": ["mathematics", "medical", "navigation-maps-and-pois"],
+    "copyright": ["mathematics", "medical", "navigation-maps-and-pois"],
+    "equal-approximately": ["mathematics", "shapes"],
+    "function-square": ["mathematics", "navigation-maps-and-pois"],
+    "greek-pi": ["mathematics"],
+    "infinity": [
+      "mathematics",
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "tools"
+    ],
+    "multiply": ["mathematics"],
+    "pilcrow": [
+      "mathematics",
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "plus-minus": ["mathematics"],
+    "sigma": [
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "square-sigma": [
+      "mathematics",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "square-square-root": ["mathematics", "navigation-maps-and-pois", "shapes"],
+    "superscript": [
+      "mathematics",
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "trademark": [
+      "mathematics",
+      "medical",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "unequal-not-equal": ["mathematics"],
+    "x": [
+      "mathematics",
+      "medical",
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes",
+      "social",
+      "tools"
+    ],
+    "ambulance": ["medical", "transportation"],
+    "bandage": ["medical", "navigation-maps-and-pois"],
+    "brain": ["medical", "science"],
+    "capsule": ["medical"],
+    "captions-off": ["medical"],
+    "clipboard-check": ["medical", "tools"],
+    "clipboard-list": ["medical", "navigation-maps-and-pois", "tools"],
+    "clipboard-pen": ["medical", "tools"],
+    "clipboard-pen-line": ["medical", "tools"],
+    "clipboard-pulse": ["medical", "tools"],
+    "clipboard-x": ["medical", "tools"],
+    "clock": ["medical", "navigation-maps-and-pois", "time-calendar"],
+    "clock-alert": ["medical", "time-calendar"],
+    "cross": ["medical"],
+    "cross-circle": ["medical"],
+    "cucumber": ["medical"],
+    "dna": ["medical", "navigation-maps-and-pois", "science"],
+    "flask-round-off": [
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "tools"
+    ],
+    "footprints": ["medical", "nature", "navigation-maps-and-pois", "people"],
+    "hand-heart": ["medical", "navigation-maps-and-pois", "people", "social"],
+    "heart-off": ["medical", "navigation-maps-and-pois", "shapes", "social"],
+    "heart-pulse": [
+      "medical",
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "social"
+    ],
+    "infection": ["medical", "science"],
+    "panniers": ["medical", "transportation", "travel"],
+    "pharmacy": ["medical", "navigation-maps-and-pois"],
+    "pill": ["medical", "navigation-maps-and-pois", "science", "shapes"],
+    "pill-bottle": ["medical", "navigation-maps-and-pois", "science", "shapes"],
+    "pills": ["medical", "navigation-maps-and-pois"],
+    "recycle": [
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "sustainability",
+      "tools"
+    ],
+    "smoking": ["medical"],
+    "square-activity": [
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "tools"
+    ],
+    "stethoscope": ["medical", "navigation-maps-and-pois"],
+    "syringe": ["medical", "navigation-maps-and-pois", "science", "tools"],
+    "tablets": ["medical", "navigation-maps-and-pois"],
+    "test-tube-diagonal": [
+      "medical",
+      "navigation-maps-and-pois",
+      "people",
+      "science",
+      "tools"
+    ],
+    "test-tubes": ["medical", "navigation-maps-and-pois", "science", "tools"],
+    "thermometer": [
+      "medical",
+      "navigation-maps-and-pois",
+      "science",
+      "weather"
+    ],
+    "thermometer-snowflake": [
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "seasons",
+      "weather"
+    ],
+    "thermometer-sun": [
+      "medical",
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "seasons",
+      "weather"
+    ],
+    "virus": ["medical", "navigation-maps-and-pois", "science"],
+    "virus-off": ["medical", "navigation-maps-and-pois", "science"],
+    "album": ["multimedia"],
+    "barcode": ["multimedia", "navigation-maps-and-pois", "shopping"],
+    "barcode-lines": ["multimedia", "shopping"],
+    "bell-minus": ["multimedia", "notification", "social", "time-calendar"],
+    "bell-off": ["multimedia", "notification", "social", "time-calendar"],
+    "bell-plus": ["multimedia", "notification", "social", "time-calendar"],
+    "bell-ring": ["multimedia", "notification", "social", "time-calendar"],
+    "casing": ["multimedia", "nature"],
+    "circle-play": ["multimedia", "navigation-maps-and-pois", "shapes"],
+    "circle-stop": ["multimedia", "navigation-maps-and-pois", "shapes"],
+    "clapperboard": ["multimedia", "navigation-maps-and-pois", "travel"],
+    "cloudy": [
+      "multimedia",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "weather"
+    ],
+    "cloudy-rainy": [
+      "multimedia",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "weather"
+    ],
+    "cloudy-snowy": [
+      "multimedia",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "weather"
+    ],
+    "cloudy-sunny": [
+      "multimedia",
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "weather"
+    ],
+    "crosshair": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography",
+      "tools"
+    ],
+    "file-audio": ["multimedia", "navigation-maps-and-pois"],
+    "file-video": ["multimedia", "navigation-maps-and-pois"],
+    "gauge": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "tools",
+      "transportation"
+    ],
+    "list-music": ["multimedia", "navigation-maps-and-pois"],
+    "list-video": ["multimedia", "navigation-maps-and-pois"],
+    "magnify": ["multimedia", "tools"],
+    "message-circle-video": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "message-square-voice": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "social"
+    ],
+    "pause": ["multimedia", "navigation-maps-and-pois"],
+    "pause-circle": ["multimedia", "navigation-maps-and-pois", "notification"],
+    "picture-in-picture": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "picture-in-picture-2": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "photography"
+    ],
+    "play-circle": ["multimedia", "navigation-maps-and-pois", "notification"],
+    "podcast": ["multimedia", "navigation-maps-and-pois", "social"],
+    "record": ["multimedia"],
+    "repeat-1": [
+      "multimedia",
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting"
+    ],
+    "screenshot": ["multimedia", "navigation-maps-and-pois", "photography"],
+    "stop-circle": ["multimedia", "navigation-maps-and-pois", "notification"],
+    "bee": ["nature"],
+    "clam": ["nature"],
+    "cloudy-drizzle": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "weather"
+    ],
+    "droplet-rain": ["nature", "navigation-maps-and-pois", "weather"],
+    "earth": ["nature", "navigation-maps-and-pois"],
+    "flower-2": ["nature", "navigation-maps-and-pois", "seasons", "shapes"],
+    "leaf": ["nature", "navigation-maps-and-pois", "seasons"],
+    "lime": ["nature"],
+    "mercury": ["nature", "science"],
+    "mushroom": ["nature", "seasons"],
+    "palm-tree": ["nature", "navigation-maps-and-pois", "travel"],
+    "plant": ["nature"],
+    "plant-growing": ["nature"],
+    "radiation": ["nature", "navigation-maps-and-pois", "science"],
+    "saturn": ["nature", "navigation-maps-and-pois", "science"],
+    "saturn-rings": ["nature", "navigation-maps-and-pois", "science"],
+    "scatter-chart": ["nature", "navigation-maps-and-pois"],
+    "snowflake": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "shapes",
+      "tools",
+      "travel",
+      "weather"
+    ],
+    "sparkle": [
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "science",
+      "shapes",
+      "tools"
+    ],
+    "sun-snow": [
+      "nature",
+      "navigation-maps-and-pois",
+      "photography",
+      "seasons",
+      "shapes",
+      "weather"
+    ],
+    "tornado": ["nature", "navigation-maps-and-pois", "weather"],
+    "tree": ["nature", "navigation-maps-and-pois", "sustainability", "travel"],
+    "tree-deciduous": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "sustainability",
+      "travel"
+    ],
+    "tree-palm": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "sustainability",
+      "travel"
+    ],
+    "tree-pine": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "sustainability",
+      "travel"
+    ],
+    "trees": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "sustainability",
+      "travel"
+    ],
+    "volcano": ["nature", "travel", "weather"],
+    "waves": [
+      "nature",
+      "navigation-maps-and-pois",
+      "science",
+      "shapes",
+      "travel",
+      "weather"
+    ],
+    "wind": [
+      "nature",
+      "navigation-maps-and-pois",
+      "seasons",
+      "tools",
+      "weather"
+    ],
+    "anchor": ["navigation-maps-and-pois", "transportation", "travel"],
+    "bank-note": ["navigation-maps-and-pois"],
+    "baseline": [
+      "navigation-maps-and-pois",
+      "shapes",
+      "text-formatting",
+      "tools"
+    ],
+    "beacon": ["navigation-maps-and-pois"],
+    "beacon-off": ["navigation-maps-and-pois"],
+    "benchmark": ["navigation-maps-and-pois"],
+    "bike": [
+      "navigation-maps-and-pois",
+      "sports",
+      "sustainability",
+      "tools",
+      "transportation"
+    ],
+    "biohazard": ["navigation-maps-and-pois", "science"],
+    "bird-off": ["navigation-maps-and-pois"],
+    "boat": ["navigation-maps-and-pois", "sports", "transportation", "travel"],
+    "box-select": ["navigation-maps-and-pois"],
+    "bus": ["navigation-maps-and-pois", "transportation", "travel"],
+    "bus-front": ["navigation-maps-and-pois", "transportation", "travel"],
+    "cable-car": ["navigation-maps-and-pois", "transportation", "travel"],
+    "campfire": ["navigation-maps-and-pois", "travel"],
+    "car": ["navigation-maps-and-pois", "transportation", "travel"],
+    "car-front": ["navigation-maps-and-pois", "transportation", "travel"],
+    "car-taxi-front": ["navigation-maps-and-pois", "transportation", "travel"],
+    "caravan": ["navigation-maps-and-pois", "transportation", "travel"],
+    "circle": ["navigation-maps-and-pois", "shapes"],
+    "circle-alert": [
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes"
+    ],
+    "circle-check": [
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes"
+    ],
+    "circle-check-big": [
+      "navigation-maps-and-pois",
+      "notification",
+      "security",
+      "shapes"
+    ],
+    "circle-divide": ["navigation-maps-and-pois", "shapes"],
+    "circle-equal": ["navigation-maps-and-pois", "shapes"],
+    "circle-gauge": ["navigation-maps-and-pois", "shapes", "tools"],
+    "circle-help": ["navigation-maps-and-pois", "notification", "shapes"],
+    "circle-minus": ["navigation-maps-and-pois", "notification", "shapes"],
+    "circle-off": ["navigation-maps-and-pois", "notification", "shapes"],
+    "circle-parking": ["navigation-maps-and-pois", "shapes", "travel"],
+    "circle-parking-off": ["navigation-maps-and-pois", "shapes", "travel"],
+    "circle-pause": ["navigation-maps-and-pois", "shapes"],
+    "cloud": ["navigation-maps-and-pois", "weather"],
+    "cloud-drizzle": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-fog": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-hail": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-lightning": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-moon": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-moon-rain": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-rain": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-rain-wind": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-snow": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-sun": ["navigation-maps-and-pois", "seasons", "weather"],
+    "cloud-sun-rain": ["navigation-maps-and-pois", "seasons", "weather"],
+    "compass": ["navigation-maps-and-pois", "travel"],
+    "concierge-bell": ["navigation-maps-and-pois", "shapes", "travel"],
+    "crane": ["navigation-maps-and-pois", "tools", "transportation"],
+    "crane-tower": ["navigation-maps-and-pois", "tools", "transportation"],
+    "cube": ["navigation-maps-and-pois", "shapes"],
+    "curly-braces": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "download-cloud": ["navigation-maps-and-pois"],
+    "dumbbell": ["navigation-maps-and-pois", "sports", "tools"],
+    "electric-power-outlet": ["navigation-maps-and-pois"],
+    "ellipsis-vertical": ["navigation-maps-and-pois"],
+    "ferris-wheel": ["navigation-maps-and-pois", "travel"],
+    "film": ["navigation-maps-and-pois", "photography"],
+    "filter": ["navigation-maps-and-pois", "photography", "shapes", "tools"],
+    "filter-x": ["navigation-maps-and-pois", "photography", "tools"],
+    "fingerprint": ["navigation-maps-and-pois", "security"],
+    "fire": ["navigation-maps-and-pois"],
+    "focus": ["navigation-maps-and-pois", "photography"],
+    "forklift": ["navigation-maps-and-pois", "tools", "transportation"],
+    "fuel": ["navigation-maps-and-pois", "tools", "transportation", "travel"],
+    "gas-station": ["navigation-maps-and-pois"],
+    "gavel": ["navigation-maps-and-pois", "tools"],
+    "globe": ["navigation-maps-and-pois", "science", "travel"],
+    "grab": ["navigation-maps-and-pois", "tools"],
+    "grip": ["navigation-maps-and-pois", "shapes", "tools"],
+    "grip-horizontal": ["navigation-maps-and-pois", "shapes", "tools"],
+    "grip-vertical": ["navigation-maps-and-pois", "shapes", "tools"],
+    "hard-hat": ["navigation-maps-and-pois", "tools"],
+    "hash": ["navigation-maps-and-pois", "social", "text-formatting", "tools"],
+    "haze": ["navigation-maps-and-pois"],
+    "heading": ["navigation-maps-and-pois", "text-formatting"],
+    "heading-1": ["navigation-maps-and-pois", "text-formatting"],
+    "heading-2": ["navigation-maps-and-pois", "text-formatting"],
+    "heading-3": ["navigation-maps-and-pois", "text-formatting"],
+    "heading-4": ["navigation-maps-and-pois", "text-formatting"],
+    "heading-5": ["navigation-maps-and-pois", "text-formatting"],
+    "heading-6": ["navigation-maps-and-pois", "text-formatting"],
+    "home": ["navigation-maps-and-pois"],
+    "indent-decrease": ["navigation-maps-and-pois", "text-formatting"],
+    "indent-increase": ["navigation-maps-and-pois", "text-formatting"],
+    "inspection-panel": ["navigation-maps-and-pois", "tools"],
+    "instagram": ["navigation-maps-and-pois", "shapes", "social"],
+    "italic": ["navigation-maps-and-pois", "text-formatting"],
+    "languages": ["navigation-maps-and-pois"],
+    "layers-3": ["navigation-maps-and-pois", "shapes"],
+    "ligature": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "lightbulb": ["navigation-maps-and-pois", "tools", "travel"],
+    "lightbulb-off": ["navigation-maps-and-pois", "tools", "travel"],
+    "link-2-off": ["navigation-maps-and-pois", "social", "tools"],
+    "link-off": ["navigation-maps-and-pois", "social", "tools"],
+    "linkedin": ["navigation-maps-and-pois", "social"],
+    "list": ["navigation-maps-and-pois", "text-formatting"],
+    "list-checks": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "list-collapse": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "list-end": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "list-filter": ["navigation-maps-and-pois", "text-formatting"],
+    "list-minus": ["navigation-maps-and-pois", "text-formatting"],
+    "list-ordered": ["navigation-maps-and-pois", "text-formatting"],
+    "list-plus": ["navigation-maps-and-pois", "text-formatting"],
+    "list-restart": ["navigation-maps-and-pois", "text-formatting"],
+    "list-start": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "list-todo": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "list-x": ["navigation-maps-and-pois", "text-formatting"],
+    "locate": ["navigation-maps-and-pois"],
+    "locate-fixed": ["navigation-maps-and-pois"],
+    "locate-off": ["navigation-maps-and-pois"],
+    "lock": ["navigation-maps-and-pois", "security", "tools"],
+    "lock-keyhole": [
+      "navigation-maps-and-pois",
+      "science",
+      "security",
+      "tools"
+    ],
+    "lock-keyhole-open": ["navigation-maps-and-pois", "security", "tools"],
+    "lock-open": ["navigation-maps-and-pois", "security", "tools"],
+    "luggage": [
+      "navigation-maps-and-pois",
+      "tools",
+      "transportation",
+      "travel"
+    ],
+    "map": ["navigation-maps-and-pois", "tools", "transportation", "travel"],
+    "map-pin-off": ["navigation-maps-and-pois", "transportation", "travel"],
+    "megaphone": ["navigation-maps-and-pois", "social", "tools", "travel"],
+    "megaphone-off": ["navigation-maps-and-pois", "social", "tools"],
+    "message-circle": ["navigation-maps-and-pois", "social"],
+    "message-circle-dashed": ["navigation-maps-and-pois", "social"],
+    "message-circle-dot": ["navigation-maps-and-pois", "social"],
+    "message-circle-heart": ["navigation-maps-and-pois", "social"],
+    "message-circle-minus": ["navigation-maps-and-pois", "social"],
+    "message-circle-more": ["navigation-maps-and-pois", "social"],
+    "message-circle-off": ["navigation-maps-and-pois", "social"],
+    "message-circle-plus": ["navigation-maps-and-pois", "social"],
+    "message-circle-question": ["navigation-maps-and-pois", "social"],
+    "message-circle-reply": ["navigation-maps-and-pois", "social"],
+    "message-circle-warning": ["navigation-maps-and-pois", "social"],
+    "message-square": ["navigation-maps-and-pois", "social"],
+    "message-square-dashed": ["navigation-maps-and-pois", "social"],
+    "message-square-dot": ["navigation-maps-and-pois", "social"],
+    "message-square-heart": ["navigation-maps-and-pois", "social"],
+    "message-square-lock": ["navigation-maps-and-pois", "social"],
+    "message-square-minus": ["navigation-maps-and-pois", "social"],
+    "message-square-more": ["navigation-maps-and-pois", "social"],
+    "message-square-off": ["navigation-maps-and-pois", "social"],
+    "message-square-plus": ["navigation-maps-and-pois", "social"],
+    "message-square-quote": ["navigation-maps-and-pois", "social"],
+    "message-square-reply": ["navigation-maps-and-pois", "social"],
+    "message-square-share": ["navigation-maps-and-pois", "social"],
+    "message-square-text": ["navigation-maps-and-pois", "social"],
+    "message-square-warning": ["navigation-maps-and-pois", "social"],
+    "message-square-x": ["navigation-maps-and-pois", "social"],
+    "messages-square": ["navigation-maps-and-pois", "social"],
+    "microscope": ["navigation-maps-and-pois", "science", "tools"],
+    "more-horizontal": ["navigation-maps-and-pois"],
+    "more-vertical": ["navigation-maps-and-pois"],
+    "mountain-snow": [
+      "navigation-maps-and-pois",
+      "photography",
+      "sports",
+      "travel"
+    ],
+    "navigation": ["navigation-maps-and-pois", "transportation", "travel"],
+    "navigation-2": ["navigation-maps-and-pois", "transportation", "travel"],
+    "navigation-2-off": [
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "navigation-off": ["navigation-maps-and-pois", "transportation", "travel"],
+    "notebook-pen": ["navigation-maps-and-pois", "tools"],
+    "notebook-text": ["navigation-maps-and-pois", "tools"],
+    "notepad-text": ["navigation-maps-and-pois", "tools"],
+    "notepad-text-dashed": ["navigation-maps-and-pois", "tools"],
+    "octagon-alert": ["navigation-maps-and-pois", "notification", "shapes"],
+    "octagon-pause": ["navigation-maps-and-pois", "notification", "shapes"],
+    "octagon-x": ["navigation-maps-and-pois", "notification", "shapes"],
+    "orbit": ["navigation-maps-and-pois", "shapes"],
+    "parking-meter": ["navigation-maps-and-pois", "transportation", "travel"],
+    "pie-chart": ["navigation-maps-and-pois", "shapes"],
+    "pig": ["navigation-maps-and-pois"],
+    "pin-off": ["navigation-maps-and-pois", "shapes", "tools"],
+    "plane": ["navigation-maps-and-pois", "tools", "transportation", "travel"],
+    "plane-arrival": ["navigation-maps-and-pois", "transportation", "travel"],
+    "plane-departure": ["navigation-maps-and-pois", "transportation", "travel"],
+    "plane-landing": ["navigation-maps-and-pois", "transportation", "travel"],
+    "plane-takeoff": ["navigation-maps-and-pois", "transportation", "travel"],
+    "pocket": ["navigation-maps-and-pois", "tools"],
+    "pocket-knife": ["navigation-maps-and-pois", "tools"],
+    "pyramid": ["navigation-maps-and-pois", "shapes"],
+    "quote": ["navigation-maps-and-pois", "text-formatting"],
+    "rainbow": ["navigation-maps-and-pois", "weather"],
+    "remove-formatting": ["navigation-maps-and-pois", "text-formatting"],
+    "replace": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "replace-all": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "roller-coaster": ["navigation-maps-and-pois", "shapes", "travel"],
+    "route": ["navigation-maps-and-pois", "transportation", "travel"],
+    "route-off": ["navigation-maps-and-pois", "transportation", "travel"],
+    "sailboat": [
+      "navigation-maps-and-pois",
+      "sports",
+      "transportation",
+      "travel"
+    ],
+    "save-success": ["navigation-maps-and-pois", "tools"],
+    "scanner": ["navigation-maps-and-pois", "tools"],
+    "school-2": ["navigation-maps-and-pois"],
+    "search": ["navigation-maps-and-pois", "tools"],
+    "search-check": ["navigation-maps-and-pois", "tools"],
+    "search-slash": ["navigation-maps-and-pois", "tools"],
+    "search-x": ["navigation-maps-and-pois", "tools"],
+    "section": ["navigation-maps-and-pois"],
+    "ship": ["navigation-maps-and-pois", "transportation", "travel"],
+    "ship-wheel": ["navigation-maps-and-pois", "transportation", "travel"],
+    "shirt": ["navigation-maps-and-pois", "shopping"],
+    "shoe": ["navigation-maps-and-pois", "shopping"],
+    "shoelace": ["navigation-maps-and-pois", "shopping"],
+    "shop": ["navigation-maps-and-pois", "shopping", "travel"],
+    "shopping-bag": [
+      "navigation-maps-and-pois",
+      "shopping",
+      "sustainability",
+      "travel"
+    ],
+    "shopping-basket": ["navigation-maps-and-pois", "shopping", "travel"],
+    "shopping-cart": ["navigation-maps-and-pois", "shopping", "travel"],
+    "shrub": ["navigation-maps-and-pois"],
+    "sidebar": ["navigation-maps-and-pois"],
+    "sidebar-close": ["navigation-maps-and-pois"],
+    "sidebar-open": ["navigation-maps-and-pois"],
+    "siren": ["navigation-maps-and-pois", "notification", "travel"],
+    "slack": ["navigation-maps-and-pois", "social"],
+    "sliders": ["navigation-maps-and-pois", "tools"],
+    "sort-asc": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "sort-desc": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "speedometer": ["navigation-maps-and-pois"],
+    "sphere": ["navigation-maps-and-pois", "shapes"],
+    "square-check": ["navigation-maps-and-pois", "shapes", "tools"],
+    "square-check-big": ["navigation-maps-and-pois", "shapes", "tools"],
+    "square-divide": ["navigation-maps-and-pois", "shapes"],
+    "square-equal": ["navigation-maps-and-pois", "shapes"],
+    "square-gantt-chart": ["navigation-maps-and-pois", "shapes", "tools"],
+    "square-m": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "square-menu": ["navigation-maps-and-pois", "shapes"],
+    "square-parking": ["navigation-maps-and-pois", "shapes"],
+    "square-parking-off": ["navigation-maps-and-pois", "shapes"],
+    "square-pen": ["navigation-maps-and-pois", "shapes", "tools"],
+    "square-pilcrow": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "square-x": ["navigation-maps-and-pois", "shapes"],
+    "star-half": ["navigation-maps-and-pois", "shapes", "social", "sports"],
+    "star-off": ["navigation-maps-and-pois", "shapes", "social", "sports"],
+    "sticker": ["navigation-maps-and-pois"],
+    "sticky-note": ["navigation-maps-and-pois", "tools"],
+    "stretch-horizontal": ["navigation-maps-and-pois", "tools"],
+    "stretch-vertical": ["navigation-maps-and-pois", "tools"],
+    "strikethrough": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "subscript": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "subtitles": ["navigation-maps-and-pois"],
+    "table-of-contents": ["navigation-maps-and-pois", "text-formatting"],
+    "tent": ["navigation-maps-and-pois", "sports", "travel"],
+    "tent-tree": ["navigation-maps-and-pois", "sports", "travel"],
+    "test-tube": ["navigation-maps-and-pois", "science", "tools"],
+    "text": ["navigation-maps-and-pois", "text-formatting"],
+    "text-cursor-input": [
+      "navigation-maps-and-pois",
+      "text-formatting",
+      "tools"
+    ],
+    "text-quote": ["navigation-maps-and-pois", "text-formatting"],
+    "text-search": ["navigation-maps-and-pois", "text-formatting"],
+    "text-select": ["navigation-maps-and-pois", "text-formatting"],
+    "ticket-check": ["navigation-maps-and-pois", "shopping", "travel"],
+    "ticket-minus": ["navigation-maps-and-pois", "shopping", "travel"],
+    "ticket-percent": ["navigation-maps-and-pois", "shopping", "travel"],
+    "ticket-plus": ["navigation-maps-and-pois", "shopping", "travel"],
+    "ticket-slash": ["navigation-maps-and-pois", "shopping", "travel"],
+    "ticket-x": ["navigation-maps-and-pois", "shopping", "travel"],
+    "tickets-plane": ["navigation-maps-and-pois", "shopping", "travel"],
+    "timer": ["navigation-maps-and-pois", "sports", "time-calendar"],
+    "timer-off": ["navigation-maps-and-pois", "sports", "time-calendar"],
+    "timer-reset": ["navigation-maps-and-pois", "sports", "time-calendar"],
+    "tower-control": ["navigation-maps-and-pois"],
+    "traffic-cone": ["navigation-maps-and-pois", "transportation"],
+    "train-front": ["navigation-maps-and-pois", "transportation", "travel"],
+    "train-front-tunnel": [
+      "navigation-maps-and-pois",
+      "transportation",
+      "travel"
+    ],
+    "train-track": ["navigation-maps-and-pois", "transportation", "travel"],
+    "tram-front": ["navigation-maps-and-pois", "transportation", "travel"],
+    "trello": ["navigation-maps-and-pois", "social"],
+    "trending-down-up": ["navigation-maps-and-pois", "social"],
+    "triangle-right": ["navigation-maps-and-pois", "notification", "shapes"],
+    "truck": ["navigation-maps-and-pois", "tools", "transportation", "travel"],
+    "twitch": ["navigation-maps-and-pois", "social"],
+    "twitter": ["navigation-maps-and-pois", "social"],
+    "type": ["navigation-maps-and-pois", "text-formatting", "tools"],
+    "type-outline": ["navigation-maps-and-pois", "text-formatting"],
+    "umbrella": ["navigation-maps-and-pois", "seasons", "travel", "weather"],
+    "umbrella-off": [
+      "navigation-maps-and-pois",
+      "seasons",
+      "travel",
+      "weather"
+    ],
+    "underline": ["navigation-maps-and-pois", "text-formatting"],
+    "unlink": ["navigation-maps-and-pois", "social", "tools"],
+    "unlink-2": ["navigation-maps-and-pois", "social", "tools"],
+    "unlock": ["navigation-maps-and-pois", "security", "tools"],
+    "unlock-keyhole": ["navigation-maps-and-pois", "security", "tools"],
+    "upload-cloud": ["navigation-maps-and-pois", "tools"],
+    "user-dot": ["navigation-maps-and-pois", "people", "social"],
+    "vote": ["navigation-maps-and-pois", "social"],
+    "watch": ["navigation-maps-and-pois", "time-calendar", "tools", "travel"],
+    "weight": ["navigation-maps-and-pois", "tools"],
+    "whole-word": ["navigation-maps-and-pois", "text-formatting"],
+    "wrap-text": ["navigation-maps-and-pois", "shapes", "text-formatting"],
+    "youtube": ["navigation-maps-and-pois", "social"],
+    "alarm-check": ["notification", "time-calendar"],
+    "alert-circle": ["notification"],
+    "alert-octagon": ["notification"],
+    "alert-triangle": ["notification"],
+    "badge-check": ["notification", "shapes"],
+    "badge-minus": ["notification", "shapes"],
+    "badge-plus": ["notification", "shapes"],
+    "badge-x": ["notification", "shapes"],
+    "calendar-alert": ["notification", "time-calendar"],
+    "check": ["notification"],
+    "check-check": ["notification"],
+    "check-circle": ["notification", "security"],
+    "check-circle-2": ["notification", "security"],
+    "help-circle": ["notification"],
+    "x-circle": ["notification", "security", "shapes", "social"],
+    "accessible": ["people", "travel"],
+    "badge-user": ["people", "shapes"],
+    "badge-user-check": ["people", "shapes"],
+    "badge-user-minus": ["people", "shapes"],
+    "badge-user-plus": ["people", "shapes"],
+    "badge-user-x": ["people", "shapes"],
+    "list-user": ["people"],
+    "aperture": ["photography", "shapes"],
+    "copy-check": ["photography", "shapes", "text-formatting", "tools"],
+    "copy-minus": ["photography", "shapes", "text-formatting", "tools"],
+    "copy-plus": ["photography", "shapes", "text-formatting", "tools"],
+    "copy-x": ["photography", "shapes", "text-formatting", "tools"],
+    "panorama": ["photography"],
+    "picamera": ["photography"],
+    "atom": ["science", "shapes"],
+    "planet": ["science"],
+    "pumpkin": ["seasons"],
+    "badge-help": ["shapes"],
+    "copy": ["shapes", "text-formatting", "tools"],
+    "eraser": ["shapes", "text-formatting", "tools"],
+    "gantt-chart": ["shapes"],
+    "loader-ring": ["shapes"],
+    "basket": ["shopping"],
+    "calendar": ["shopping", "time-calendar"],
+    "cash-register": ["shopping"],
+    "chat-bubble": ["social"],
+    "dribbble": ["social"],
+    "facebook": ["social"],
+    "github": ["social"],
+    "gitlab": ["social"],
+    "basketball": ["sports"],
+    "football": ["sports"],
+    "frisbee": ["sports"],
+    "bicycle": ["sustainability", "tools"],
+    "bold": ["text-formatting"],
+    "casket": ["text-formatting"],
+    "font": ["text-formatting"],
+    "font-bold": ["text-formatting"],
+    "font-italic": ["text-formatting"],
+    "font-mono": ["text-formatting"],
+    "font-size-large": ["text-formatting"],
+    "font-size-small": ["text-formatting"],
+    "font-strikethrough": ["text-formatting"],
+    "font-underline": ["text-formatting"],
+    "line-height": ["text-formatting"],
+    "line-height-increase": ["text-formatting"],
+    "line-height-decrease": ["text-formatting"],
+    "square-ellipsis": ["text-formatting"],
+    "calendar-1": ["time-calendar"],
+    "calendar-arrow-down": ["time-calendar"],
+    "calendar-arrow-up": ["time-calendar"],
+    "calendar-cancel": ["time-calendar"],
+    "calendar-check": ["time-calendar"],
+    "calendar-check-2": ["time-calendar"],
+    "calendar-chevron-left": ["time-calendar"],
+    "calendar-chevron-right": ["time-calendar"],
+    "calendar-clock": ["time-calendar"],
+    "calendar-cog": ["time-calendar"],
+    "calendar-days": ["time-calendar"],
+    "calendar-dot": ["time-calendar"],
+    "calendar-heart": ["time-calendar"],
+    "calendar-mark-outlined": ["time-calendar"],
+    "calendar-marked": ["time-calendar"],
+    "calendar-minus": ["time-calendar"],
+    "calendar-minus-2": ["time-calendar"],
+    "calendar-off": ["time-calendar"],
+    "calendar-plus": ["time-calendar"],
+    "calendar-plus-2": ["time-calendar"],
+    "calendar-range": ["time-calendar"],
+    "calendar-search": ["time-calendar"],
+    "calendar-x": ["time-calendar"],
+    "calendar-x-2": ["time-calendar"],
+    "clock-1": ["time-calendar"],
+    "clock-10": ["time-calendar"],
+    "clock-11": ["time-calendar"],
+    "clock-12": ["time-calendar"],
+    "clock-2": ["time-calendar"],
+    "clock-3": ["time-calendar"],
+    "clock-4": ["time-calendar"],
+    "clock-5": ["time-calendar"],
+    "clock-6": ["time-calendar"],
+    "clock-7": ["time-calendar"],
+    "clock-8": ["time-calendar"],
+    "clock-9": ["time-calendar"],
+    "clock-arrow-down": ["time-calendar"],
+    "clock-arrow-up": ["time-calendar"],
+    "bomb": ["tools"],
+    "briefcase": ["tools", "travel"],
+    "briefcase-business": ["tools"],
+    "briefcase-conveyor-belt": ["tools"],
+    "briefcase-medical": ["tools"],
+    "chisel": ["tools"],
+    "chrome": ["tools"],
+    "cigarette": ["tools"],
+    "cigarette-off": ["tools"],
+    "clipboard": ["tools"],
+    "clipboard-type": ["tools"],
+    "disk": ["tools"],
+    "gear": ["tools"],
+    "inspect": ["tools"],
+    "pipette-off": ["tools"],
+    "steps": ["tools"],
+    "ferry": ["transportation", "travel"],
+    "baggage-claim": ["travel"],
+    "beach-ball": ["travel"],
+    "palmtree": ["travel"],
+    "passport": ["travel"],
+    "photo": ["travel"],
+    "picnic-table": ["travel"],
+    "fog": ["weather"]
+  }
+}

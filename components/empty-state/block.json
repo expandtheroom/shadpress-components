@@ -1,0 +1,38 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/empty-state",
+
+  "title": "Empty State",
+
+  "category": "theme",
+
+  "description": "Empty State",
+
+  "keywords": ["Empty State", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "title": "No results found",
+        "description": "Try adjusting your search or filters to find what you're looking for.",
+        "action_label": "Clear filters",
+        "action_url": "#"
+      }
+    }
+  }
+}

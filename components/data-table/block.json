@@ -1,0 +1,67 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/data-table",
+
+  "title": "Data Table",
+
+  "category": "theme",
+
+  "description": "Data Table",
+
+  "keywords": ["Data Table", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "data": {
+        "caption": "Invoice Summary",
+        "filterable": true,
+        "headers": [
+          { "label": "Invoice", "key": "invoice", "sortable": true },
+          { "label": "Status", "key": "status", "sortable": false },
+          { "label": "Method", "key": "method", "sortable": false },
+          { "label": "Amount", "key": "amount", "sortable": true }
+        ],
+        "rows": [
+          {
+            "cells": [
+              { "content": "INV001" },
+              { "content": "Paid" },
+              { "content": "Credit Card" },
+              { "content": "$250.00" }
+            ]
+          },
+          {
+            "cells": [
+              { "content": "INV002" },
+              { "content": "Pending" },
+              { "content": "PayPal" },
+              { "content": "$150.00" }
+            ]
+          },
+          {
+            "cells": [
+              { "content": "INV003" },
+              { "content": "Paid" },
+              { "content": "Bank Transfer" },
+              { "content": "$350.00" }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

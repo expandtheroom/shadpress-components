@@ -1,0 +1,25 @@
+@reference "tailwindcss";
+
+[data-slot='toggle-group'] {
+  @apply inline-flex rounded-md overflow-hidden;
+  border: 1px solid var(--color-border);
+}
+
+[data-slot='toggle-group-item'] {
+  @apply px-3 py-1.5 text-sm font-medium transition-colors;
+  background-color: transparent;
+}
+
+[data-slot='toggle-group-item']:hover {
+  background-color: var(--color-accent);
+  color: var(--color-accent-foreground);
+}
+
+[data-slot='toggle-group-item'][data-state='on'] {
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
+}
+
+[data-slot='toggle-group-item'] + [data-slot='toggle-group-item'] {
+  border-left: 1px solid var(--color-border);
+}

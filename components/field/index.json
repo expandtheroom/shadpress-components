@@ -1,0 +1,5 @@
+{
+  "name": "Field",
+  "description": "Unified form field wrapper supporting multiple control types",
+  "requires": ["input-field", "textarea-field", "native-select-field", "checkbox-field"]
+}

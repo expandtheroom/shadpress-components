@@ -1,0 +1,5 @@
+{
+  "name": "Alert Dialog",
+  "description": "Modal dialog for confirming actions with customizable buttons",
+  "requires": ["button"]
+}
