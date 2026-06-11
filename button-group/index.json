@@ -1,0 +1,5 @@
+{
+  "name": "Button Group",
+  "description": "Group of buttons with orientation, spacing, and alignment options",
+  "requires": ["button"]
+}

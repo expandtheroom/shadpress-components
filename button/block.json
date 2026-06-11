@@ -1,0 +1,34 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/button",
+
+  "title": "Button",
+
+  "category": "theme",
+
+  "description": "Button",
+
+  "keywords": ["Button", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3,
+    "autoInlineEditing": true
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {}
+    }
+  }
+}
