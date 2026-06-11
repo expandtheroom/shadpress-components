@@ -2,5 +2,5 @@
   "name": "Lucide Icons",
   "description": "Lucide icon library provider and category builder",
   "requires": [],
-  "icon_provider": true
+  "provides": ["icons"]
 }
