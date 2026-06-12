@@ -17,10 +17,13 @@ return function (FieldsBuilder $fields) {
         $provider_choices[$key] = $provider['label'];
     }
 
+    $fields->addTrueFalse('include_icon', ['label' => 'Include Icons', 'default_value' => 0]);
+
     $fields->addSelect('icon_provider', [
         'label'         => 'Icon Provider',
         'choices'       => $provider_choices,
         'default_value' => $first_key,
         'wrapper'       => $is_multi ? [] : ['class' => 'hidden'],
     ]);
+    $fields->getField('icon_provider')->conditional('include_icon', '==', '1');
 };

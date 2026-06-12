@@ -23,7 +23,6 @@ $repeater = $accordion_items_field
 $providers = apply_filters('theme/icon_providers', []);
 if (!empty($providers)) {
     $is_multi = count($providers) > 1;
-    $repeater->addTrueFalse('include_icon', ['label' => 'Include Icon', 'default_value' => 0]);
     foreach ($providers as $key => $provider) {
         $field_name = 'icon_' . str_replace('-', '_', $key);
         $repeater->addField($field_name, $provider['field_type'], $provider['field_args']);

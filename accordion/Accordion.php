@@ -7,7 +7,8 @@ class Accordion extends BaseComponent {
     public function __construct(
         public array  $panels       = [],
         public string $type         = 'single',
-        public string $icon_provider = '',
+        public bool|int $include_icon  = 0,
+        public string   $icon_provider = '',
 
         // non-field properties
         public array $extra_attrs = [],
@@ -25,7 +26,7 @@ class Accordion extends BaseComponent {
     }
 
     public function render_panel_icon(array $panel): string {
-        if (empty($panel['include_icon'])) return '';
+        if (empty($this->include_icon)) return '';
         static $providers = null;
         if ($providers === null) {
             $providers = apply_filters('theme/icon_providers', []);
