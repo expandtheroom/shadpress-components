@@ -1,0 +1,5 @@
+{
+  "name": "Tabs",
+  "description": "Tab interface with multiple panels containing typography content",
+  "requires": ["typography"]
+}

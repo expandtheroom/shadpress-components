@@ -1,0 +1,30 @@
+@reference "tailwindcss";
+
+/* Badge — shared styles for Format API output */
+.shadpress-badge {
+  @apply inline-flex items-center justify-center rounded-full border px-2.5 py-0.5 text-xs font-semibold w-fit whitespace-nowrap shrink-0;
+}
+
+.shadpress-badge:not([data-variant]),
+.shadpress-badge[data-variant='default'] {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border-color: transparent;
+}
+
+.shadpress-badge[data-variant='secondary'] {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+  border-color: transparent;
+}
+
+.shadpress-badge[data-variant='destructive'] {
+  background-color: var(--color-destructive);
+  color: white;
+  border-color: transparent;
+}
+
+.shadpress-badge[data-variant='outline'] {
+  color: var(--color-foreground);
+  border-color: currentColor;
+}

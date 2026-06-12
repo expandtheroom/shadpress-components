@@ -1,0 +1,35 @@
+{
+  "$schema": "https://advancedcustomfields.com/schemas/json/main/block.json",
+
+  "apiVersion": 3,
+
+  "name": "acf/badge",
+
+  "title": "Badge",
+
+  "category": "theme",
+
+  "description": "Badge",
+
+  "keywords": ["Badge", "theme"],
+
+  "textdomain": "shadpress-starter",
+
+  "supports": {
+    "anchor": true,
+    "customClassName": true
+  },
+
+  "acf": {
+    "blockVersion": 3
+  },
+
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "label": "New"
+      }
+    }
+  }
+}
