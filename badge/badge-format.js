@@ -1,10 +1,10 @@
-/* globals wp */
+/* globals wp, shadpressBadgeFormat */
 ;(function () {
   const { registerFormatType, toggleFormat, removeFormat } = wp.richText
   const { RichTextToolbarButton } = wp.blockEditor
   const { useState } = wp.element
   const { createElement: el, Fragment } = wp.element
-  const { Popover, Button, SelectControl } = wp.components
+  const { Popover, Button, SelectControl, TextControl } = wp.components
   const { __ } = wp.i18n
 
   const FORMAT_NAME = 'shadpress/badge'
@@ -16,22 +16,44 @@
     { label: __('Outline', 'shadpress-starter'), value: 'outline' },
   ]
 
+  const POSITION_OPTIONS = [
+    { label: __('Left', 'shadpress-starter'), value: 'left' },
+    { label: __('Right', 'shadpress-starter'), value: 'right' },
+  ]
+
   function BadgeFormatEdit({ value, onChange, isActive, activeAttributes }) {
     const [showPopover, setShowPopover] = useState(false)
     const [variant, setVariant] = useState('default')
+    const [icon, setIcon] = useState('')
+    const [iconProvider, setIconProvider] = useState('')
+    const [iconPosition, setIconPosition] = useState('left')
+
+    const providers = (typeof shadpressBadgeFormat !== 'undefined' && shadpressBadgeFormat.iconProviders) || []
+    const hasProviders = providers.length > 0
+    const isMultiProvider = providers.length > 1
 
     function openPopover() {
-      setVariant(
-        isActive && activeAttributes
-          ? activeAttributes.variant || 'default'
-          : 'default'
-      )
+      const attrs = isActive && activeAttributes ? activeAttributes : {}
+      setVariant(attrs.variant || 'default')
+      setIcon(attrs.icon || '')
+      setIconProvider(attrs.iconProvider || (providers[0] ? providers[0].key : ''))
+      setIconPosition(attrs.iconPosition || 'left')
       setShowPopover(true)
     }
 
     function applyFormat() {
+      const attributes = { variant }
+      if (icon) {
+        attributes.icon = icon
+        if (iconProvider) attributes.iconProvider = iconProvider
+        attributes.iconPosition = iconPosition
+      } else {
+        attributes.icon = ''
+        attributes.iconProvider = ''
+        attributes.iconPosition = 'left'
+      }
       onChange(
-        toggleFormat(value, { type: FORMAT_NAME, attributes: { variant } })
+        toggleFormat(value, { type: FORMAT_NAME, attributes })
       )
       setShowPopover(false)
     }
@@ -62,7 +84,7 @@
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '8px',
-                minWidth: '180px',
+                minWidth: '200px',
               },
             },
             el(SelectControl, {
@@ -71,6 +93,32 @@
               options: VARIANT_OPTIONS,
               onChange: setVariant,
             }),
+            hasProviders &&
+              el(
+                Fragment,
+                null,
+                isMultiProvider &&
+                  el(SelectControl, {
+                    label: __('Icon Provider', 'shadpress-starter'),
+                    value: iconProvider,
+                    options: providers.map((p) => ({ label: p.label, value: p.key })),
+                    onChange: (val) => { setIconProvider(val); setIcon('') },
+                  }),
+                el(TextControl, {
+                  label: __('Icon', 'shadpress-starter'),
+                  value: icon,
+                  placeholder: __('e.g. star, check, circle', 'shadpress-starter'),
+                  onChange: setIcon,
+                  __nextHasNoMarginBottom: true,
+                }),
+                icon &&
+                  el(SelectControl, {
+                    label: __('Icon Position', 'shadpress-starter'),
+                    value: iconPosition,
+                    options: POSITION_OPTIONS,
+                    onChange: setIconPosition,
+                  })
+              ),
             el(
               'div',
               { style: { display: 'flex', gap: '8px' } },
@@ -98,6 +146,9 @@
     className: 'shadpress-badge',
     attributes: {
       variant: 'data-variant',
+      icon: 'data-icon',
+      iconProvider: 'data-icon-provider',
+      iconPosition: 'data-icon-position',
     },
     edit: BadgeFormatEdit,
   })
