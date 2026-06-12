@@ -98,12 +98,17 @@ class Badge extends BaseComponent {
             filemtime($file)
         );
 
-        $providers = apply_filters('theme/icon_providers', []);
+        $providers        = apply_filters('theme/icon_providers', []);
+        $icon_providers_js = [];
+        foreach ($providers as $key => $provider) {
+            $entry = ['key' => $key, 'label' => $provider['label']];
+            if ($key === 'lucide-icons' && class_exists('Theme\\Components\\LucideIcons')) {
+                $entry['icons'] = array_keys(\Theme\Components\LucideIcons::get_icons_data());
+            }
+            $icon_providers_js[] = $entry;
+        }
         wp_localize_script('shadpress-badge-format', 'shadpressBadgeFormat', [
-            'iconProviders' => array_values(array_map(
-                fn($p) => ['key' => $p['key'], 'label' => $p['label']],
-                $providers
-            )),
+            'iconProviders' => $icon_providers_js,
         ]);
     }
 

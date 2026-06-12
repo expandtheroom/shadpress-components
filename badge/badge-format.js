@@ -1,10 +1,10 @@
-/* globals wp, shadpressBadgeFormat */
+/* globals wp, shadpressBadgeFormat, iconPickerData */
 ;(function () {
   const { registerFormatType, toggleFormat, removeFormat } = wp.richText
   const { RichTextToolbarButton } = wp.blockEditor
   const { useState } = wp.element
   const { createElement: el, Fragment } = wp.element
-  const { Popover, Button, SelectControl, TextControl, ToggleControl } = wp.components
+  const { Popover, Button, SelectControl, TextControl, ComboboxControl, ToggleControl } = wp.components
   const { __ } = wp.i18n
 
   const FORMAT_NAME = 'shadpress/badge'
@@ -21,6 +21,13 @@
     { label: __('Right', 'shadpress-starter'), value: 'right' },
   ]
 
+  function scaleSvg(svg, size) {
+    return svg.replace(
+      '<svg',
+      '<svg width="' + size + '" height="' + size + '" style="flex-shrink:0;vertical-align:middle"'
+    )
+  }
+
   function BadgeFormatEdit({ value, onChange, isActive, activeAttributes }) {
     const [showPopover, setShowPopover] = useState(false)
     const [variant, setVariant] = useState('default')
@@ -29,9 +36,18 @@
     const [iconProvider, setIconProvider] = useState('')
     const [iconPosition, setIconPosition] = useState('left')
 
-    const providers = (typeof shadpressBadgeFormat !== 'undefined' && shadpressBadgeFormat.iconProviders) || []
+    const providers =
+      typeof shadpressBadgeFormat !== 'undefined' ? shadpressBadgeFormat.iconProviders || [] : []
     const hasProviders = providers.length > 0
     const isMultiProvider = providers.length > 1
+    const iconsData =
+      typeof iconPickerData !== 'undefined' ? iconPickerData.iconsData || {} : {}
+
+    const currentProvider = providers.find((p) => p.key === iconProvider) || providers[0]
+    const iconOptions = (currentProvider && currentProvider.icons
+      ? currentProvider.icons
+      : []
+    ).map((name) => ({ value: name, label: name }))
 
     function openPopover() {
       const attrs = isActive && activeAttributes ? activeAttributes : {}
@@ -51,15 +67,45 @@
         if (iconProvider) attributes.iconProvider = iconProvider
         attributes.iconPosition = iconPosition
       }
-      onChange(
-        toggleFormat(value, { type: FORMAT_NAME, attributes })
-      )
+      onChange(toggleFormat(value, { type: FORMAT_NAME, attributes }))
       setShowPopover(false)
     }
 
     function removeCurrentFormat() {
       onChange(removeFormat(value, FORMAT_NAME))
       setShowPopover(false)
+    }
+
+    function renderIconPicker() {
+      if (iconOptions.length > 0) {
+        return el(ComboboxControl, {
+          label: __('Icon', 'shadpress-starter'),
+          value: icon,
+          options: iconOptions,
+          onChange: setIcon,
+          __nextHasNoMarginBottom: true,
+        })
+      }
+      return el(TextControl, {
+        label: __('Icon', 'shadpress-starter'),
+        value: icon,
+        placeholder: __('e.g. star, check, circle', 'shadpress-starter'),
+        onChange: setIcon,
+        __nextHasNoMarginBottom: true,
+      })
+    }
+
+    function renderIconPreview() {
+      if (!icon) return null
+      const svg = iconsData[icon]
+      return el(
+        'div',
+        { style: { display: 'flex', alignItems: 'center', gap: '6px', padding: '4px 0' } },
+        svg
+          ? el('span', { dangerouslySetInnerHTML: { __html: scaleSvg(svg, 20) } })
+          : null,
+        el('span', { style: { fontSize: '12px', color: '#757575' } }, icon)
+      )
     }
 
     return el(
@@ -83,7 +129,7 @@
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '8px',
-                minWidth: '200px',
+                minWidth: '240px',
               },
             },
             el(SelectControl, {
@@ -111,15 +157,13 @@
                         label: __('Icon Provider', 'shadpress-starter'),
                         value: iconProvider,
                         options: providers.map((p) => ({ label: p.label, value: p.key })),
-                        onChange: (val) => { setIconProvider(val); setIcon('') },
+                        onChange: (val) => {
+                          setIconProvider(val)
+                          setIcon('')
+                        },
                       }),
-                    el(TextControl, {
-                      label: __('Icon', 'shadpress-starter'),
-                      value: icon,
-                      placeholder: __('e.g. star, check, circle', 'shadpress-starter'),
-                      onChange: setIcon,
-                      __nextHasNoMarginBottom: true,
-                    }),
+                    renderIconPicker(),
+                    renderIconPreview(),
                     el(SelectControl, {
                       label: __('Icon Position', 'shadpress-starter'),
                       value: iconPosition,
