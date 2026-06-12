@@ -60,6 +60,9 @@ class Badge extends BaseComponent {
 
                 if (!str_contains($attrs_str, 'shadpress-badge')) return $matches[0];
 
+                preg_match('/\bdata-include-icon="([^"]*)"/', $attrs_str, $inc_match);
+                if (($inc_match[1] ?? '') !== '1') return $matches[0];
+
                 preg_match('/\bdata-icon="([^"]*)"/', $attrs_str, $icon_match);
                 $icon_value = $icon_match[1] ?? '';
                 if (empty($icon_value)) return $matches[0];

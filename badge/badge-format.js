@@ -4,7 +4,7 @@
   const { RichTextToolbarButton } = wp.blockEditor
   const { useState } = wp.element
   const { createElement: el, Fragment } = wp.element
-  const { Popover, Button, SelectControl, TextControl } = wp.components
+  const { Popover, Button, SelectControl, TextControl, ToggleControl } = wp.components
   const { __ } = wp.i18n
 
   const FORMAT_NAME = 'shadpress/badge'
@@ -24,6 +24,7 @@
   function BadgeFormatEdit({ value, onChange, isActive, activeAttributes }) {
     const [showPopover, setShowPopover] = useState(false)
     const [variant, setVariant] = useState('default')
+    const [includeIcon, setIncludeIcon] = useState(false)
     const [icon, setIcon] = useState('')
     const [iconProvider, setIconProvider] = useState('')
     const [iconPosition, setIconPosition] = useState('left')
@@ -35,6 +36,7 @@
     function openPopover() {
       const attrs = isActive && activeAttributes ? activeAttributes : {}
       setVariant(attrs.variant || 'default')
+      setIncludeIcon(attrs.includeIcon === '1')
       setIcon(attrs.icon || '')
       setIconProvider(attrs.iconProvider || (providers[0] ? providers[0].key : ''))
       setIconPosition(attrs.iconPosition || 'left')
@@ -43,14 +45,11 @@
 
     function applyFormat() {
       const attributes = { variant }
-      if (icon) {
+      if (hasProviders) {
+        attributes.includeIcon = includeIcon ? '1' : '0'
         attributes.icon = icon
         if (iconProvider) attributes.iconProvider = iconProvider
         attributes.iconPosition = iconPosition
-      } else {
-        attributes.icon = ''
-        attributes.iconProvider = ''
-        attributes.iconPosition = 'left'
       }
       onChange(
         toggleFormat(value, { type: FORMAT_NAME, attributes })
@@ -97,27 +96,37 @@
               el(
                 Fragment,
                 null,
-                isMultiProvider &&
-                  el(SelectControl, {
-                    label: __('Icon Provider', 'shadpress-starter'),
-                    value: iconProvider,
-                    options: providers.map((p) => ({ label: p.label, value: p.key })),
-                    onChange: (val) => { setIconProvider(val); setIcon('') },
-                  }),
-                el(TextControl, {
-                  label: __('Icon', 'shadpress-starter'),
-                  value: icon,
-                  placeholder: __('e.g. star, check, circle', 'shadpress-starter'),
-                  onChange: setIcon,
+                el(ToggleControl, {
+                  label: __('Include Icon', 'shadpress-starter'),
+                  checked: includeIcon,
+                  onChange: setIncludeIcon,
                   __nextHasNoMarginBottom: true,
                 }),
-                icon &&
-                  el(SelectControl, {
-                    label: __('Icon Position', 'shadpress-starter'),
-                    value: iconPosition,
-                    options: POSITION_OPTIONS,
-                    onChange: setIconPosition,
-                  })
+                includeIcon &&
+                  el(
+                    Fragment,
+                    null,
+                    isMultiProvider &&
+                      el(SelectControl, {
+                        label: __('Icon Provider', 'shadpress-starter'),
+                        value: iconProvider,
+                        options: providers.map((p) => ({ label: p.label, value: p.key })),
+                        onChange: (val) => { setIconProvider(val); setIcon('') },
+                      }),
+                    el(TextControl, {
+                      label: __('Icon', 'shadpress-starter'),
+                      value: icon,
+                      placeholder: __('e.g. star, check, circle', 'shadpress-starter'),
+                      onChange: setIcon,
+                      __nextHasNoMarginBottom: true,
+                    }),
+                    el(SelectControl, {
+                      label: __('Icon Position', 'shadpress-starter'),
+                      value: iconPosition,
+                      options: POSITION_OPTIONS,
+                      onChange: setIconPosition,
+                    })
+                  )
               ),
             el(
               'div',
@@ -146,6 +155,7 @@
     className: 'shadpress-badge',
     attributes: {
       variant: 'data-variant',
+      includeIcon: 'data-include-icon',
       icon: 'data-icon',
       iconProvider: 'data-icon-provider',
       iconPosition: 'data-icon-position',
