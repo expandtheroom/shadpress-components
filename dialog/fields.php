@@ -21,6 +21,7 @@ return function (FieldsBuilder $fields) {
     $fields->addTrueFalse('trigger_include_icon', [
         'label'         => 'Include Icon on Trigger',
         'default_value' => 0,
+        'ui'            => true,
     ]);
 
     $fields->addSelect('trigger_icon_provider', [
@@ -54,6 +55,7 @@ return function (FieldsBuilder $fields) {
     $fields->addTrueFalse('header_include_icon', [
         'label'         => 'Include Icon in Header',
         'default_value' => 0,
+        'ui'            => true,
     ]);
 
     $fields->addSelect('header_icon_provider', [

@@ -17,7 +17,7 @@ return function (FieldsBuilder $fields) {
         $provider_choices[$key] = $provider['label'];
     }
 
-    $fields->addTrueFalse('include_icon', ['label' => 'Include Icons', 'default_value' => 0]);
+    $fields->addTrueFalse('include_icon', ['label' => 'Include Icons', 'default_value' => 0, 'ui' => true]);
 
     $fields->addSelect('icon_provider', [
         'label'         => 'Icon Provider',
