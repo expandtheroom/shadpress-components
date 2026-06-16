@@ -2,18 +2,7 @@
 
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
-$toggle_label_field = (new FieldsBuilder('toggle_label_fields'));
-$toggle_label_field->addText('label', [
-    'label'    => 'Label',
-    'required' => 1,
-]);
-
-$toggle_pressed_field = (new FieldsBuilder('toggle_pressed_fields'));
-$toggle_pressed_field->addTrueFalse('pressed', [
-    'label'         => 'Pressed by default',
-    'ui'            => 1,
-    'default_value' => 0,
-]);
+$cbf_fields = require(get_stylesheet_directory() . '/components/checkbox-field/checkbox_field_fields.php');
 
 $toggle_variant_field = (new FieldsBuilder('toggle_variant_fields'));
 $toggle_variant_field->addSelect('variant', [
@@ -36,26 +25,20 @@ $toggle_size_field->addSelect('size', [
     'default_value' => 'default',
 ]);
 
-$toggle_disabled_field = (new FieldsBuilder('toggle_disabled_fields'));
-$toggle_disabled_field->addTrueFalse('disabled', [
-    'label'         => 'Disabled',
-    'ui'            => 1,
-    'default_value' => 0,
-]);
-
 $toggle_full_fields = (new FieldsBuilder('toggle_component_fields'));
 $toggle_full_fields
-    ->addFields($toggle_label_field)
-    ->addFields($toggle_pressed_field)
+    ->addFields($cbf_fields['label'])
+    ->addFields($cbf_fields['checked'])
+    ->addFields($cbf_fields['disabled'])
     ->addFields($toggle_variant_field)
     ->addFields($toggle_size_field)
-    ->addFields($toggle_disabled_field);
+;
 
 return [
-    'label'    => $toggle_label_field,
-    'pressed'  => $toggle_pressed_field,
+    'checked'  => $cbf_fields['checked'],
+    'disabled' => $cbf_fields['disabled'],
+    'label'    => $cbf_fields['label'],
     'variant'  => $toggle_variant_field,
     'size'     => $toggle_size_field,
-    'disabled' => $toggle_disabled_field,
     'full'     => $toggle_full_fields,
 ];

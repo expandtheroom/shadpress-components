@@ -26,28 +26,6 @@ class HoverCard extends BaseComponent {
         );
     }
 
-    /** Returns absolute-position classes for the card panel based on side + align. */
-    public function card_position_classes(): string {
-        $is_horizontal = in_array($this->side, ['top', 'bottom'], true);
-
-        $side_classes = match ($this->side) {
-            'top' => 'bottom-full mb-2',
-            'left' => 'right-full mr-2',
-            'right' => 'left-full ml-2',
-            default => 'top-full mt-2',  // bottom
-        };
-
-        $align_classes = match ($this->align) {
-            'start' => $is_horizontal ? 'left-0' : 'top-0',
-            'end' => $is_horizontal ? 'right-0' : 'bottom-0',
-            default => $is_horizontal
-                ? 'left-1/2 -translate-x-1/2'
-                : 'top-1/2 -translate-y-1/2',
-        };
-
-        return "$side_classes $align_classes";
-    }
-
     public static function register(): void {
         add_filter('wp_kses_allowed_html', function (array $allowed, string $context): array {
             if ($context === 'post') {

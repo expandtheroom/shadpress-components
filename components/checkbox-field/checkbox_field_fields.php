@@ -10,14 +10,14 @@ $cbf_description_field->addText('description', ['label' => 'Helper Description']
 
 $cbf_required_field = (new FieldsBuilder('cbf_required_fields'));
 $cbf_required_field->addTrueFalse('required', [
-    'label'         => 'Required',
-    'ui'            => 1,
+    'label' => 'Required',
+    'ui' => 1,
     'default_value' => 0,
 ]);
 
 $cbf_error_field = (new FieldsBuilder('cbf_error_fields'));
 $cbf_error_field->addText('error', [
-    'label'        => 'Error Message',
+    'label' => 'Error Message',
     'instructions' => 'Leave blank for no error state.',
 ]);
 
@@ -26,15 +26,22 @@ $cbf_name_field->addText('name', ['label' => 'Name (HTML)']);
 
 $cbf_value_field = (new FieldsBuilder('cbf_value_fields'));
 $cbf_value_field->addText('value', [
-    'label'         => 'Value',
+    'label' => 'Value',
     'default_value' => '1',
-    'instructions'  => 'Value submitted when checked.',
+    'instructions' => 'Value submitted when checked.',
 ]);
 
 $cbf_checked_field = (new FieldsBuilder('cbf_checked_fields'));
 $cbf_checked_field->addTrueFalse('checked', [
-    'label'         => 'Initially Checked',
-    'ui'            => 1,
+    'label' => 'Initially Checked',
+    'ui' => 1,
+    'default_value' => 0,
+]);
+
+$cbf_disabled_field = (new FieldsBuilder('cbf_disabled_fields'));
+$cbf_disabled_field->addTrueFalse('disabled', [
+    'label' => 'Disabled',
+    'ui' => 1,
     'default_value' => 0,
 ]);
 
@@ -46,15 +53,17 @@ $cbf_full_fields
     ->addFields($cbf_error_field)
     ->addFields($cbf_name_field)
     ->addFields($cbf_value_field)
-    ->addFields($cbf_checked_field);
+    ->addFields($cbf_checked_field)
+    ->addFields($cbf_disabled_field);
 
 return [
-    'label'       => $cbf_label_field,
+    'checked' => $cbf_checked_field,
     'description' => $cbf_description_field,
-    'required'    => $cbf_required_field,
-    'error'       => $cbf_error_field,
-    'name'        => $cbf_name_field,
-    'value'       => $cbf_value_field,
-    'checked'     => $cbf_checked_field,
-    'full'        => $cbf_full_fields,
+    'disabled' => $cbf_disabled_field,
+    'error' => $cbf_error_field,
+    'label' => $cbf_label_field,
+    'name' => $cbf_name_field,
+    'required' => $cbf_required_field,
+    'value' => $cbf_value_field,
+    'full' => $cbf_full_fields,
 ];

@@ -1,12 +1,13 @@
 <?php
 /** @var \Theme\Components\Card $this */
+
+$icon_html = !empty($this->include_icon) ? $this->render_icon() : '';
 ?>
 <div <?= $this->component_attrs() ?>
      class="<?= esc_attr(classNames(
-         $this->get_classes(),
+         $this->component_classes(),
          'bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm',
      )) ?>">
-
 
     <?php if (!empty($this->image['url'])): ?>
         <div class="-mt-6 aspect-video overflow-hidden rounded-t-xl">
@@ -23,9 +24,10 @@
             <?= $this->badge_component ?>
         <?php endif; ?>
 
-        <?php if ($this->title): ?>
+        <?php if ($this->title || $icon_html): ?>
             <div data-slot="card-title"
-                 class="leading-none font-semibold">
+                 class="leading-none font-semibold flex items-center gap-2">
+                <?= $icon_html ?>
                 <?= esc_html($this->title) ?>
             </div>
         <?php endif; ?>
@@ -33,7 +35,7 @@
         <?php if ($this->description): ?>
             <div data-slot="card-description"
                  class="text-muted-foreground text-sm">
-                <?= esc_html($this->description) ?>
+                 <?= esc_html($this->description) ?>
             </div>
         <?php endif; ?>
 

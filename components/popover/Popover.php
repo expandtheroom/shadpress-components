@@ -8,10 +8,10 @@ class Popover extends BaseComponent {
 
     public function __construct(
         public string $trigger_label = '',
-        public string $body          = '',
-        public string $side          = 'bottom',
-        public string $align         = 'center',
-        public array  $extra_attrs   = []
+        public string $body = '',
+        public string $side = 'bottom',
+        public string $align = 'center',
+        public array $extra_attrs = []
     ) {
     }
 
@@ -19,7 +19,12 @@ class Popover extends BaseComponent {
         $this->body_component = new Typography(body: $this->body);
     }
 
-    public function popover_content_classes(): string {
-        return 'absolute z-50 w-72 rounded-md border p-4 text-sm shadow-md outline-none';
+    protected function set_attrs(): array {
+        return [
+            'data-side' => $this->side ? esc_attr($this->side) : 'bottom',
+            'data-align' => $this->align ? esc_attr($this->align) : 'center',
+            'data-slot' => $this->component_slug(),
+            ...$this->extra_attrs,
+        ];
     }
 }

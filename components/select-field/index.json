@@ -1,0 +1,5 @@
+{
+  "name": "Select Field",
+  "description": "Form field wrapper for select with label, description, and error handling",
+  "requires": ["label", "select"]
+}

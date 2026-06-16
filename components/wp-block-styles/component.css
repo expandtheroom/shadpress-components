@@ -1,0 +1,7 @@
+@reference "@src/css/index.css";
+
+@import './wp-block-editor.css';
+@import './wp-block-heading.css';
+@import './wp-block-image.css';
+@import './wp-link.css';
+@import './wp-block-paragraph.css';

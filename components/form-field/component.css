@@ -1,0 +1,27 @@
+@reference "@src/css/index.css";
+
+[data-slot='field-description'] {
+  font-size: 0.875rem;
+  color: var(--color-muted-foreground);
+}
+
+[data-slot='field-error'] {
+  font-size: 0.875rem;
+  color: var(--color-destructive);
+}
+
+[data-slot='field-input'] {
+  border-color: var(--color-input);
+}
+
+[data-slot='field-input'][aria-invalid='true'] {
+  border-color: var(--color-destructive);
+}
+
+[data-slot='field-label'] {
+  color: var(--color-foreground);
+}
+
+[data-slot='field-required'] {
+  color: var(--color-destructive);
+}

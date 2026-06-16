@@ -1,5 +1,5 @@
 {
   "name": "Select",
-  "description": "Custom searchable select dropdown component",
+  "description": "Native HTML select dropdown",
   "requires": []
 }

@@ -13,7 +13,7 @@
 
   "keywords": ["Menubar", "theme"],
 
-  "textdomain": "shadpress-starter",
+  "textdomain": "shadpress",
 
   "supports": {
     "anchor": true,

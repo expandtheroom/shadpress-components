@@ -1,5 +1,6 @@
 {
   "name": "Collapsible",
   "description": "Collapsible content panel with trigger and typography body",
-  "requires": ["typography"]
+  "requires": ["typography"],
+  "accepts": ["icons"]
 }

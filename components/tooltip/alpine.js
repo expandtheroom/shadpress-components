@@ -7,6 +7,8 @@ export default () => ({
   _closeTimer: null,
 
   init() {
+    if (this.$el.closest('[contenteditable]')) return
+
     const content = this.$el.dataset.tooltipContent || ''
     const side = this.$el.dataset.side || 'top'
 

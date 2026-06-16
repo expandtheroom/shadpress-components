@@ -1,0 +1,13 @@
+@reference "@src/css/index.css";
+
+.editor-styles-wrapper {
+  @apply p-5 max-w-none;
+}
+
+.editor-visual-editor__post-title-wrapper {
+  @apply my-5! text-4xl font-bold;
+}
+
+.block-editor-block-list__layout > * {
+  @apply my-5;
+}

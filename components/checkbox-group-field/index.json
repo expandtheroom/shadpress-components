@@ -1,0 +1,5 @@
+{
+  "name": "CheckboxGroupField",
+  "description": "Group of checkboxes sharing a name, submitting selected values as an array",
+  "requires": ["checkbox", "label", "toggle"]
+}

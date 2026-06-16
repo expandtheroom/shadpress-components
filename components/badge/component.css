@@ -1,30 +1,31 @@
-@reference "tailwindcss";
+@reference "@src/css/index.css";
 
 /* Badge — shared styles for Format API output */
-.shadpress-badge {
-  @apply inline-flex items-center justify-center gap-1 rounded-full border px-2.5 py-0.5 text-xs font-semibold w-fit whitespace-nowrap shrink-0;
+[data-component='badge'] {
+  @apply inline-flex items-baseline gap-[0.5em] rounded-full border px-[1em] py-[0.25em] -my-[0.25em] text-[0.85em] font-semibold w-fit whitespace-nowrap shrink-0;
 }
 
-.shadpress-badge:not([data-variant]),
-.shadpress-badge[data-variant='default'] {
-  background-color: var(--color-primary);
-  color: var(--color-primary-foreground);
-  border-color: transparent;
+[data-component='badge']:not([data-variant]),
+[data-component='badge'][data-variant='default'] {
+  @apply bg-primary! text-primary-foreground! border-transparent!;
 }
 
-.shadpress-badge[data-variant='secondary'] {
-  background-color: var(--color-secondary);
-  color: var(--color-secondary-foreground);
-  border-color: transparent;
+[data-component='badge'][data-variant='secondary'] {
+  @apply bg-secondary! text-secondary-foreground! border-transparent!;
 }
 
-.shadpress-badge[data-variant='destructive'] {
-  background-color: var(--color-destructive);
-  color: white;
-  border-color: transparent;
+[data-component='badge'][data-variant='destructive'] {
+  @apply bg-destructive! text-white! border-transparent!;
 }
 
-.shadpress-badge[data-variant='outline'] {
-  color: var(--color-foreground);
-  border-color: currentColor;
+[data-component='badge'][data-variant='outline'] {
+  @apply text-foreground! border-current!;
+}
+
+[data-component='badge'] svg {
+  @apply w-[1em]! h-[1em]! self-center!;
+}
+
+[data-component='badge'][data-include-icon='1']:not(:has(svg)) {
+  @apply pl-[2em];
 }

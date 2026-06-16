@@ -16,6 +16,9 @@ class InputField extends BaseComponent {
         public string $field_type = 'text',
         public string $name = '',
         public string $placeholder = '',
+        public string $prefix = '',
+        public string $suffix = '',
+        public bool $disabled = false,
         public array $extra_attrs = []
     ) {
     }
@@ -38,6 +41,7 @@ class InputField extends BaseComponent {
             id: $this->label_for,
             placeholder: $this->placeholder,
             required: $this->required,
+            disabled: $this->disabled,
             extra_attrs: $error_attrs,
         );
     }
@@ -48,6 +52,10 @@ class InputField extends BaseComponent {
 
     public function error_id(): string {
         return $this->label_for ? $this->label_for . '-error' : '';
+    }
+
+    public function has_addons(): bool {
+        return $this->prefix !== '' || $this->suffix !== '';
     }
 
     protected function set_attrs(): array {

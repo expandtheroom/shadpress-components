@@ -1,5 +1,6 @@
 {
   "name": "Dialog",
   "description": "Modal dialog with configurable trigger button and typography content",
-  "requires": ["button", "typography"]
+  "requires": ["button", "typography"],
+  "accepts": ["icons"]
 }

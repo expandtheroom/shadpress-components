@@ -1,15 +1,14 @@
 export default () => ({
-    pressed: false,
+    checked: false,
     disabled: false,
 
     init() {
-      const root = this.$el.closest('[data-component]')
-      this.pressed = root?.dataset.pressed === 'true'
-      this.disabled = root?.dataset.disabled === 'true'
+      this.checked = this.$el.dataset.checked === 'true'
+      this.disabled = this.$el.dataset.disabled === 'true'
     },
 
     toggle() {
       if (this.disabled) return
-      this.pressed = !this.pressed
+      this.checked = !this.checked
     },
 })

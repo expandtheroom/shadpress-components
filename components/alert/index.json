@@ -1,5 +1,6 @@
 {
   "name": "Alert",
   "description": "Alert component with optional dismissible variant",
-  "requires": []
+  "requires": [],
+  "accepts": ["icons"]
 }

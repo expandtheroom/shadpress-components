@@ -13,7 +13,7 @@
 
   "keywords": ["Empty State", "theme"],
 
-  "textdomain": "shadpress-starter",
+  "textdomain": "shadpress",
 
   "supports": {
     "anchor": true,

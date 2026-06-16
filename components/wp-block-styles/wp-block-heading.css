@@ -1,0 +1,34 @@
+/* @reference "@src/css/index.css";
+
+.wp-block-heading {
+  &,
+  &.block-editor-block-list__block {
+    font-family: var(--wp--preset--font-family--display) !important;
+    @apply mt-10 mb-5 font-semibold leading-tight;
+  }
+
+  --theme-heading-color: var(--color-sb-slate);
+}
+
+h1.wp-block-heading,
+h2.wp-block-heading,
+h3.wp-block-heading,
+h4.wp-block-heading,
+h5.wp-block-heading,
+h6.wp-block-heading {
+  @apply w-full max-w-full mx-auto;
+}
+
+h1.wp-block-heading,
+h2.wp-block-heading {
+  @apply text-(--theme-heading-color);
+  @apply text-4xl md:text-5xl;
+}
+
+h3.wp-block-heading,
+h4.wp-block-heading,
+h5.wp-block-heading,
+h6.wp-block-heading {
+  @apply text-(--theme-heading-color);
+  @apply text-3xl md:text-4xl;
+} */

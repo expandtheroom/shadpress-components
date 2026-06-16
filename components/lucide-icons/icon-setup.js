@@ -2,7 +2,7 @@
 /**
  * Downloads Lucide SVG icons and generates PHP + JSON data files.
  * Run: make generate-icons
- * Or directly: node themes/shadpress-starter/components/lucide-icons/icon-setup.js
+ * Or directly: node themes/shadpress/components/lucide-icons/icon-setup.js
  */
 
 import { execSync } from 'node:child_process'

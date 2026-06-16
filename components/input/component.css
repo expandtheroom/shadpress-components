@@ -1,5 +1,0 @@
-@reference "tailwindcss";
-
-[data-slot='input'] {
-  border-color: var(--color-input);
-}

@@ -8,6 +8,7 @@ class Label extends BaseComponent {
         public string $text = '',
         public string $label_for = '',
         public bool $required = false,
+        public string $id = '',
         public array $extra_attrs = []
     ) {
     }
@@ -16,6 +17,7 @@ class Label extends BaseComponent {
         return [
             'data-slot' => $this->component_slug(),
             'for' => $this->label_for ?: null,
+            'id' => $this->id ?: null,
             ...$this->extra_attrs,
         ];
     }

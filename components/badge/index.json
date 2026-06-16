@@ -1,5 +1,6 @@
 {
   "name": "Badge",
   "description": "Inline badge with various styling variants",
-  "requires": []
+  "requires": [],
+  "accepts": ["icons"]
 }

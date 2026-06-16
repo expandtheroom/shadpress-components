@@ -1,0 +1,5 @@
+{
+  "name": "Radio Group Field",
+  "description": "Radio button group with multiple options and orientation control",
+  "requires": ["label"]
+}

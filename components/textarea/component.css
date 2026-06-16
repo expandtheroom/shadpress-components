@@ -1,5 +1,0 @@
-@reference "tailwindcss";
-
-[data-slot='textarea'] {
-  border-color: var(--color-input);
-}

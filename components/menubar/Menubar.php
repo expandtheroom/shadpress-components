@@ -10,4 +10,12 @@ class Menubar extends BaseComponent {
         public array  $extra_attrs = []
     ) {
     }
+
+    protected function set_attrs(): array {
+        return [
+            'data-type' => $this->type,
+            'data-slot' => $this->component_slug(),
+            ...$this->extra_attrs,
+        ];
+    }
 }

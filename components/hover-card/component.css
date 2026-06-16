@@ -1,0 +1,5 @@
+@reference "@src/css/index.css";
+
+[data-component='hover-card'] {
+  @apply relative inline-block bg-accent p-0.75 -m-0.5 cursor-help rounded-sm;
+}

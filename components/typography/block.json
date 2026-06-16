@@ -13,7 +13,7 @@
 
   "keywords": ["Typography", "theme"],
 
-  "textdomain": "shadpress-starter",
+  "textdomain": "shadpress",
 
   "supports": {
     "anchor": true,

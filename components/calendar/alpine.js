@@ -39,11 +39,20 @@ export default () => ({
       this.currentYear = base.getFullYear()
       this.currentMonth = base.getMonth()
 
-      this.buildDays()
       this.todayDate = (() => {
         const t = new Date()
         return `${t.getFullYear()}-${String(t.getMonth() + 1).padStart(2, '0')}-${String(t.getDate()).padStart(2, '0')}`
       })()
+
+      this.buildDays()
+      this.renderGrid()
+
+      this.$el.querySelector('[data-slot="calendar-grid"]').addEventListener('click', e => {
+        const btn = e.target.closest('[data-slot="calendar-day"]')
+        if (btn && !btn.disabled) {
+          this.selectDay(JSON.parse(btn.dataset.day))
+        }
+      })
     },
 
     prevMonth() {
@@ -54,6 +63,7 @@ export default () => ({
         this.currentMonth -= 1
       }
       this.buildDays()
+      this.renderGrid()
     },
 
     nextMonth() {
@@ -64,6 +74,7 @@ export default () => ({
         this.currentMonth += 1
       }
       this.buildDays()
+      this.renderGrid()
     },
 
     buildDays() {
@@ -81,13 +92,7 @@ export default () => ({
         const pm = month === 0 ? 11 : month - 1
         const py = month === 0 ? year - 1 : year
         const full = `${py}-${String(pm + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`
-        cells.push({
-          year: py,
-          month: pm,
-          date: d,
-          fullDate: full,
-          outside: true,
-        })
+        cells.push({ year: py, month: pm, date: d, fullDate: full, outside: true })
       }
 
       for (let d = 1; d <= daysInMonth; d++) {
@@ -102,17 +107,31 @@ export default () => ({
         const ny = month === 11 ? year + 1 : year
         for (let d = 1; d <= needed; d++) {
           const full = `${ny}-${String(nm + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`
-          cells.push({
-            year: ny,
-            month: nm,
-            date: d,
-            fullDate: full,
-            outside: true,
-          })
+          cells.push({ year: ny, month: nm, date: d, fullDate: full, outside: true })
         }
       }
 
       this.days = cells
+    },
+
+    renderGrid() {
+      const grid = this.$el.querySelector('[data-slot="calendar-grid"]')
+      const btnClass = 'flex items-center justify-center h-8 w-full text-sm rounded-md cursor-pointer transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring enabled:hover:bg-accent data-[today=true]:bg-accent data-[today=true]:font-semibold data-[selected=true]:bg-primary data-[selected=true]:text-primary-foreground data-[selected=true]:font-semibold data-[selected=true]:hover:bg-primary data-[outside=true]:opacity-40 disabled:cursor-not-allowed disabled:pointer-events-none disabled:opacity-50'
+
+      grid.innerHTML = this.days.map(day => {
+        const isToday    = day.fullDate === this.todayDate
+        const isSelected = this.selectedDate !== '' && day.fullDate === this.selectedDate
+        const isDisabled = (this.minDate && day.fullDate < this.minDate) || (this.maxDate && day.fullDate > this.maxDate)
+
+        const extra = [
+          isToday    ? 'data-today="true"'    : '',
+          isSelected ? 'data-selected="true"' : '',
+          day.outside ? 'data-outside="true"' : '',
+          isDisabled  ? 'disabled'             : '',
+        ].filter(Boolean).join(' ')
+
+        return `<button type="button" data-slot="calendar-day" data-day='${JSON.stringify(day)}' ${extra} aria-label="${day.fullDate}" class="${btnClass}">${day.date}</button>`
+      }).join('')
     },
 
     selectDay(day) {
@@ -123,18 +142,7 @@ export default () => ({
         this.currentMonth = day.month
         this.buildDays()
       }
-    },
-
-    isSelected(day) {
-      return this.selectedDate !== '' && day.fullDate === this.selectedDate
-    },
-
-    isToday(day) {
-      const today = new Date()
-      const y = today.getFullYear()
-      const m = String(today.getMonth() + 1).padStart(2, '0')
-      const d = String(today.getDate()).padStart(2, '0')
-      return day.fullDate === `${y}-${m}-${d}`
+      this.renderGrid()
     },
 
     isDisabled(day) {

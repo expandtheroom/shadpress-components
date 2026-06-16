@@ -1,0 +1,16 @@
+@reference "@src/css/index.css";
+
+/* a:where(:not(.wp-element-button)) {
+  color: inherit;
+  text-decoration: none;
+} */
+
+/* a:where(:not(.wp-element-button, .button, .btn)) {
+  @apply text-sb-fern hover:text-sb-slate underline;
+} */
+/*
+@layer base {
+  a:not([class]) {
+    @apply text-sb-crimson underline hover:decoration-sb-flame!;
+  }
+} */

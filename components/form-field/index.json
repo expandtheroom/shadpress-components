@@ -1,0 +1,15 @@
+{
+  "name": "FormField",
+  "description": "Unified form field wrapper supporting multiple control types",
+  "requires": [
+    "checkbox-field",
+    "checkbox-group-field",
+    "combobox-field",
+    "date-picker-field",
+    "input-field",
+    "radio-group-field",
+    "select-field",
+    "styled-select-field",
+    "textarea-field"
+  ]
+}

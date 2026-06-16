@@ -3,6 +3,6 @@
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
 return function (FieldsBuilder $fields) {
-    $switch_toggle_fields = require(get_stylesheet_directory() . '/components/switch-toggle/switch_toggle_fields.php');
-    $fields->addFields($switch_toggle_fields['full']);
+    $cbf_fields = require(get_stylesheet_directory() . '/components/checkbox-field/checkbox_field_fields.php');
+    $fields->addFields($cbf_fields['full']);
 };

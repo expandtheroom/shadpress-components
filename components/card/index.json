@@ -1,5 +1,6 @@
 {
   "name": "Card",
   "description": "Card layout with optional badge, content, and action button",
-  "requires": ["badge", "typography", "button"]
+  "requires": ["badge", "typography", "button"],
+  "accepts": ["icons"]
 }

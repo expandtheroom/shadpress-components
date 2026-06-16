@@ -1,6 +1,8 @@
 <?php
 /** @var \Theme\Components\Alert $this */
 
+$icon_html = !empty($this->include_icon) ? $this->render_icon() : '';
+
 $x_attrs = $this->compile_attrs([
     'x-data' => $this->component_module_name() . '()',
     'x-show' => 'visible',
@@ -8,7 +10,7 @@ $x_attrs = $this->compile_attrs([
 ?>
 <div <?= $this->component_attrs() ?>
      <?= $x_attrs ?>
-     class="<?= esc_attr(classNames($this->alert_classes(), $this->get_classes())) ?>">
+     class="<?= esc_attr(classNames($this->alert_classes(), $this->component_classes())) ?>">
 
     <?php if ($this->dismissible): ?>
         <button type="button"
@@ -32,9 +34,10 @@ $x_attrs = $this->compile_attrs([
         </button>
     <?php endif; ?>
 
-    <?php if ($this->title): ?>
+    <?php if ($this->title || $icon_html): ?>
         <div data-slot="alert-title"
-             class="col-start-2 mb-1 font-medium leading-none tracking-tight">
+             class="col-start-2 mb-1 font-medium leading-none tracking-tight flex items-center gap-2">
+            <?= $icon_html ?>
             <?= esc_html($this->title) ?>
         </div>
     <?php endif; ?>

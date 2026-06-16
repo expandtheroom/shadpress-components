@@ -1,4 +1,4 @@
-@reference "tailwindcss";
+@reference "@src/css/index.css";
 
 .hello-world-blue {
   background-color: lightblue;

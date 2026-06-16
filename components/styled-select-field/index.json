@@ -1,0 +1,5 @@
+{
+  "name": "Styled Select Field",
+  "description": "Custom searchable select dropdown component",
+  "requires": ["label"]
+}

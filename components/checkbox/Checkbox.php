@@ -5,12 +5,13 @@ namespace Theme\Components;
 class Checkbox extends BaseComponent {
 
     public function __construct(
+        public bool $checked = false,
+        public bool $disabled = false,
         public string $label = '',
         public string $name = '',
-        public string $value = '1',
-        public bool $checked = false,
         public bool $required = false,
-        public bool $disabled = false,
+        public string $value = '1',
+
         public array $extra_attrs = []
     ) {
     }
@@ -25,6 +26,4 @@ class Checkbox extends BaseComponent {
             ...$this->extra_attrs,
         ];
     }
-
-
 }

@@ -1,5 +1,0 @@
-{
-  "name": "Input Group",
-  "description": "Input with prefix/suffix elements for compound input patterns",
-  "requires": ["input"]
-}

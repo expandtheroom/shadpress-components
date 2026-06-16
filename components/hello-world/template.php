@@ -3,7 +3,7 @@
 ?>
 <div <?= $this->get_anchor_attr() ?>
      data-component="<?= $this->component_slug() ?>"
-     class="<?= esc_attr(classNames('p-10 space-y-5', $this->get_classes())) ?>">
+     class="<?= esc_attr(classNames('p-10 space-y-5', $this->component_classes())) ?>">
     <h2><?= esc_html($this->title) ?></h2>
 
     <div x-data="helloWorld"

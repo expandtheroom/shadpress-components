@@ -1,4 +1,4 @@
-@reference "tailwindcss";
+@reference "@src/css/index.css";
 
 [data-slot='typography'] {
   & h1 {

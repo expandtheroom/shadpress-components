@@ -1,9 +1,0 @@
-@reference "tailwindcss";
-
-[data-slot='collapsible-content'] {
-  overflow: hidden;
-}
-
-[data-slot='collapsible-trigger'] svg {
-  flex-shrink: 0;
-}

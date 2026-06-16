@@ -1,7 +1,6 @@
 /* globals wp */
 ;(function () {
-  const { registerFormatType, toggleFormat, getActiveFormat, removeFormat } =
-    wp.richText
+  const { registerFormatType, toggleFormat, removeFormat, applyFormat: richTextApply } = wp.richText
   const { RichTextToolbarButton } = wp.blockEditor
   const { useState, useRef } = wp.element
   const { createElement: el, Fragment } = wp.element
@@ -11,16 +10,16 @@
   const FORMAT_NAME = 'shadpress/hover-card'
 
   const SIDE_OPTIONS = [
-    { label: __('Bottom', 'shadpress-starter'), value: 'bottom' },
-    { label: __('Top', 'shadpress-starter'), value: 'top' },
-    { label: __('Left', 'shadpress-starter'), value: 'left' },
-    { label: __('Right', 'shadpress-starter'), value: 'right' },
+    { label: __('Bottom', 'shadpress'), value: 'bottom' },
+    { label: __('Top', 'shadpress'), value: 'top' },
+    { label: __('Left', 'shadpress'), value: 'left' },
+    { label: __('Right', 'shadpress'), value: 'right' },
   ]
 
   const ALIGN_OPTIONS = [
-    { label: __('Center', 'shadpress-starter'), value: 'center' },
-    { label: __('Start', 'shadpress-starter'), value: 'start' },
-    { label: __('End', 'shadpress-starter'), value: 'end' },
+    { label: __('Center', 'shadpress'), value: 'center' },
+    { label: __('Start', 'shadpress'), value: 'start' },
+    { label: __('End', 'shadpress'), value: 'end' },
   ]
 
   function HoverCardEdit({ value, onChange, isActive, activeAttributes }) {
@@ -29,37 +28,66 @@
     const [side, setSide] = useState('bottom')
     const [align, setAlign] = useState('center')
     const anchorRef = useRef(null)
+    const openValueRef = useRef(null)
+    const openIsActiveRef = useRef(false)
 
     function openPopover() {
-      if (isActive && activeAttributes) {
-        setCardContent(activeAttributes.cardContent || '')
-        setSide(activeAttributes.side || 'bottom')
-        setAlign(activeAttributes.align || 'center')
-      } else {
-        setCardContent('')
-        setSide('bottom')
-        setAlign('center')
-      }
+      openValueRef.current = value
+      openIsActiveRef.current = isActive
+
+      const attrs = isActive && activeAttributes ? activeAttributes : {}
+      setCardContent(attrs.cardContent || '')
+      setSide(attrs.side || 'bottom')
+      setAlign(attrs.align || 'center')
       setShowPopover(true)
     }
 
     function applyFormat() {
-      onChange(
-        toggleFormat(value, {
-          type: FORMAT_NAME,
-          attributes: {
-            xData: 'hoverCard',
-            cardContent,
-            side,
-            align,
-          },
-        })
-      )
+      const openValue = openValueRef.current
+      const openIsActive = openIsActiveRef.current
+      const newAttrs = { component: 'hover-card', xData: 'hoverCard', cardContent, side, align }
+
+      if (openIsActive) {
+        // Find the full span boundaries from the cursor/selection position, then
+        // use Gutenberg's own utilities with explicit indices to remove the old
+        // format and apply the new one. This avoids the doubling that occurs
+        // when toggleFormat sees the format as still-active after a no-op remove.
+        const { formats, start, end } = openValue
+        let rangeStart = start
+        let rangeEnd = end
+        while (rangeStart > 0 && formats[rangeStart - 1]?.some((f) => f.type === FORMAT_NAME)) {
+          rangeStart--
+        }
+        while (rangeEnd < formats.length && formats[rangeEnd]?.some((f) => f.type === FORMAT_NAME)) {
+          rangeEnd++
+        }
+        const newFormat = { type: FORMAT_NAME, attributes: newAttrs }
+        const cleared = removeFormat(openValue, FORMAT_NAME, rangeStart, rangeEnd)
+        onChange(richTextApply(cleared, newFormat, rangeStart, rangeEnd))
+      } else {
+        onChange(
+          toggleFormat(openValue, {
+            type: FORMAT_NAME,
+            attributes: newAttrs,
+          })
+        )
+      }
+
       setShowPopover(false)
     }
 
     function removeCurrentFormat() {
-      onChange(removeFormat(value, FORMAT_NAME))
+      const openValue = openValueRef.current
+      const { formats, start, end } = openValue
+      let rangeStart = start
+      let rangeEnd = end
+      while (rangeStart > 0 && formats[rangeStart - 1]?.some((f) => f.type === FORMAT_NAME)) {
+        rangeStart--
+      }
+      while (rangeEnd < formats.length && formats[rangeEnd]?.some((f) => f.type === FORMAT_NAME)) {
+        rangeEnd++
+      }
+      onChange(removeFormat(openValue, FORMAT_NAME, rangeStart, rangeEnd))
       setShowPopover(false)
     }
 
@@ -71,7 +99,7 @@
         { ref: anchorRef },
         el(RichTextToolbarButton, {
           icon: 'info-outline',
-          title: __('Hover Card', 'shadpress-starter'),
+          title: __('Hover Card', 'shadpress'),
           onClick: openPopover,
           isActive,
         })
@@ -96,19 +124,19 @@
               },
             },
             el(TextareaControl, {
-              label: __('Card content', 'shadpress-starter'),
+              label: __('Card content', 'shadpress'),
               value: cardContent,
               onChange: setCardContent,
               rows: 4,
             }),
             el(SelectControl, {
-              label: __('Position', 'shadpress-starter'),
+              label: __('Position', 'shadpress'),
               value: side,
               options: SIDE_OPTIONS,
               onChange: setSide,
             }),
             el(SelectControl, {
-              label: __('Alignment', 'shadpress-starter'),
+              label: __('Alignment', 'shadpress'),
               value: align,
               options: ALIGN_OPTIONS,
               onChange: setAlign,
@@ -130,12 +158,12 @@
                     isDestructive: true,
                     onClick: removeCurrentFormat,
                   },
-                  __('Remove', 'shadpress-starter')
+                  __('Remove', 'shadpress')
                 ),
               el(
                 Button,
                 { variant: 'secondary', onClick: () => setShowPopover(false) },
-                __('Cancel', 'shadpress-starter')
+                __('Cancel', 'shadpress')
               ),
               el(
                 Button,
@@ -144,7 +172,7 @@
                   onClick: applyFormat,
                   disabled: !cardContent.trim(),
                 },
-                __('Apply', 'shadpress-starter')
+                __('Apply', 'shadpress')
               )
             )
           )
@@ -153,10 +181,12 @@
   }
 
   registerFormatType(FORMAT_NAME, {
-    title: __('Hover Card', 'shadpress-starter'),
+    name: FORMAT_NAME,
+    title: __('Hover Card', 'shadpress'),
     tagName: 'span',
     className: 'hover-card',
     attributes: {
+      component: 'data-component',
       xData: 'x-data',
       cardContent: 'data-content',
       side: 'data-side',

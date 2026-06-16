@@ -1,0 +1,84 @@
+@reference "@src/css/index.css";
+
+.wysiwyg-content {
+  & > * {
+    @apply text-inherit my-5;
+  }
+
+  & > *:first-child {
+    margin-top: 0 !important;
+  }
+
+  & > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  a:not(.btn a) {
+    &,
+    &:link {
+      @apply font-bold antialiased text-(--color-sb-slate) border-b border-transparent hover:border-(--color-sb-slate) transition;
+    }
+  }
+
+  ol {
+    list-style-type: none;
+    counter-set: outerlist 0;
+
+    li {
+      @apply relative my-4 md:my-5;
+      padding: 0 3ch;
+
+      &::before {
+        @apply text-(--color-sb-slate);
+        counter-increment: outerlist;
+        content: counter(outerlist) '.';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3ch;
+        text-align: center;
+      }
+
+      ol {
+        list-style-type: none;
+        counter-set: innerlist 0;
+
+        li {
+          counter-increment: innerlist;
+          &::before {
+            content: counter(innerlist, lower-alpha) '.';
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+
+    li {
+      @apply relative my-4 md:my-5;
+      padding: 0 3ch;
+
+      &::before {
+        @apply leading-6 text-(--color-sb-slate);
+        font-size: 1.25em;
+        content: '\02022'; /* &bull; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: calc(3ch / 1.25);
+        text-align: center;
+      }
+
+      ul {
+        list-style-type: none;
+        li {
+          &::before {
+            content: '\025AA'; /* &blacksquare; */
+          }
+        }
+      }
+    }
+  }
+}

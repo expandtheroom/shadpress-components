@@ -1,0 +1,7 @@
+/* @reference "@src/css/index.css";
+
+.wp-block-paragraph {
+  font-family: var(--wp--preset--font-family--body) !important;
+
+  @apply text-lg my-5;
+} */

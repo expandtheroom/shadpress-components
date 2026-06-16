@@ -1,5 +1,0 @@
-{
-  "name": "Accordion",
-  "description": "Expandable accordion panels with typography content",
-  "requires": ["typography"]
-}

@@ -1,0 +1,5 @@
+{
+  "name": "Combobox Field",
+  "description": "Searchable dropdown combobox with JSON option rendering",
+  "requires": ["label"]
+}

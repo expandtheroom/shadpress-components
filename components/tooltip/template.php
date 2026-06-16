@@ -3,7 +3,7 @@
 /** @var \Theme\Components\Tooltip $this */
 ?>
 <span <?= $this->component_attrs() ?>
-    class="<?= esc_attr($this->get_classes()) ?>"
+    class="<?= $this->component_classes() ?>"
     x-data="<?= esc_attr($this->component_module_name()) ?>">
     <span data-slot="tooltip-trigger"
         tabindex="0"

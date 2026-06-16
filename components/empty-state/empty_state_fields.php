@@ -21,8 +21,8 @@ $empty_state_full_fields
     ->addFields($empty_state_action_link_field);
 
 return [
-    'title'       => $empty_state_title_field,
+    'title' => $empty_state_title_field,
     'description' => $empty_state_description_field,
     'action_link' => $empty_state_action_link_field,
-    'full'        => $empty_state_full_fields,
+    'full' => $empty_state_full_fields,
 ];

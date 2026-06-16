@@ -1,5 +1,7 @@
 <?php
 /** @var \Theme\Components\AlertDialog $this */
+
+$header_icon_html = !empty($this->header_include_icon) ? $this->render_header_icon() : '';
 ?>
 <div <?= $this->component_attrs() ?>
      x-data="<?= esc_attr($this->component_module_name()) ?>()">
@@ -26,7 +28,8 @@
         <div data-slot="alert-dialog-header" class="flex flex-col gap-2 text-center sm:text-left">
             <h2 data-slot="alert-dialog-title"
                 :id="'alert-dialog-title-' + $id('alert-dialog')"
-                class="text-lg font-semibold">
+                class="text-lg font-semibold flex items-center gap-2">
+                <?= $header_icon_html ?>
                 <?= esc_html($this->title) ?>
             </h2>
             <?php if ($this->description): ?>

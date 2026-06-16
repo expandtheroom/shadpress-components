@@ -45,31 +45,12 @@ class Badge extends BaseComponent {
     public static function register(): void {
         add_filter('the_content', [self::class, 'process_format_icons']);
         add_filter('wp_kses_allowed_html', [self::class, 'allow_badge_format_attrs'], 10, 2);
-        add_filter('block_editor_settings_all', [self::class, 'add_editor_preview_styles']);
-    }
-
-    public static function add_editor_preview_styles(array $settings): array {
-        $settings['styles'][] = ['css' => '
-            .shadpress-badge[data-include-icon="1"][data-icon]::before {
-                content: "[" attr(data-icon) "] ";
-                font-size: 0.85em;
-                opacity: 0.6;
-            }
-            .shadpress-badge[data-include-icon="1"][data-icon][data-icon-position="right"]::before {
-                content: "";
-            }
-            .shadpress-badge[data-include-icon="1"][data-icon][data-icon-position="right"]::after {
-                content: " [" attr(data-icon) "]";
-                font-size: 0.85em;
-                opacity: 0.6;
-            }
-        '];
-        return $settings;
     }
 
     public static function allow_badge_format_attrs(array $tags, string $context): array {
         if ($context !== 'post') return $tags;
         $tags['span'] = array_merge($tags['span'] ?? [], [
+            'data-component'     => true,
             'data-variant'       => true,
             'data-include-icon'  => true,
             'data-icon'          => true,
@@ -80,6 +61,10 @@ class Badge extends BaseComponent {
     }
 
     public static function process_format_icons(string $content): string {
+        if (str_contains($content, 'data-badge-preview')) {
+            $content = preg_replace('/<span\b[^>]*\bdata-badge-preview[^>]*>.*?<\/span>/s', '', $content);
+        }
+
         if (!str_contains($content, 'shadpress-badge')) return $content;
 
         $providers = apply_filters('theme/icon_providers', []);
@@ -148,7 +133,7 @@ class Badge extends BaseComponent {
     protected function set_attrs(): array {
         return [
             'data-variant' => $this->variant,
-            'data-slot'    => $this->component_slug(),
+            'data-slot' => $this->component_slug(),
             ...$this->extra_attrs,
         ];
     }

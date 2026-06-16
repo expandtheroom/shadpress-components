@@ -13,11 +13,12 @@
 
   "keywords": ["Hover Card", "theme"],
 
-  "textdomain": "shadpress-starter",
+  "textdomain": "shadpress",
 
   "supports": {
     "anchor": true,
-    "customClassName": true
+    "customClassName": true,
+    "inserter": false
   },
 
   "acf": {

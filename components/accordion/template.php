@@ -3,23 +3,23 @@
 /** @var \Theme\Components\Accordion $this */
 ?>
 <div <?= $this->component_attrs() ?>
-    class="<?= esc_attr($this->get_classes()) ?>"
+    class="<?= $this->component_classes() ?>"
     <?php if (!$this->is_preview): ?>x-data="<?= esc_attr($this->component_module_name()) ?>()"
     <?php endif; ?>>
 
     <?php foreach ($this->panels as $idx => $panel):
         $button_attrs = $this->compile_attrs([
-            'id' => 'accordion-trigger-' . esc_attr((string) $idx),
+            'id'            => 'accordion-trigger-' . esc_attr((string) $idx),
             'aria-controls' => 'accordion-panel-' . esc_attr((string) $idx),
             'aria-expanded' => $this->is_preview ? 'true' : 'false',
-            'data-state' => $this->is_preview ? 'open' : 'closed',
+            'data-state'    => $this->is_preview ? 'open' : 'closed',
         ]);
 
         $panel_attrs = $this->is_preview ? $this->compile_attrs([
-            'id' => 'accordion-panel-' . esc_attr((string) $idx),
-            'role' => 'region',
+            'id'              => 'accordion-panel-' . esc_attr((string) $idx),
+            'role'            => 'region',
             'aria-labelledby' => 'accordion-trigger-' . esc_attr((string) $idx),
-            'data-state' => $this->is_preview ? 'open' : 'closed',
+            'data-state'      => $this->is_preview ? 'open' : 'closed',
         ]) : $this->compile_attrs([
             'style' => 'display:none',
         ]);
@@ -32,6 +32,7 @@
                     type="button"
                     class="focus-visible:border-ring focus-visible:ring-ring/50 flex w-full items-start justify-between gap-4 rounded-md py-4 text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] hover:underline">
 
+                    <?= $this->render_panel_icon($panel) ?>
                     <?= esc_html($panel['trigger'] ?? '') ?>
 
                     <svg xmlns="http://www.w3.org/2000/svg"

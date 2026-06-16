@@ -28,6 +28,7 @@ return function (FieldsBuilder $fields) {
     $fields->addTrueFalse('include_icon', [
         'label'         => 'Include Icon',
         'default_value' => 0,
+        'ui'            => true,
     ]);
 
     $fields->addSelect('icon_provider', [

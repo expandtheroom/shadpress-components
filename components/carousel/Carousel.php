@@ -30,4 +30,15 @@ class Carousel extends BaseComponent {
     public function slide_count(): int {
         return count($this->slides);
     }
+
+    protected function set_attrs(): array {
+        return [
+            'data-loop' => $this->loop ? 'true' : 'false',
+            'data-autoplay' => $this->autoplay ? 'true' : 'false',
+            'data-autoplay-delay' => $this->autoplay_delay,
+            'aria-roledescription' => 'carousel',
+            'aria-label' => 'Carousel',
+            ...$this->extra_attrs,
+        ];
+    }
 }

@@ -1,5 +1,0 @@
-@reference "tailwindcss";
-
-[data-slot='label'] {
-  color: var(--color-foreground);
-}

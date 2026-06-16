@@ -1,15 +1,11 @@
 <?php
 /** @var \Theme\Components\Dialog $this */
+$header_icon_html = !empty($this->header_include_icon) ? $this->render_header_icon() : '';
 ?>
 <div <?= $this->component_attrs() ?>
      x-data="<?= esc_attr($this->component_module_name()) ?>()">
 
-    <button type="button"
-            data-slot="dialog-trigger"
-            class="<?= esc_attr($this->trigger_classes()) ?>"
-            @click="openDialog()">
-        <?= esc_html($this->trigger_label) ?>
-    </button>
+    <?= $this->trigger_button ?>
 
     <div data-slot="dialog-overlay"
          x-show="open"
@@ -33,7 +29,7 @@
          :aria-labelledby="id + '-title'"
          :data-state="open ? 'open' : 'closed'"
          @keydown.escape.window="if (open) open = false"
-         class="fixed left-1/2 top-1/2 z-50 w-full max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-xl border bg-background shadow-lg p-6 focus:outline-none"
+         class="fixed left-1/2 top-1/2 z-50 w-full max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-xl border bg-background shadow-lg p-6 max-h-[90dvh] overflow-y-auto focus:outline-none"
          x-transition:enter="transition ease-out duration-200"
          x-transition:enter-start="opacity-0 scale-95"
          x-transition:enter-end="opacity-100 scale-100"
@@ -66,8 +62,8 @@
              class="flex flex-col gap-2 mb-4">
             <h2 data-slot="dialog-title"
                 :id="id + '-title'"
-                class="text-lg font-semibold leading-none tracking-tight">
-                <?= esc_html($this->title) ?>
+                class="flex items-center gap-2 text-lg font-semibold leading-none tracking-tight">
+                <?= $header_icon_html ?><?= esc_html($this->title) ?>
             </h2>
             <?php if ($this->description): ?>
                 <p data-slot="dialog-description"

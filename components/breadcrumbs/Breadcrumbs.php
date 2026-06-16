@@ -36,17 +36,17 @@ class Breadcrumbs extends BaseComponent {
         $items = [];
 
         $items[] = [
-            'link' => ['url' => home_url('/'), 'title' => __('Home', 'shadpress-starter'), 'target' => ''],
+            'link' => ['url' => home_url('/'), 'title' => __('Home', 'shadpress'), 'target' => ''],
             'is_current' => false,
         ];
 
         if (is_404()) {
-            $items[] = ['link' => ['url' => '', 'title' => __('Page Not Found', 'shadpress-starter'), 'target' => ''], 'is_current' => true];
+            $items[] = ['link' => ['url' => '', 'title' => __('Page Not Found', 'shadpress'), 'target' => ''], 'is_current' => true];
             return $items;
         }
 
         if (is_search()) {
-            $items[] = ['link' => ['url' => '', 'title' => sprintf(__('Search: %s', 'shadpress-starter'), get_search_query()), 'target' => ''], 'is_current' => true];
+            $items[] = ['link' => ['url' => '', 'title' => sprintf(__('Search: %s', 'shadpress'), get_search_query()), 'target' => ''], 'is_current' => true];
             return $items;
         }
 

@@ -5,12 +5,15 @@ namespace Theme\Components;
 class Toggle extends BaseComponent {
 
     public function __construct(
-        public string $label       = '',
-        public bool   $pressed     = false,
-        public string $variant     = 'default',
-        public string $size        = 'default',
-        public bool   $disabled    = false,
-        public array  $extra_attrs = []
+        public string $label = '',
+        public bool $checked = false,
+        public string $variant = 'default',
+        public string $size = 'default',
+        public bool $disabled = false,
+        public bool $required = false,
+        public string $name = '',
+        public string $value = '1',
+        public array $extra_attrs = []
     ) {
     }
 
@@ -38,5 +41,14 @@ class Toggle extends BaseComponent {
         }
 
         return implode(' ', $classes);
+    }
+
+
+    protected function set_attrs(): array {
+        return [
+            'data-checked' => $this->checked ? 'true' : 'false',
+            'data-disabled' => $this->disabled ? 'true' : 'false',
+            ...$this->extra_attrs,
+        ];
     }
 }

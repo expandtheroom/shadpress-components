@@ -6,7 +6,7 @@ $is_link = !empty($this->link['url']);
 
 $shared_attrs = implode(' ', array_filter([
     $this->component_attrs(),
-    'class="' . esc_attr(classNames($this->button_classes(), $this->get_classes())) . '"',
+    'class="' . esc_attr(classNames($this->button_classes(), $this->component_classes())) . '"',
 ]));
 
 $icon_html  = !empty($this->include_icon) ? $this->render_icon() : '';
