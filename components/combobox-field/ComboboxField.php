@@ -4,26 +4,30 @@ namespace Theme\Components;
 
 class ComboboxField extends BaseComponent {
 
+    public string $id = '';
+    public string $name = '';
     public ?Label $label_component = null;
 
     public function __construct(
-        public string $name        = '',
+        public string $label       = '',
         public string $placeholder = 'Search...',
         public array  $options     = [],
-        public string $label       = '',
-        public string $label_for   = '',
-        public string $description  = '',
-        public bool   $required     = false,
-        public string $error        = '',
-        public array  $extra_attrs  = []
+        public string $description = '',
+        public bool   $required    = false,
+        public string $error       = '',
+        public array  $extra_attrs = []
     ) {
     }
 
     public function prepare(): void {
+        $this->id   = sanitize_title($this->label);
+        $this->name = $this->id;
+
         if ($this->label !== '') {
             $this->label_component = new Label(
                 text: $this->label,
-                label_for: $this->label_for,
+                label_for: $this->id,
+                id: $this->id . '-label',
                 required: $this->required,
             );
         }
@@ -44,6 +48,6 @@ class ComboboxField extends BaseComponent {
     }
 
     public function error_id(): string {
-        return $this->label_for ? $this->label_for . '-error' : '';
+        return $this->id ? $this->id . '-error' : '';
     }
 }

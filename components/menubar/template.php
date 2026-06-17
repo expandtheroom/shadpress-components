@@ -13,26 +13,14 @@
         @keydown.arrow-left.prevent="active !== null && moveFocus(-1)"
         @keydown.arrow-right.prevent="active !== null && moveFocus(1)">
 
-        <?php foreach ($this->menus as $menu_index => $menu): ?>
+        <?php foreach (array_values($this->menus) as $idx => $menu): ?>
             <?php
             $menu_label = $menu['label'] ?? '';
             $menu_items = $menu['menu_items'] ?? [];
-            $idx        = (int) $menu_index;
             ?>
             <div data-slot="menubar-menu" class="relative">
 
-                <button data-slot="menubar-trigger"
-                    type="button"
-                    role="menuitem"
-                    data-menu-index="<?= esc_attr((string) $idx) ?>"
-                    :aria-expanded="(active === <?= $idx ?>).toString()"
-                    :aria-haspopup="'menu'"
-                    :tabindex="focusedIndex === <?= $idx ?> ? 0 : -1"
-                    @click="active = active === <?= $idx ?> ? null : <?= $idx ?>"
-                    @mouseenter="active !== null && (active = <?= $idx ?>)"
-                    class="px-3 py-1.5 text-sm font-medium rounded-sm hover:bg-accent hover:text-accent-foreground aria-expanded:bg-accent aria-expanded:text-accent-foreground focus-visible:outline-none focus-visible:ring-[3px] focus-visible:ring-ring/50">
-                    <?= esc_html($menu_label) ?>
-                </button>
+                <?= $this->trigger_components[$idx] ?>
 
                 <div data-slot="menubar-content"
                     role="menu"

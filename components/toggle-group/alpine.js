@@ -1,34 +1,39 @@
 export default () => ({
-    type: 'single',
-    value: '',
     values: [],
+    multiple: true,
 
     init() {
-      this.type = this.$el.dataset.type || 'single'
-      const def = this.$el.dataset.default || ''
+        this.multiple = this.$el.dataset.multiple !== 'false'
 
-      if (this.type === 'single') {
-        this.value = def
-      } else {
-        this.values = def
-          ? def
-              .split(',')
-              .map((v) => v.trim())
-              .filter(Boolean)
-          : []
-      }
+        const items = this.$el.querySelectorAll('[data-slot="toggle"]')
+
+        items.forEach((btn) => {
+            if (btn.dataset.checked === 'true') {
+                this.values.push(btn.dataset.value)
+            }
+            btn.addEventListener('click', () => this.toggle(btn.dataset.value))
+        })
+
+        this.$watch('values', () => this.updateState())
+        this.updateState()
+    },
+
+    updateState() {
+        this.$el.querySelectorAll('[data-slot="toggle"]').forEach((btn) => {
+            const on = this.values.includes(btn.dataset.value)
+            btn.setAttribute('aria-pressed', String(on))
+            btn.setAttribute('data-checked', String(on))
+        })
     },
 
     toggle(val) {
-      if (this.type === 'single') {
-        this.value = this.value === val ? '' : val
-      } else {
-        const idx = this.values.indexOf(val)
-        if (idx === -1) {
-          this.values = [...this.values, val]
+        if (this.multiple) {
+            const idx = this.values.indexOf(val)
+            this.values = idx === -1
+                ? [...this.values, val]
+                : this.values.filter((v) => v !== val)
         } else {
-          this.values = this.values.filter((v) => v !== val)
+            this.values = this.values.includes(val) ? [] : [val]
         }
-      }
     },
 })

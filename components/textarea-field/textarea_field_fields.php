@@ -5,12 +5,6 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 $textarea_field_label_field = (new FieldsBuilder('textarea_field_label_fields'));
 $textarea_field_label_field->addText('label', ['label' => 'Label', 'required' => 1]);
 
-$textarea_field_label_for_field = (new FieldsBuilder('textarea_field_label_for_fields'));
-$textarea_field_label_for_field->addText('label_for', [
-    'label'        => 'For (textarea ID)',
-    'instructions' => 'Links label to textarea via HTML for/id pair.',
-]);
-
 $textarea_field_description_field = (new FieldsBuilder('textarea_field_description_fields'));
 $textarea_field_description_field->addText('description', ['label' => 'Helper Description']);
 
@@ -26,9 +20,6 @@ $textarea_field_error_field->addText('error', [
     'label'        => 'Error Message',
     'instructions' => 'Leave blank for no error state.',
 ]);
-
-$textarea_field_name_field = (new FieldsBuilder('textarea_field_name_fields'));
-$textarea_field_name_field->addText('name', ['label' => 'Name (HTML)']);
 
 $textarea_field_placeholder_field = (new FieldsBuilder('textarea_field_placeholder_fields'));
 $textarea_field_placeholder_field->addText('placeholder', ['label' => 'Placeholder']);
@@ -57,11 +48,9 @@ $textarea_field_readonly_field->addTrueFalse('readonly', [
 $textarea_field_full_fields = (new FieldsBuilder('textarea_field_component_fields'));
 $textarea_field_full_fields
     ->addFields($textarea_field_label_field)
-    ->addFields($textarea_field_label_for_field)
     ->addFields($textarea_field_description_field)
     ->addFields($textarea_field_required_field)
     ->addFields($textarea_field_error_field)
-    ->addFields($textarea_field_name_field)
     ->addFields($textarea_field_placeholder_field)
     ->addFields($textarea_field_rows_field)
     ->addFields($textarea_field_disabled_field)
@@ -69,11 +58,9 @@ $textarea_field_full_fields
 
 return [
     'label'       => $textarea_field_label_field,
-    'label_for'   => $textarea_field_label_for_field,
     'description' => $textarea_field_description_field,
     'required'    => $textarea_field_required_field,
     'error'       => $textarea_field_error_field,
-    'name'        => $textarea_field_name_field,
     'placeholder' => $textarea_field_placeholder_field,
     'rows'        => $textarea_field_rows_field,
     'disabled'    => $textarea_field_disabled_field,

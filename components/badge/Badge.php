@@ -121,7 +121,7 @@ class Badge extends BaseComponent {
         foreach ($providers as $key => $provider) {
             $entry = ['key' => $key, 'label' => $provider['label']];
             if ($key === 'lucide-icons' && class_exists('Theme\\Components\\LucideIcons')) {
-                $entry['icons'] = array_keys(\Theme\Components\LucideIcons::get_icons_data());
+                $entry['icons'] = array_keys(LucideIcons::get_icons_data());
             }
             $icon_providers_js[] = $entry;
         }

@@ -12,7 +12,7 @@
 
     <button type="button"
         data-slot="date-picker-trigger"
-        <?php if ($this->trigger_id()): ?>id="<?= esc_attr($this->trigger_id()) ?>" <?php endif; ?>
+        id="<?= esc_attr($this->id) ?>"
         x-ref="trigger"
         @click="open = !open"
         :aria-expanded="open.toString()"

@@ -2,13 +2,14 @@
 
 use StoutLogic\AcfBuilder\FieldsBuilder;
 
+$orientation_choices = [
+    'horizontal' => 'Horizontal',
+    'vertical'   => 'Vertical',
+];
 $separator_orientation_field = (new FieldsBuilder('separator_orientation_fields'));
 $separator_orientation_field->addSelect('orientation', [
     'label'         => 'Orientation',
-    'choices'       => [
-        'horizontal' => 'Horizontal',
-        'vertical'   => 'Vertical',
-    ],
+    'choices'       => $orientation_choices,
     'default_value' => 'horizontal',
 ]);
 
@@ -25,7 +26,8 @@ $separator_full_fields
     ->addFields($separator_decorative_field);
 
 return [
-    'orientation' => $separator_orientation_field,
-    'decorative'  => $separator_decorative_field,
-    'full'        => $separator_full_fields,
+    'orientation'         => $separator_orientation_field,
+    'orientation_choices' => $orientation_choices,
+    'decorative'          => $separator_decorative_field,
+    'full'                => $separator_full_fields,
 ];

@@ -1,0 +1,13 @@
+@reference "@src/css/index.css";
+
+figure.wp-block-table {
+  @apply rich-text-figure;
+
+  figcaption {
+    @apply rich-text-figcaption;
+  }
+
+  table { @apply rich-text-table; }
+  th { @apply rich-text-th; }
+  td { @apply rich-text-td; }
+}

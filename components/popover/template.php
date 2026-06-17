@@ -1,21 +1,13 @@
 <?php
 
 /** @var \Theme\Components\Popover $this */
-$side  = in_array($this->side,  ['top', 'right', 'bottom', 'left'], true) ? $this->side  : 'bottom';
-$align = in_array($this->align, ['start', 'center', 'end'],          true) ? $this->align : 'center';
 ?>
 <div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>"
     x-data="<?= esc_attr($this->component_module_name()) ?>()">
 
     <div class="relative inline-block">
 
-        <button data-slot="popover-trigger"
-            type="button"
-            @click="open = !open"
-            :aria-expanded="open.toString()"
-            class="inline-flex h-9 items-center justify-center rounded-md border px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
-            <?= esc_html($this->trigger_label) ?>
-        </button>
+        <?= $this->trigger_component ?>
 
         <div data-slot="popover-content"
             x-show="open"

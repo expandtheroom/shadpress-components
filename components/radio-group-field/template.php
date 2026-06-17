@@ -16,7 +16,7 @@
         class="flex data-[orientation=horizontal]:flex-row data-[orientation=horizontal]:gap-4 data-[orientation=vertical]:flex-col data-[orientation=vertical]:gap-2"
         data-disabled="<?= esc_attr($this->disabled ? 'true' : 'false') ?>"
         data-name="<?= esc_attr($this->name) ?>"
-        <?php if ($this->label && $this->label_id()): ?>aria-labelledby="<?= esc_attr($this->label_id()) ?>" <?php endif; ?>
+        <?php if ($this->label_component): ?>aria-labelledby="<?= esc_attr($this->id) ?>-label" <?php endif; ?>
         @keydown.arrow-up.prevent="movePrev()"
         @keydown.arrow-down.prevent="moveNext()"
         @keydown.arrow-left.prevent="movePrev()"

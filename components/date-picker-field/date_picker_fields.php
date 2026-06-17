@@ -5,12 +5,6 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 $date_picker_label_field = (new FieldsBuilder('date_picker_label_fields'));
 $date_picker_label_field->addText('label', ['label' => 'Label', 'required' => 1]);
 
-$date_picker_label_for_field = (new FieldsBuilder('date_picker_label_for_fields'));
-$date_picker_label_for_field->addText('label_for', [
-    'label' => 'For (trigger ID)',
-    'instructions' => 'Links label to the date-picker trigger via HTML for/id pair. Optional; falls back to the name.',
-]);
-
 $date_picker_description_field = (new FieldsBuilder('date_picker_description_fields'));
 $date_picker_description_field->addText('description', ['label' => 'Helper Description']);
 
@@ -25,12 +19,6 @@ $date_picker_error_field = (new FieldsBuilder('date_picker_error_fields'));
 $date_picker_error_field->addText('error', [
     'label' => 'Error Message',
     'instructions' => 'Leave blank for no error state.',
-]);
-
-$date_picker_name_field = (new FieldsBuilder('date_picker_name_fields'));
-$date_picker_name_field->addText('name', [
-    'label' => 'Name (HTML)',
-    'required' => 1,
 ]);
 
 $date_picker_placeholder_field = (new FieldsBuilder('date_picker_placeholder_fields'));
@@ -63,11 +51,9 @@ $date_picker_max_field->addDatePicker('max_date', [
 $date_picker_full_fields = (new FieldsBuilder('date_picker_component_fields'));
 $date_picker_full_fields
     ->addFields($date_picker_label_field)
-    ->addFields($date_picker_label_for_field)
     ->addFields($date_picker_description_field)
     ->addFields($date_picker_required_field)
     ->addFields($date_picker_error_field)
-    ->addFields($date_picker_name_field)
     ->addFields($date_picker_placeholder_field)
     ->addFields($date_picker_selected_field)
     ->addFields($date_picker_min_field)
@@ -75,11 +61,9 @@ $date_picker_full_fields
 
 return [
     'label' => $date_picker_label_field,
-    'label_for' => $date_picker_label_for_field,
     'description' => $date_picker_description_field,
     'required' => $date_picker_required_field,
     'error' => $date_picker_error_field,
-    'name' => $date_picker_name_field,
     'placeholder' => $date_picker_placeholder_field,
     'selected_date' => $date_picker_selected_field,
     'min_date' => $date_picker_min_field,

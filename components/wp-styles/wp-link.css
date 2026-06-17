@@ -1,0 +1,5 @@
+@reference "@src/css/index.css";
+
+a:where(:not(.wp-element-button, .button, .btn)) {
+  @apply rich-text-a;
+}

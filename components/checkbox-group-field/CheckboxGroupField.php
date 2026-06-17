@@ -4,6 +4,8 @@ namespace Theme\Components;
 
 class CheckboxGroupField extends BaseComponent {
 
+    public string $id = '';
+    public string $name = '';
     public ?Label $label_component = null;
     /** @var BaseComponent[] */
     public array $checkbox_components = [];
@@ -12,22 +14,24 @@ class CheckboxGroupField extends BaseComponent {
         public string $description = '',
         public string $error = '',
         public string $label = '',
-        public string $label_for = '',
-        public string $name = '',
-        public array  $options = [],  // each: ['label' => '', 'value' => '', 'checked' => false]
-        public string $orientation = 'vertical',
-        public bool   $required = false,
+        public array $options = [],  // each: ['label' => '', 'value' => '', 'checked' => false]
+        public string $orientation = 'horizontal',
+        public bool $required = false,
         public string $variant = 'checkbox',
-        public array  $extra_attrs = []
+        public array $extra_attrs = []
     ) {
     }
 
     public function prepare(): void {
+        $this->id = sanitize_title($this->label);
+        $this->name = $this->id;
+
         if ($this->label !== '') {
             $this->label_component = new Label(
                 text: $this->label,
+                label_for: $this->id,
+                id: $this->id . '-label',
                 required: $this->required,
-                id: $this->label_id(),
             );
         }
 
@@ -51,19 +55,11 @@ class CheckboxGroupField extends BaseComponent {
         }
     }
 
-    public function label_id(): string {
-        if ($this->label_for) {
-            return $this->label_for;
-        }
-
-        return $this->name ? $this->name . '-label' : '';
-    }
-
     public function has_error(): bool {
         return $this->error !== '';
     }
 
     public function error_id(): string {
-        return $this->label_for ? $this->label_for . '-error' : '';
+        return $this->id ? $this->id . '-error' : '';
     }
 }

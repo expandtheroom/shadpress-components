@@ -17,7 +17,7 @@
 
         <button data-slot="select-trigger"
             type="button"
-            <?php if ($this->label_for): ?>id="<?= esc_attr($this->label_for) ?>" <?php endif; ?>
+            id="<?= esc_attr($this->id) ?>"
             x-ref="trigger"
             :aria-expanded="open.toString()"
             @click="!disabled && (open = !open)"

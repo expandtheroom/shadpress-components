@@ -1,12 +1,9 @@
 @reference "@src/css/index.css";
 
 [data-slot='icon'] {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  color: inherit;
+  @apply inline-flex items-center justify-center text-inherit;
 
   & svg {
-    display: block;
+    @apply block;
   }
 }

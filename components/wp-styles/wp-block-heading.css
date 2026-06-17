@@ -1,0 +1,8 @@
+@reference "@src/css/index.css";
+
+h1.wp-block-heading { @apply rich-text-h1; }
+h2.wp-block-heading { @apply rich-text-h2; }
+h3.wp-block-heading { @apply rich-text-h3; }
+h4.wp-block-heading { @apply rich-text-h4; }
+h5.wp-block-heading { @apply rich-text-h5; }
+h6.wp-block-heading { @apply rich-text-h6; }

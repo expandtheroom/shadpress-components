@@ -32,13 +32,17 @@ $alert_dialog_confirm_field->addText('confirm_label', [
     'default_value' => 'Continue',
 ]);
 
+// Import variant choices from Button, filtered to the two meaningful confirm actions.
+$button_fields = require get_stylesheet_directory() . '/components/button/button_fields.php';
+$variant_choices = array_intersect_key(
+    $button_fields['variant_choices'],
+    array_flip(['default', 'destructive'])
+);
+
 $alert_dialog_variant_field = (new FieldsBuilder('alert_dialog_variant_fields'));
 $alert_dialog_variant_field->addSelect('variant', [
     'label'         => 'Confirm Button Variant',
-    'choices'       => [
-        'default'     => 'Default',
-        'destructive' => 'Destructive',
-    ],
+    'choices'       => $variant_choices,
     'default_value' => 'default',
 ]);
 
@@ -52,11 +56,12 @@ $alert_dialog_full_fields
     ->addFields($alert_dialog_variant_field);
 
 return [
-    'trigger_label' => $alert_dialog_trigger_field,
-    'title'         => $alert_dialog_title_field,
-    'description'   => $alert_dialog_description_field,
-    'cancel_label'  => $alert_dialog_cancel_field,
-    'confirm_label' => $alert_dialog_confirm_field,
-    'variant'       => $alert_dialog_variant_field,
-    'full'          => $alert_dialog_full_fields,
+    'trigger_label'   => $alert_dialog_trigger_field,
+    'title'           => $alert_dialog_title_field,
+    'description'     => $alert_dialog_description_field,
+    'cancel_label'    => $alert_dialog_cancel_field,
+    'confirm_label'   => $alert_dialog_confirm_field,
+    'variant'         => $alert_dialog_variant_field,
+    'variant_choices' => $variant_choices,
+    'full'            => $alert_dialog_full_fields,
 ];

@@ -1,0 +1,5 @@
+@reference "@src/css/index.css";
+
+ul.wp-block-list { @apply rich-text-ul; }
+ol.wp-block-list { @apply rich-text-ol; }
+.wp-block-list > li { @apply rich-text-li; }

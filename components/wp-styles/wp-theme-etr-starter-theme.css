@@ -1,0 +1,5 @@
+@reference "@src/css/index.css";
+
+body.wp-theme-etr-starter-theme {
+  @apply p-4 space-y-4;
+}

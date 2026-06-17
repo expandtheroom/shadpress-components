@@ -1,0 +1,87 @@
+/* Don't change these, and don't add @reference "@src/css/index.css" because it will create a circular reference */
+@reference "@src/css/theme.css";
+@reference "tailwindcss";
+
+@utility rich-text-h1 {
+  @apply scroll-m-20 text-4xl lg:text-5xl font-extrabold tracking-tight text-balance;
+}
+
+@utility rich-text-h2 {
+  @apply scroll-m-20 text-3xl font-semibold tracking-tight pb-2 border-b border-border;
+}
+
+@utility rich-text-h3 {
+  @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+}
+
+@utility rich-text-h4 {
+  @apply scroll-m-20 text-xl font-semibold tracking-tight;
+}
+
+@utility rich-text-h5 {
+  @apply scroll-m-20 text-lg font-semibold tracking-tight;
+}
+
+@utility rich-text-h6 {
+  @apply scroll-m-20 text-base font-semibold tracking-tight;
+}
+
+@utility rich-text-p {
+  @apply leading-7;
+}
+
+@utility rich-text-blockquote {
+  @apply mt-6 border-l-4 pl-6 italic border-border;
+}
+
+@utility rich-text-ul {
+  @apply my-6 ml-6 list-disc;
+}
+
+@utility rich-text-ol {
+  @apply my-6 ml-6 list-decimal;
+}
+
+@utility rich-text-li {
+  @apply mt-2;
+}
+
+@utility rich-text-figure {
+  @apply my-6;
+}
+
+@utility rich-text-figcaption {
+  @apply mt-2 text-sm text-center text-muted-foreground;
+}
+
+@utility rich-text-img {
+  @apply max-w-full h-auto rounded-md;
+}
+
+@utility rich-text-hr {
+  @apply my-6 border-t border-border;
+}
+
+@utility rich-text-pre {
+  @apply my-6 rounded-lg bg-muted p-4 overflow-x-auto font-mono text-sm;
+}
+
+@utility rich-text-code {
+  @apply relative rounded font-mono text-sm font-semibold bg-muted p-2;
+}
+
+@utility rich-text-a {
+  @apply text-primary underline underline-offset-4 hover:no-underline;
+}
+
+@utility rich-text-table {
+  @apply my-6 w-full overflow-y-auto;
+}
+
+@utility rich-text-th {
+  @apply border px-4 py-2 text-left font-bold border-border;
+}
+
+@utility rich-text-td {
+  @apply border px-4 py-2 text-left border-border;
+}

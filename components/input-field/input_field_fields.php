@@ -5,12 +5,6 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 $label_field = (new FieldsBuilder('field_label_fields'));
 $label_field->addText('label', ['label' => 'Label', 'required' => 1]);
 
-$label_for_field = (new FieldsBuilder('field_label_for_fields'));
-$label_for_field->addText('label_for', [
-    'label' => 'For (input ID)',
-    'instructions' => 'Links label to input via HTML for/id pair.',
-]);
-
 $description_field = (new FieldsBuilder('field_description_fields'));
 $description_field->addText('description', ['label' => 'Helper Description']);
 
@@ -43,9 +37,6 @@ $type_field->addSelect('field_type', [
     'default_value' => 'text',
 ]);
 
-$name_field = (new FieldsBuilder('field_name_fields'));
-$name_field->addText('name', ['label' => 'Name (HTML)']);
-
 $placeholder_field = (new FieldsBuilder('field_placeholder_fields'));
 $placeholder_field->addText('placeholder', ['label' => 'Placeholder']);
 
@@ -71,12 +62,10 @@ $disabled_field->addTrueFalse('disabled', [
 $full_fields = (new FieldsBuilder('field_component_fields'));
 $full_fields
     ->addFields($label_field)
-    ->addFields($label_for_field)
     ->addFields($description_field)
     ->addFields($required_field)
     ->addFields($error_field)
     ->addFields($type_field)
-    ->addFields($name_field)
     ->addFields($placeholder_field)
     ->addFields($prefix_field)
     ->addFields($suffix_field)
@@ -84,13 +73,11 @@ $full_fields
 
 return [
     'label' => $label_field,
-    'label_for' => $label_for_field,
     'description' => $description_field,
     'required' => $required_field,
     'error' => $error_field,
     'field_type' => $type_field,
     'field_type_choices' => $type_choices,
-    'name' => $name_field,
     'placeholder' => $placeholder_field,
     'prefix' => $prefix_field,
     'suffix' => $suffix_field,

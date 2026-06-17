@@ -4,15 +4,15 @@ namespace Theme\Components;
 
 class StyledSelectField extends BaseComponent {
 
+    public string $id = '';
+    public string $name = '';
     public ?Label $label_component = null;
 
     public function __construct(
-        public string $name = '',
+        public string $label = '',
         public string $placeholder = 'Select an option',
         public array $options = [],
         public bool $disabled = false,
-        public string $label = '',
-        public string $label_for = '',
         public string $description = '',
         public bool $required = false,
         public string $error = '',
@@ -21,10 +21,14 @@ class StyledSelectField extends BaseComponent {
     }
 
     public function prepare(): void {
+        $this->id   = sanitize_title($this->label);
+        $this->name = $this->id;
+
         if ($this->label !== '') {
             $this->label_component = new Label(
                 text: $this->label,
-                label_for: $this->label_for,
+                label_for: $this->id,
+                id: $this->id . '-label',
                 required: $this->required,
             );
         }
@@ -35,16 +39,15 @@ class StyledSelectField extends BaseComponent {
     }
 
     public function error_id(): string {
-        return $this->label_for ? $this->label_for . '-error' : '';
+        return $this->id ? $this->id . '-error' : '';
     }
 
     protected function set_attrs(): array {
         return [
-            'data-slot' => $this->component_slug(),
-            'data-name' => $this->name ? esc_attr($this->name) : null,
+            'data-slot'        => $this->component_slug(),
+            'data-name'        => esc_attr($this->name),
             'data-placeholder' => $this->placeholder ?: null,
-            'data-value' => $this->default_value ?: null,
-            'data-disabled' => $this->disabled ? 'disabled' : null,
+            'data-disabled'    => $this->disabled ? 'disabled' : null,
             ...$this->extra_attrs,
         ];
     }

@@ -1,85 +1,32 @@
 @reference "@src/css/index.css";
 
 [data-slot='typography'] {
-  & h1 {
-    @apply scroll-m-20 text-4xl font-extrabold tracking-tight text-balance;
-
-    @media (min-width: 1024px) {
-      @apply text-5xl;
-    }
-  }
-
-  & h2 {
-    @apply scroll-m-20 text-3xl font-semibold tracking-tight pb-2;
-    border-bottom: 1px solid var(--color-border);
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-
-  & h3 {
-    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
-  }
-
-  & h4 {
-    @apply scroll-m-20 text-xl font-semibold tracking-tight;
-  }
-
-  & p {
-    @apply leading-7;
-
-    &:not(:first-child) {
-      margin-top: 1.5rem;
-    }
-  }
-
-  & blockquote {
-    @apply mt-6 border-l-4 pl-6 italic;
-    border-color: var(--color-border);
-  }
-
-  & ul {
-    @apply my-6 ml-6 list-disc;
-
-    & > li {
-      margin-top: 0.5rem;
-    }
-  }
-
-  & ol {
-    @apply my-6 ml-6 list-decimal;
-
-    & > li {
-      margin-top: 0.5rem;
-    }
-  }
-
-  & code {
-    @apply relative rounded font-mono text-sm font-semibold;
-    background-color: var(--color-muted);
-    padding: 0.2rem 0.3rem;
-  }
-
-  & table {
-    @apply my-6 w-full overflow-y-auto;
-  }
-
-  & th {
-    @apply border px-4 py-2 text-left font-bold;
-    border-color: var(--color-border);
-  }
-
-  & td {
-    @apply border px-4 py-2 text-left;
-    border-color: var(--color-border);
-  }
+  & h1 { @apply rich-text-h1; }
+  & h2 { @apply rich-text-h2; }
+  & h3 { @apply rich-text-h3; }
+  & h4 { @apply rich-text-h4; }
+  & h5 { @apply rich-text-h5; }
+  & h6 { @apply rich-text-h6; }
+  & p { @apply rich-text-p; }
+  & blockquote { @apply rich-text-blockquote; }
+  & figure { @apply rich-text-figure; }
+  & figcaption { @apply rich-text-figcaption; }
+  & img { @apply rich-text-img; }
+  & hr { @apply rich-text-hr; }
+  & pre { @apply rich-text-pre; }
+  & ul { @apply rich-text-ul; }
+  & ol { @apply rich-text-ol; }
+  & li { @apply rich-text-li; }
+  & code:not(pre > code) { @apply rich-text-code; }
+  & a:not([class]) { @apply rich-text-a; }
+  & table { @apply rich-text-table; }
+  & th { @apply rich-text-th; }
+  & td { @apply rich-text-td; }
 }
 
 [data-slot='typography'][data-variant='lead'] {
   & p {
-    @apply text-xl;
-    color: var(--color-muted-foreground);
+    @apply text-xl text-muted-foreground;
   }
 }
 
@@ -97,7 +44,6 @@
 
 [data-slot='typography'][data-variant='muted'] {
   & p {
-    @apply text-sm;
-    color: var(--color-muted-foreground);
+    @apply text-sm text-muted-foreground;
   }
 }

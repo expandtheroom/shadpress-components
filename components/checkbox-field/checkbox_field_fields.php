@@ -21,9 +21,6 @@ $cbf_error_field->addText('error', [
     'instructions' => 'Leave blank for no error state.',
 ]);
 
-$cbf_name_field = (new FieldsBuilder('cbf_name_fields'));
-$cbf_name_field->addText('name', ['label' => 'Name (HTML)']);
-
 $cbf_value_field = (new FieldsBuilder('cbf_value_fields'));
 $cbf_value_field->addText('value', [
     'label' => 'Value',
@@ -51,7 +48,6 @@ $cbf_full_fields
     ->addFields($cbf_description_field)
     ->addFields($cbf_required_field)
     ->addFields($cbf_error_field)
-    ->addFields($cbf_name_field)
     ->addFields($cbf_value_field)
     ->addFields($cbf_checked_field)
     ->addFields($cbf_disabled_field);
@@ -62,7 +58,6 @@ return [
     'disabled' => $cbf_disabled_field,
     'error' => $cbf_error_field,
     'label' => $cbf_label_field,
-    'name' => $cbf_name_field,
     'required' => $cbf_required_field,
     'value' => $cbf_value_field,
     'full' => $cbf_full_fields,

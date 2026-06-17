@@ -1,5 +1,0 @@
-{
-  "name": "Wysiwyg Content",
-  "description": "Renders sanitized HTML content wrapped in a Typography component",
-  "requires": ["typography"]
-}

@@ -1,0 +1,5 @@
+@reference "@src/css/index.css";
+
+[data-slot="menubar-trigger"][aria-expanded="true"] {
+    @apply bg-accent text-accent-foreground;
+}

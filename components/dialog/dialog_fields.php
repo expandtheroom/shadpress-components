@@ -5,12 +5,9 @@ use StoutLogic\AcfBuilder\FieldsBuilder;
 $dialog_trigger_label_field = (new FieldsBuilder('dialog_trigger_label_fields'));
 $dialog_trigger_label_field->addText('trigger_label', ['label' => 'Trigger Button Label', 'required' => 1]);
 
-$trigger_variant_choices = [
-    'default'   => 'Default',
-    'outline'   => 'Outline',
-    'secondary' => 'Secondary',
-    'ghost'     => 'Ghost',
-];
+// Import variant choices from Button — single source of truth.
+$button_fields = require get_stylesheet_directory() . '/components/button/button_fields.php';
+$trigger_variant_choices = $button_fields['variant_choices'];
 
 $dialog_trigger_variant_field = (new FieldsBuilder('dialog_trigger_variant_fields'));
 $dialog_trigger_variant_field->addSelect('trigger_variant', [

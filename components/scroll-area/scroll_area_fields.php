@@ -15,14 +15,15 @@ $scroll_area_max_height_field->addText('max_height', [
     'instructions'  => 'CSS value, e.g. 300px, 50vh, 20rem.',
 ]);
 
+$orientation_choices = [
+    'vertical'   => 'Vertical',
+    'horizontal' => 'Horizontal',
+    'both'       => 'Both',
+];
 $scroll_area_orientation_field = (new FieldsBuilder('scroll_area_orientation_fields'));
 $scroll_area_orientation_field->addSelect('orientation', [
     'label'         => 'Scroll Direction',
-    'choices'       => [
-        'vertical'   => 'Vertical',
-        'horizontal' => 'Horizontal',
-        'both'       => 'Both',
-    ],
+    'choices'       => $orientation_choices,
     'default_value' => 'vertical',
 ]);
 
@@ -33,8 +34,9 @@ $scroll_area_full_fields
     ->addFields($scroll_area_orientation_field);
 
 return [
-    'body'        => $scroll_area_content_field,
-    'max_height'  => $scroll_area_max_height_field,
-    'orientation' => $scroll_area_orientation_field,
-    'full'        => $scroll_area_full_fields,
+    'body'                => $scroll_area_content_field,
+    'max_height'          => $scroll_area_max_height_field,
+    'orientation'         => $scroll_area_orientation_field,
+    'orientation_choices' => $orientation_choices,
+    'full'                => $scroll_area_full_fields,
 ];

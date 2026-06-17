@@ -4,6 +4,8 @@ namespace Theme\Components;
 
 class CheckboxField extends BaseComponent {
 
+    public string $id = '';
+    public string $name = '';
     public BaseComponent $control_component;
 
     public function __construct(
@@ -13,7 +15,6 @@ class CheckboxField extends BaseComponent {
         public bool $disabled = false,
         public string $error = '',
         public string $label = '',
-        public string $name = '',
         public bool $required = false,
         public string $value = '1',
 
@@ -26,6 +27,9 @@ class CheckboxField extends BaseComponent {
     }
 
     public function prepare(): void {
+        $this->id   = sanitize_title($this->label);
+        $this->name = $this->id;
+
         $this->control_component = match ($this->component) {
             'switch-toggle' => new SwitchToggle(
                 label: $this->label,
@@ -58,6 +62,10 @@ class CheckboxField extends BaseComponent {
 
     public function has_error(): bool {
         return $this->error !== '';
+    }
+
+    public function error_id(): string {
+        return $this->id ? $this->id . '-error' : '';
     }
 
     protected function set_attrs(): array {

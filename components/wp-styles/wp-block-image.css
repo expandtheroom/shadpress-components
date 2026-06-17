@@ -1,0 +1,33 @@
+@reference "@src/css/index.css";
+
+figure.wp-block-image {
+  @apply rich-text-figure;
+
+  img {
+    @apply rich-text-img;
+  }
+
+  figcaption {
+    @apply rich-text-figcaption;
+  }
+
+  &.alignleft {
+    @apply float-left mr-5;
+  }
+
+  &.alignright {
+    @apply float-right ml-5;
+  }
+
+  &.aligncenter {
+    @apply mx-auto;
+
+    img {
+      @apply mx-auto;
+    }
+  }
+
+  &.alignfull {
+    @apply w-screen max-w-none;
+  }
+}

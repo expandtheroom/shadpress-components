@@ -1,27 +1,25 @@
 @reference "@src/css/index.css";
 
 [data-slot='field-description'] {
-  font-size: 0.875rem;
-  color: var(--color-muted-foreground);
+  @apply text-sm text-muted-foreground;
 }
 
 [data-slot='field-error'] {
-  font-size: 0.875rem;
-  color: var(--color-destructive);
+  @apply text-sm text-destructive;
 }
 
 [data-slot='field-input'] {
-  border-color: var(--color-input);
+  @apply border-input;
 }
 
 [data-slot='field-input'][aria-invalid='true'] {
-  border-color: var(--color-destructive);
+  @apply border-destructive;
 }
 
 [data-slot='field-label'] {
-  color: var(--color-foreground);
+  @apply text-foreground;
 }
 
 [data-slot='field-required'] {
-  color: var(--color-destructive);
+  @apply text-destructive;
 }

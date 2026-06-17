@@ -7,15 +7,7 @@
         class="relative inline-block"
         x-data="<?= esc_attr($this->component_module_name()) ?>()">
 
-        <button data-slot="dropdown-menu-trigger"
-            type="button"
-            x-ref="trigger"
-            :aria-expanded="open.toString()"
-            @click="open = !open"
-            class="<?= esc_attr($this->trigger_classes()) ?>"
-            style="<?= esc_attr($this->trigger_style()) ?>">
-            <?= esc_html($this->trigger_label) ?>
-        </button>
+        <?= $this->trigger_component ?>
 
         <div data-slot="dropdown-menu-content"
             role="menu"

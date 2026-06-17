@@ -1,0 +1,12 @@
+{
+  "name": "Rich Text Utils",
+  "description": "CSS-only utility component defining rich-text-* Tailwind utilities and the .rich-text container class for styling HTML content elements",
+  "requires": [],
+  "postInstall": [
+    {
+      "type": "prepend",
+      "path": "assets/src/css/utils.css",
+      "template": "@import '../../../components/rich-text-utils/rich-text-utils.css';\n"
+    }
+  ]
+}

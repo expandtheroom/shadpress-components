@@ -1,0 +1,9 @@
+@reference "@src/css/index.css";
+
+[data-slot="toggle"][data-checked="false"] {
+    @apply bg-muted text-muted-foreground border-transparent;
+}
+
+[data-slot="toggle"][data-checked="false"]:hover {
+    @apply bg-accent text-accent-foreground;
+}

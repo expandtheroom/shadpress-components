@@ -1,0 +1,3 @@
+@reference "@src/css/index.css";
+
+pre.wp-block-code { @apply rich-text-pre; }

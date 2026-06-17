@@ -19,7 +19,7 @@
 
             <input data-slot="combobox-input"
                 type="text"
-                <?php if ($this->label_for): ?>id="<?= esc_attr($this->label_for) ?>" <?php endif; ?>
+                id="<?= esc_attr($this->id) ?>"
                 role="combobox"
                 :aria-expanded="open.toString()"
                 aria-autocomplete="list"

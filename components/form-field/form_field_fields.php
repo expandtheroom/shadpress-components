@@ -11,6 +11,7 @@ $combobox_fields = require(get_stylesheet_directory() . '/components/combobox-fi
 $date_picker_fields = require(get_stylesheet_directory() . '/components/date-picker-field/date_picker_fields.php');
 $radio_group_fields = require(get_stylesheet_directory() . '/components/radio-group-field/radio_group_field_fields.php');
 $styled_select_fields = require(get_stylesheet_directory() . '/components/styled-select-field/styled_select_field_fields.php');
+$toggle_group_fields = require(get_stylesheet_directory() . '/components/toggle-group/toggle_group_fields.php');
 
 $field_full_fields = (new FieldsBuilder('form_field_component_fields'));
 $field_full_fields
@@ -81,7 +82,6 @@ $field_full_fields
         'layout' => 'block',
         'conditional_logic' => [
             [['field' => 'control_type', 'operator' => '==', 'value' => 'checkbox-group']],
-            [['field' => 'control_type', 'operator' => '==', 'value' => 'toggle-group']],
         ],
     ])
     ->addFields($checkbox_group_fields['full'])
@@ -129,6 +129,17 @@ $field_full_fields
         ],
     ])
     ->addFields($styled_select_fields['full'])
+    ->endGroup()
+    ->addGroup('toggle_group_fields', [
+        'label' => '',
+        'layout' => 'block',
+        'conditional_logic' => [
+            [
+                ['field' => 'control_type', 'operator' => '==', 'value' => 'toggle-group'],
+            ]
+        ],
+    ])
+    ->addFields($toggle_group_fields['full'])
     ->endGroup();
 
 return [

@@ -8,18 +8,22 @@ $dropdown_menu_trigger_label_field->addText('trigger_label', [
     'required' => 1,
 ]);
 
+// Import variant choices from Button — single source of truth.
+$button_fields = require get_stylesheet_directory() . '/components/button/button_fields.php';
+$trigger_variant_choices = $button_fields['variant_choices'];
+
 $dropdown_menu_trigger_variant_field = (new FieldsBuilder('dropdown_menu_trigger_variant_fields'));
 $dropdown_menu_trigger_variant_field->addSelect('trigger_variant', [
     'label'         => 'Trigger Variant',
-    'choices'       => [
-        'default'   => 'Default',
-        'outline'   => 'Outline',
-        'secondary' => 'Secondary',
-        'ghost'     => 'Ghost',
-    ],
+    'choices'       => $trigger_variant_choices,
     'default_value' => 'default',
 ]);
 
+$item_type_choices = [
+    'item'      => 'Item',
+    'separator' => 'Separator',
+    'label'     => 'Label (heading)',
+];
 $dropdown_menu_items_field = (new FieldsBuilder('dropdown_menu_items_fields'));
 $dropdown_menu_items_field
     ->addRepeater('menu_items', [
@@ -35,11 +39,7 @@ $dropdown_menu_items_field
         ])
         ->addSelect('type', [
             'label'         => 'Item Type',
-            'choices'       => [
-                'item'      => 'Item',
-                'separator' => 'Separator',
-                'label'     => 'Label (heading)',
-            ],
+            'choices'       => $item_type_choices,
             'default_value' => 'item',
         ])
     ->endRepeater();
@@ -51,8 +51,10 @@ $dropdown_menu_full_fields
     ->addFields($dropdown_menu_items_field);
 
 return [
-    'trigger_label'   => $dropdown_menu_trigger_label_field,
-    'trigger_variant' => $dropdown_menu_trigger_variant_field,
-    'menu_items'      => $dropdown_menu_items_field,
-    'full'            => $dropdown_menu_full_fields,
+    'trigger_label'          => $dropdown_menu_trigger_label_field,
+    'trigger_variant'        => $dropdown_menu_trigger_variant_field,
+    'trigger_variant_choices' => $trigger_variant_choices,
+    'menu_items'             => $dropdown_menu_items_field,
+    'item_type_choices'      => $item_type_choices,
+    'full'                   => $dropdown_menu_full_fields,
 ];

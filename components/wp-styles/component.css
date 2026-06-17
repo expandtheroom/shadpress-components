@@ -1,0 +1,13 @@
+@reference "@src/css/index.css";
+
+@import './wp-gutenberg-editor.css';
+@import './wp-block-heading.css';
+@import './wp-block-paragraph.css';
+@import './wp-block-list.css';
+@import './wp-block-quote.css';
+@import './wp-block-separator.css';
+@import './wp-block-code.css';
+@import './wp-block-table.css';
+@import './wp-block-image.css';
+@import './wp-link.css';
+@import './wp-theme-etr-starter-theme.css';

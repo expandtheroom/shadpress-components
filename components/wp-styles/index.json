@@ -1,0 +1,5 @@
+{
+  "name": "WP Styles",
+  "description": "CSS-only component that maps Gutenberg block selectors to rich-text-* utilities for consistent front-end typography",
+  "requires": ["rich-text-utils"]
+}

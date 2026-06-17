@@ -1,0 +1,3 @@
+@reference "@src/css/index.css";
+
+.wp-block-paragraph { @apply rich-text-p; }
