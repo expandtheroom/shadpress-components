@@ -4,9 +4,9 @@
 
 $icon_html = !empty($this->include_icon) ? $this->render_icon() : '';
 ?>
-<div <?= $this->component_attrs() ?>
+<div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>"
     data-open="<?= esc_attr($this->open ? 'true' : 'false') ?>"
-    x-data="<?= esc_attr($this->component_module_name()) ?>()">
+    x-data="<?= $this->component_module_name() ?>">
 
     <button data-slot="collapsible-trigger"
         type="button"

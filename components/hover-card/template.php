@@ -7,7 +7,7 @@
                 $this->component_classes(),
                 'relative inline-block',
             ) ?>"
-    x-data="<?= esc_attr($this->component_module_name()) ?>()">
+    x-data="<?= $this->component_module_name() ?>">
 
     <?php if ($this->trigger_url): ?>
         <a href="<?= esc_url($this->trigger_url) ?>"

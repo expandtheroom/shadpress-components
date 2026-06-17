@@ -3,7 +3,7 @@
 /** @var \Theme\Components\DatePicker $this */
 ?>
 <div <?= $this->component_attrs() ?>
-    x-data="<?= esc_attr($this->component_module_name()) ?>()"
+    x-data="<?= $this->component_module_name() ?>"
     class="<?= classNames($this->component_classes(), 'relative flex flex-col gap-1.5') ?>">
 
     <?php if ($this->label_component): ?>

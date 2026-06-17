@@ -3,8 +3,8 @@
 /** @var \Theme\Components\Carousel $this */
 $total = $this->slide_count();
 ?>
-<div <?= $this->component_attrs() ?>
-    x-data="<?= esc_attr($this->component_module_name()) ?>()">
+<div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>"
+    x-data="<?= $this->component_module_name() ?>">
 
     <div data-slot="carousel-viewport" class="relative overflow-hidden">
 

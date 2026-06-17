@@ -9,7 +9,7 @@
 
     <div data-slot="combobox"
         class="relative"
-        x-data="<?= esc_attr($this->component_module_name()) ?>()"
+        x-data="<?= $this->component_module_name() ?>"
         @click.outside="open = false; query = selected ? selected.label : ''"
         data-name="<?= esc_attr($this->name) ?>"
         data-placeholder="<?= esc_attr($this->placeholder) ?>"

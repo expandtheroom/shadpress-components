@@ -7,7 +7,7 @@
         role="menubar"
         class="flex items-center gap-1 border border-border bg-background rounded-[calc(var(--radius)-2px)] p-1"
         <?php if ($this->label): ?>aria-label="<?= esc_attr($this->label) ?>" <?php endif; ?>
-        x-data="<?= esc_attr($this->component_module_name()) ?>()"
+        x-data="<?= $this->component_module_name() ?>"
         data-menu-count="<?= esc_attr((string) count($this->menus)) ?>"
         @keydown.escape="active = null"
         @keydown.arrow-left.prevent="active !== null && moveFocus(-1)"

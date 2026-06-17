@@ -2,8 +2,8 @@
 
 /** @var \Theme\Components\Toggle $this */
 ?>
-<div <?= $this->component_attrs() ?>
-    x-data="<?= esc_attr($this->component_module_name()) ?>()">
+<div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>"
+    x-data="<?= $this->component_module_name() ?>">
 
     <?php if ($this->name): ?>
         <template x-if="checked">

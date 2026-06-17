@@ -4,7 +4,7 @@
 ?>
 <div <?= $this->component_attrs() ?>
     class="<?= $this->component_classes() ?>"
-    <?php if (!$this->is_preview): ?>x-data="<?= esc_attr($this->component_module_name()) ?>()"
+    <?php if (!$this->is_preview): ?>x-data="<?= $this->component_module_name() ?>"
     <?php endif; ?>>
 
     <?php foreach ($this->panels as $idx => $panel):

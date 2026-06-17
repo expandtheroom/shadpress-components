@@ -5,7 +5,7 @@
 <div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>">
     <div data-slot="dropdown-menu"
         class="relative inline-block"
-        x-data="<?= esc_attr($this->component_module_name()) ?>()">
+        x-data="<?= $this->component_module_name() ?>">
 
         <?= $this->trigger_component ?>
 

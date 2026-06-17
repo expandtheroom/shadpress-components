@@ -4,7 +4,7 @@
 ?>
 <div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>">
     <span data-slot="switch-root"
-        x-data="<?= esc_attr($this->component_module_name()) ?>()"
+        x-data="<?= $this->component_module_name() ?>"
         data-checked="<?= esc_attr($this->checked ? 'true' : 'false') ?>"
         data-name="<?= esc_attr($this->name) ?>"
         data-disabled="<?= esc_attr($this->disabled ? 'true' : 'false') ?>"

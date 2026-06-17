@@ -2,14 +2,14 @@
 
 /** @var \Theme\Components\StyledSelectField $this */
 ?>
-<div <?= $this->component_attrs() ?> class="flex flex-col gap-1.5">
+<div <?= $this->component_attrs() ?> class="<?= classNames($this->component_classes(), 'flex flex-col gap-1.5') ?>">
     <?php if ($this->label_component): ?>
         <?= $this->label_component ?>
     <?php endif; ?>
 
     <div <?= $this->component_attrs() ?>
         class="<?= classNames($this->component_classes(), 'relative') ?>"
-        x-data="<?= esc_attr($this->component_module_name()) ?>()"
+        x-data="<?= $this->component_module_name() ?>"
         @keydown.arrow-down.prevent="!disabled && openAndMoveNext()"
         @keydown.arrow-up.prevent="!disabled && openAndMovePrev()"
         @keydown.enter.prevent="!disabled && confirmActive()"

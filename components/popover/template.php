@@ -3,7 +3,7 @@
 /** @var \Theme\Components\Popover $this */
 ?>
 <div <?= $this->component_attrs() ?> class="<?= $this->component_classes() ?>"
-    x-data="<?= esc_attr($this->component_module_name()) ?>()">
+    x-data="<?= $this->component_module_name() ?>">
 
     <div class="relative inline-block">
 

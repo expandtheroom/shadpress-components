@@ -17,7 +17,7 @@ if ($layout === 'separate') {
     );
 }
 ?>
-<div <?= $this->component_attrs() ?> class="flex flex-col gap-1.5">
+<div <?= $this->component_attrs() ?> class="<?= classNames($this->component_classes(), 'flex flex-col gap-1.5') ?>">
     <?php if ($this->label_component): ?>
         <?= $this->label_component ?>
     <?php endif; ?>
@@ -26,8 +26,8 @@ if ($layout === 'separate') {
         role="group"
         class="<?= $wrapper_classes ?>"
         data-multiple="<?= $this->multiple ? 'true' : 'false' ?>"
-        <?php if ($this->label_component): ?>aria-labelledby="<?= esc_attr($this->id) ?>-label"<?php elseif ($this->label): ?>aria-label="<?= esc_attr($this->label) ?>"<?php endif; ?>
-        x-data="<?= esc_attr($this->component_module_name()) ?>()">
+        <?php if ($this->label_component): ?>aria-labelledby="<?= esc_attr($this->id) ?>-label" <?php elseif ($this->label): ?>aria-label="<?= esc_attr($this->label) ?>" <?php endif; ?>
+        x-data="<?= $this->component_module_name() ?>">
 
         <?php foreach ($this->toggle_components as $toggle): ?>
             <?= $toggle ?>
@@ -43,7 +43,7 @@ if ($layout === 'separate') {
 
     <?php if ($this->has_error()): ?>
         <p data-slot="field-error"
-            <?php if ($this->error_id()): ?>id="<?= esc_attr($this->error_id()) ?>"<?php endif; ?>
+            <?php if ($this->error_id()): ?>id="<?= esc_attr($this->error_id()) ?>" <?php endif; ?>
             role="alert">
             <?= esc_html($this->error) ?>
         </p>

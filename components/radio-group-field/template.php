@@ -10,7 +10,7 @@
 
     <div data-slot="radio-group"
         role="radiogroup"
-        x-data="<?= esc_attr($this->component_module_name()) ?>()"
+        x-data="<?= $this->component_module_name() ?>"
         data-default-value="<?= esc_attr($this->default_value) ?>"
         data-orientation="<?= esc_attr($this->orientation) ?>"
         class="flex data-[orientation=horizontal]:flex-row data-[orientation=horizontal]:gap-4 data-[orientation=vertical]:flex-col data-[orientation=vertical]:gap-2"
